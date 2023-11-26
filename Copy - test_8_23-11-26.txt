@@ -1,284 +1,50 @@
+///$tab 1_skript.qvs
+SET ThousandSep=',';
+SET DecimalSep='.';
+SET MoneyThousandSep=',';
+SET MoneyDecimalSep='.';
+SET MoneyFormat='$ ###0.00;-$ ###0.00';
+SET TimeFormat='h:mm:ss TT';
+SET DateFormat='M/D/YYYY';
+SET TimestampFormat='M/D/YYYY h:mm:ss[.fff] TT';
+SET FirstWeekDay=6;
+SET BrokenWeeks=1;
+SET ReferenceDay=0;
+SET FirstMonthOfYear=1;
+SET CollationLocale='en-US';
+SET CreateSearchIndexOnReload=1;
+SET MonthNames='Jan;Feb;Mar;Apr;May;Jun;Jul;Aug;Sep;Oct;Nov;Dec';
+SET LongMonthNames='January;February;March;April;May;June;July;August;September;October;November;December';
+SET DayNames='Mon;Tue;Wed;Thu;Fri;Sat;Sun';
+SET LongDayNames='Monday;Tuesday;Wednesday;Thursday;Friday;Saturday;Sunday';
+SET NumericalAbbreviation='3:k;6:M;9:G;12:T;15:P;18:E;21:Z;24:Y;-3:m;-6:μ;-9:n;-12:p;-15:f;-18:a;-21:z;-24:y';
 
-SHEETS
+Load * Inline [
+  a,b
+  1,2
+  3,4
+  5,6
+  7,8
+  100,2
+  200,4
+  300,2
+  555,3
+];
+///$tab 2_skript2.qvs
+Table2:
+Load * Inline [
+b,c
+2,A
+4,B
+6,C
+8,F
+];
 
-OBJECTS ON SHEETS
-
-DIMENSIONS
-{"qInfo":{"qId":"fhJLp","qType":"dimension"},"qMeta":{"title":"YearMonth","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"dimension","id":"fhJLp","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.727Z","modifiedDate":"2021-12-10T12:46:46.727Z","privileges":["read","update","delete","publish"]},"qData":[]}
-{"qInfo":{"qId":"SWeLpDj","qType":"dimension"},"qMeta":{"title":"Category Name","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"dimension","id":"SWeLpDj","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.790Z","modifiedDate":"2021-12-10T12:46:46.790Z","privileges":["read","update","delete","publish"]},"qData":[]}
-{"qInfo":{"qId":"LpmZEK","qType":"dimension"},"qMeta":{"title":"Day","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"dimension","id":"LpmZEK","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.791Z","modifiedDate":"2021-12-10T12:46:46.791Z","privileges":["read","update","delete","publish"]},"qData":[]}
-
-MASTER OBJECTS
-{"qInfo":{"qId":"fe2cf0c1-43bc-4448-92a8-898073ffe597","qType":"masterobject"},"qMeta":{"title":"Sankey","tags":[],"_resourcetype":"app.object","_objecttype":"masterobject","id":"fe2cf0c1-43bc-4448-92a8-898073ffe597","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.728Z","modifiedDate":"2021-12-10T12:46:46.728Z","privileges":["read","update","delete","publish"]},"qData":[]}
-{"qInfo":{"qId":"cb71d7c9-ae86-4835-bd7d-f1cb5fe4e590","qType":"masterobject"},"qMeta":{"title":"Radar","tags":[],"_resourcetype":"app.object","_objecttype":"masterobject","id":"cb71d7c9-ae86-4835-bd7d-f1cb5fe4e590","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.762Z","modifiedDate":"2021-12-10T12:46:46.762Z","privileges":["read","update","delete","publish"]},"qData":[]}
-{"qInfo":{"qId":"bcd3b2ce-68e8-400a-ae41-3522db3be9e3","qType":"masterobject"},"qMeta":{"title":"Funnel","tags":[],"_resourcetype":"app.object","_objecttype":"masterobject","id":"bcd3b2ce-68e8-400a-ae41-3522db3be9e3","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.769Z","modifiedDate":"2021-12-10T12:46:46.769Z","privileges":["read","update","delete","publish"]},"qData":[]}
-{"qInfo":{"qId":"abb534ee-08a1-47b1-b0e9-28645907ffd4","qType":"masterobject"},"qMeta":{"title":"accounts2","tags":[],"_resourcetype":"app.object","_objecttype":"masterobject","id":"abb534ee-08a1-47b1-b0e9-28645907ffd4","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.782Z","modifiedDate":"2021-12-10T12:46:46.782Z","privileges":["read","update","delete","publish"]},"qData":[]}
-{"qInfo":{"qId":"8bbf7880-7e79-45d0-9dc4-91fd5d14ff56","qType":"masterobject"},"qMeta":{"title":"KPI","tags":[],"_resourcetype":"app.object","_objecttype":"masterobject","id":"8bbf7880-7e79-45d0-9dc4-91fd5d14ff56","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.801Z","modifiedDate":"2021-12-10T12:46:46.801Z","privileges":["read","update","delete","publish"]},"qData":[]}
-{"qInfo":{"qId":"8af89b8d-48e2-4b64-a519-e1f95dfa4b96","qType":"masterobject"},"qMeta":{"title":"Scatter","tags":[],"_resourcetype":"app.object","_objecttype":"masterobject","id":"8af89b8d-48e2-4b64-a519-e1f95dfa4b96","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.802Z","modifiedDate":"2021-12-10T12:46:46.802Z","privileges":["read","update","delete","publish"]},"qData":[]}
-{"qInfo":{"qId":"6e89848e-f8c3-4908-afd8-a5f7a88f5b4e","qType":"masterobject"},"qMeta":{"title":"Sales","tags":[],"_resourcetype":"app.object","_objecttype":"masterobject","id":"6e89848e-f8c3-4908-afd8-a5f7a88f5b4e","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.807Z","modifiedDate":"2021-12-10T12:46:46.807Z","privileges":["read","update","delete","publish"]},"qData":[]}
-{"qInfo":{"qId":"61351981-7333-4fc0-8434-0d04307b7397","qType":"masterobject"},"qMeta":{"title":"Pie","tags":[],"_resourcetype":"app.object","_objecttype":"masterobject","id":"61351981-7333-4fc0-8434-0d04307b7397","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.811Z","modifiedDate":"2021-12-10T12:46:46.811Z","privileges":["read","update","delete","publish"]},"qData":[]}
-{"qInfo":{"qId":"5016ca72-a288-47ff-8825-794c799d0af5","qType":"masterobject"},"qMeta":{"title":"Line_for_mkpi","tags":[],"_resourcetype":"app.object","_objecttype":"masterobject","id":"5016ca72-a288-47ff-8825-794c799d0af5","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.821Z","modifiedDate":"2021-12-10T12:46:46.821Z","privileges":["read","update","delete","publish"]},"qData":[]}
-{"qInfo":{"qId":"43321b05-3c03-4d04-8191-7ae387b8fbe5","qType":"masterobject"},"qMeta":{"title":"qliklook","tags":[],"_resourcetype":"app.object","_objecttype":"masterobject","id":"43321b05-3c03-4d04-8191-7ae387b8fbe5","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.821Z","modifiedDate":"2021-12-10T12:46:46.821Z","privileges":["read","update","delete","publish"]},"qData":[]}
-{"qInfo":{"qId":"4060ac6e-b1b1-4da4-8670-1c2cc85e9c1b","qType":"masterobject"},"qMeta":{"title":"accounts","tags":[],"_resourcetype":"app.object","_objecttype":"masterobject","id":"4060ac6e-b1b1-4da4-8670-1c2cc85e9c1b","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.827Z","modifiedDate":"2021-12-10T12:46:46.827Z","privileges":["read","update","delete","publish"]},"qData":[]}
-{"qInfo":{"qId":"32a14843-aba7-426d-bed7-549b88188a68","qType":"masterobject"},"qMeta":{"title":"Word cloud","tags":[],"_resourcetype":"app.object","_objecttype":"masterobject","id":"32a14843-aba7-426d-bed7-549b88188a68","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.829Z","modifiedDate":"2021-12-10T12:46:46.829Z","privileges":["read","update","delete","publish"]},"qData":[]}
-{"qInfo":{"qId":"00393ad9-d2bf-4d4b-9c08-0ec3969807d0","qType":"masterobject"},"qMeta":{"title":"Heatmap","tags":[],"_resourcetype":"app.object","_objecttype":"masterobject","id":"00393ad9-d2bf-4d4b-9c08-0ec3969807d0","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.878Z","modifiedDate":"2021-12-10T12:46:46.878Z","privileges":["read","update","delete","publish"]},"qData":[]}
-{"qInfo":{"qId":"25f77954-0136-451d-aebd-3eda592cc4c3","qType":"masterobject"},"qMeta":{"title":"Tooltip - Bar chart","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"masterobject","id":"25f77954-0136-451d-aebd-3eda592cc4c3","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:47.068Z","modifiedDate":"2021-12-10T12:46:47.068Z","privileges":["read","update","delete","publish"]},"qData":[]}
-{"qInfo":{"qId":"9753b9a9-0072-4d9f-b8bd-1b2cb1a52d12","qType":"masterobject"},"qMeta":{"title":"Tooltip - Map","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"masterobject","id":"9753b9a9-0072-4d9f-b8bd-1b2cb1a52d12","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:47.069Z","modifiedDate":"2021-12-10T12:46:47.069Z","privileges":["read","update","delete","publish"]},"qData":[]}
-{"qInfo":{"qId":"d2eaa85a-567b-4c96-a374-5633b0340491","qType":"masterobject"},"qMeta":{"title":"Tooltip - Products","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"masterobject","id":"d2eaa85a-567b-4c96-a374-5633b0340491","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:47.070Z","modifiedDate":"2021-12-10T12:46:47.070Z","privileges":["read","update","delete","publish"]},"qData":[]}
-{"qInfo":{"qId":"f2e6f867-9b69-447a-96e4-36adb40dc628","qType":"masterobject"},"qMeta":{"title":"Tooltip - Table","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"masterobject","id":"f2e6f867-9b69-447a-96e4-36adb40dc628","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:47.071Z","modifiedDate":"2021-12-10T12:46:47.071Z","privileges":["read","update","delete","publish"]},"qData":[]}
-
-VARIABLES
-{"qName":"name","qDefinition":"SalesData","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"b69a136d-2a50-4c9e-b108-ba46540a4558","qType":"variable"},"qData":[],"qIsScriptCreated":true}
-{"qName":"index","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"112bdd24-5dcd-4eea-9e63-02419ba0b163","qType":"variable"},"qData":[],"qIsScriptCreated":true}
-{"qName":"currentName","qDefinition":"SalesData","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"e8f61e7a-0ba6-463c-b275-b5e4fac39861","qType":"variable"},"qData":[],"qIsScriptCreated":true}
-{"qName":"matches","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"6205a401-d148-4d48-9a60-db1f449cda0a","qType":"variable"},"qData":[],"qIsScriptCreated":true}
-{"qName":"vGeo","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"bb1f61b6-1550-47d6-8246-a55414ddd0c1","qType":"variable"},"qData":[]}
-{"qName":"vIndicator","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"de75e5fc-c709-4fa1-b6c5-8f23f1e89a04","qType":"variable"},"qData":[]}
-{"qName":"vTrend","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"6649977e-e0ae-43c7-bcaf-fd2736b6fabb","qType":"variable"},"qData":[]}
-{"qName":"vTime","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"a25bc6f1-9335-4dbb-8014-d352d50f85f1","qType":"variable"},"qData":[]}
-{"qName":"budget","qDefinition":"20%","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"bdcff267-5f15-4da3-bf5b-83f260721d47","qType":"variable"},"qData":[]}
-{"qName":"vCurr","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"684fe6d8-2b77-4736-bd69-ddd0a7405fe0","qType":"variable"},"qData":[]}
-{"qName":"vBgMap","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"c6fcc2f7-aa77-48e3-bee1-a2c6460c3a11","qType":"variable"},"qData":[]}
-{"qName":"vAcc","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"70a3e282-9b83-4da1-8e51-25dd72a5414e","qType":"variable"},"qData":[]}
-{"qName":"vShow","qDefinition":"-1","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"a2bc0116-3efc-46f8-a3de-e95d8de4ef82","qType":"variable"},"qData":[]}
-{"qName":"vPlay","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"d232b71c-491d-4ed1-8f9b-49e0c85a33c6","qType":"variable"},"qData":[]}
-{"qName":"vYear","qDefinition":"2019","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"55990acd-fba1-42de-ab06-f8b8c66c9f7f","qType":"variable"},"qData":[]}
-{"qName":"vColor","qDefinition":"Orange","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"f4ac701a-6823-429a-b39f-983c35410422","qType":"variable"},"qData":[]}
-{"qName":"vSlide","qDefinition":"18","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"e63dc1cd-dc26-4d07-9dcd-20841c89705e","qType":"variable"},"qData":[]}
-
-FIELDS
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Field","qCardinal":72,"qTags":["$text","$ascii","$key","$hidden","$system"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Table","qCardinal":8,"qTags":["$text","$ascii","$key","$hidden","$system"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Rows","qCardinal":6,"qTags":["$numeric","$integer","$hidden","$system"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Fields","qCardinal":6,"qTags":["$numeric","$integer","$hidden","$system"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$FieldNo","qCardinal":34,"qTags":["$numeric","$integer","$hidden","$system"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Info","qCardinal":1,"qTags":["$text","$ascii","$hidden","$system"],"qSrcTables":[]}
-{"qName":"color_id","qCardinal":15,"qTags":["$numeric","$integer"],"qSrcTables":["colors"]}
-{"qName":"color_type","qCardinal":4,"qTags":["$text","$ascii"],"qSrcTables":["colors"]}
-{"qName":"color_name","qCardinal":15,"qTags":["$text","$ascii"],"qSrcTables":["colors"]}
-{"qName":"color_r","qCardinal":11,"qTags":["$numeric","$integer"],"qSrcTables":["colors"]}
-{"qName":"color_g","qCardinal":13,"qTags":["$numeric","$integer"],"qSrcTables":["colors"]}
-{"qName":"color_b","qCardinal":14,"qTags":["$numeric","$integer"],"qSrcTables":["colors"]}
-{"qName":"color_hex","qCardinal":15,"qTags":["$text","$ascii"],"qSrcTables":["colors"]}
-{"qName":"Address","qCardinal":90,"qTags":["$text"],"qSrcTables":["SalesData"]}
-{"qName":"CategoryID","qCardinal":8,"qTags":["$numeric","$integer"],"qSrcTables":["SalesData"]}
-{"qName":"CategoryName","qCardinal":8,"qTags":["$text"],"qSrcTables":["SalesData"]}
-{"qName":"City","qCardinal":69,"qTags":["$text","$geoname","$relates_SalesData.City_GeoInfo"],"qSrcTables":["SalesData"]}
-{"qName":"ContactName","qCardinal":90,"qTags":["$text"],"qSrcTables":["SalesData"]}
-{"qName":"COS","qCardinal":2140,"qTags":["$numeric"],"qSrcTables":["SalesData"]}
-{"qName":"Country","qCardinal":21,"qTags":["$text","$geoname","$relates_SalesData.Country_GeoInfo","$ascii"],"qSrcTables":["SalesData"]}
-{"qName":"Customer","qCardinal":90,"qTags":["$text"],"qSrcTables":["SalesData"]}
-{"qName":"CustomerID","qCardinal":90,"qTags":["$numeric","$integer"],"qSrcTables":["SalesData"]}
-{"qName":"Description","qCardinal":8,"qTags":["$text"],"qSrcTables":["SalesData"]}
-{"qName":"Discount","qCardinal":829,"qTags":["$numeric"],"qSrcTables":["SalesData"]}
-{"qName":"EmployeeID","qCardinal":35,"qTags":["$numeric","$integer","$key"],"qSrcTables":["SalesData","Employees","Hierarchy"]}
-{"qName":"Fax","qCardinal":68,"qTags":[],"qSrcTables":["SalesData"]}
-{"qName":"Freight","qCardinal":783,"qTags":["$numeric"],"qSrcTables":["SalesData"]}
-{"qName":"GP","qCardinal":2149,"qTags":["$numeric"],"qSrcTables":["SalesData"]}
-{"qName":"Month","qCardinal":12,"qTags":["$numeric","$integer"],"qSrcTables":["SalesData"]}
-{"qName":"OrderDate","qCardinal":545,"qTags":["$numeric","$integer","$timestamp","$date"],"qDerivedFieldData":{"qDerivedFieldLists":[{"qDerivedDefinitionName":"autoCalendar","qFieldDefs":[{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:Year","qName":"OrderDate.autoCalendar.Year","qMethod":"Year","qExpr":"=${autoCalendar(OrderDate).Year}","qTags":["$axis","$year"]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:Quarter","qName":"OrderDate.autoCalendar.Quarter","qMethod":"Quarter","qExpr":"=${autoCalendar(OrderDate).Quarter}","qTags":["$quarter","$cyclic"]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:YearQuarter","qName":"OrderDate.autoCalendar.YearQuarter","qMethod":"YearQuarter","qExpr":"=${autoCalendar(OrderDate).YearQuarter}","qTags":["$yearquarter","$qualified"]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:Month","qName":"OrderDate.autoCalendar.Month","qMethod":"Month","qExpr":"=${autoCalendar(OrderDate).Month}","qTags":["$month","$cyclic"]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:YearMonth","qName":"OrderDate.autoCalendar.YearMonth","qMethod":"YearMonth","qExpr":"=${autoCalendar(OrderDate).YearMonth}","qTags":["$axis","$yearmonth","$qualified"]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:Week","qName":"OrderDate.autoCalendar.Week","qMethod":"Week","qExpr":"=${autoCalendar(OrderDate).Week}","qTags":["$weeknumber","$cyclic"]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:Date","qName":"OrderDate.autoCalendar.Date","qMethod":"Date","qExpr":"=${autoCalendar(OrderDate).Date}","qTags":["$axis","$date","$qualified"]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:InYTD","qName":"OrderDate.autoCalendar.InYTD","qMethod":"InYTD","qExpr":"=${autoCalendar(OrderDate).InYTD}","qTags":[]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:YearsAgo","qName":"OrderDate.autoCalendar.YearsAgo","qMethod":"YearsAgo","qExpr":"=${autoCalendar(OrderDate).YearsAgo}","qTags":[]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:InQTD","qName":"OrderDate.autoCalendar.InQTD","qMethod":"InQTD","qExpr":"=${autoCalendar(OrderDate).InQTD}","qTags":[]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:QuartersAgo","qName":"OrderDate.autoCalendar.QuartersAgo","qMethod":"QuartersAgo","qExpr":"=${autoCalendar(OrderDate).QuartersAgo}","qTags":[]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:QuarterRelNo","qName":"OrderDate.autoCalendar.QuarterRelNo","qMethod":"QuarterRelNo","qExpr":"=${autoCalendar(OrderDate).QuarterRelNo}","qTags":[]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:InMTD","qName":"OrderDate.autoCalendar.InMTD","qMethod":"InMTD","qExpr":"=${autoCalendar(OrderDate).InMTD}","qTags":[]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:MonthsAgo","qName":"OrderDate.autoCalendar.MonthsAgo","qMethod":"MonthsAgo","qExpr":"=${autoCalendar(OrderDate).MonthsAgo}","qTags":[]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:MonthRelNo","qName":"OrderDate.autoCalendar.MonthRelNo","qMethod":"MonthRelNo","qExpr":"=${autoCalendar(OrderDate).MonthRelNo}","qTags":[]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:InWTD","qName":"OrderDate.autoCalendar.InWTD","qMethod":"InWTD","qExpr":"=${autoCalendar(OrderDate).InWTD}","qTags":[]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:WeeksAgo","qName":"OrderDate.autoCalendar.WeeksAgo","qMethod":"WeeksAgo","qExpr":"=${autoCalendar(OrderDate).WeeksAgo}","qTags":[]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:WeekRelNo","qName":"OrderDate.autoCalendar.WeekRelNo","qMethod":"WeekRelNo","qExpr":"=${autoCalendar(OrderDate).WeekRelNo}","qTags":[]}],"qGroupDefs":[],"qTags":[]}]},"qSrcTables":["SalesData"]}
-{"qName":"fiscyear","qCardinal":545,"qTags":["$numeric","$integer","$timestamp","$date"],"qDerivedFieldData":{"qDerivedFieldLists":[{"qDerivedDefinitionName":"r","qFieldDefs":[{"qId":"9780d64e-f293-4e0b-aa59-202bc172e034:Year","qName":"fiscyear.r.Year","qMethod":"Year","qExpr":"=${r(fiscyear).Year}","qTags":["$axis"]},{"qId":"9780d64e-f293-4e0b-aa59-202bc172e034:StartWeekQuarter","qName":"fiscyear.r.StartWeekQuarter","qMethod":"StartWeekQuarter","qExpr":"=${r(fiscyear).StartWeekQuarter}","qTags":["$axis","$simplified"]},{"qId":"9780d64e-f293-4e0b-aa59-202bc172e034:Week","qName":"fiscyear.r.Week","qMethod":"Week","qExpr":"=${r(fiscyear).Week}","qTags":["$axis","$qualified"]}],"qGroupDefs":[],"qTags":[]}]},"qSrcTables":["SalesData"]}
-{"qName":"GridDay","qCardinal":31,"qTags":["$numeric","$integer"],"qSrcTables":["SalesData"]}
-{"qName":"GridYearMonth","qCardinal":33,"qTags":["$numeric","$integer","$timestamp","$date"],"qSrcTables":["SalesData"]}
-{"qName":"OrderID","qCardinal":836,"qTags":["$numeric","$integer"],"qSrcTables":["SalesData"]}
-{"qName":"Phone","qCardinal":90,"qTags":[],"qSrcTables":["SalesData"]}
-{"qName":"PostalCode","qCardinal":82,"qTags":[],"qSrcTables":["SalesData"]}
-{"qName":"ProductID","qCardinal":77,"qTags":["$numeric","$integer"],"qSrcTables":["SalesData"]}
-{"qName":"ProductName","qCardinal":77,"qTags":["$text"],"qSrcTables":["SalesData"]}
-{"qName":"Quantity","qCardinal":56,"qTags":["$numeric","$integer"],"qSrcTables":["SalesData"]}
-{"qName":"Quarter","qCardinal":5,"qTags":["$text","$ascii"],"qSrcTables":["SalesData"]}
-{"qName":"Sales","qCardinal":2113,"qTags":["$numeric"],"qSrcTables":["SalesData"]}
-{"qName":"ShipperID","qCardinal":3,"qTags":["$numeric","$integer"],"qSrcTables":["SalesData"]}
-{"qName":"SupplierID","qCardinal":29,"qTags":["$numeric","$integer"],"qSrcTables":["SalesData"]}
-{"qName":"Year","qCardinal":5,"qTags":["$numeric","$integer"],"qSrcTables":["SalesData"]}
-{"qName":"SalesData.City_GeoInfo","qCardinal":65,"qTags":["$text","$ascii","$geopoint","$relates_City"],"qSrcTables":["SalesData"]}
-{"qName":"SalesData.Country_GeoInfo","qCardinal":22,"qTags":["$text","$ascii","$geopolygon","$relates_Country"],"qSrcTables":["SalesData"]}
-{"qName":"ISO3Code","qCardinal":247,"qTags":["$text","$ascii","$key"],"qSrcTables":["SalesData","countryGeo"]}
-{"qName":"CountryCode","qCardinal":247,"qTags":["$text","$ascii"],"qSrcTables":["countryGeo"]}
-{"qName":"EmployeeName","qCardinal":35,"qTags":["$text"],"qSrcTables":["Employees"]}
-{"qName":"Title","qCardinal":12,"qTags":["$text","$ascii","$key"],"qSrcTables":["Employees","Colors"]}
-{"qName":"Hire Date","qCardinal":34,"qTags":["$numeric","$integer","$timestamp","$date"],"qSrcTables":["Employees"]}
-{"qName":"Office","qCardinal":5,"qTags":["$numeric","$integer"],"qSrcTables":["Employees"]}
-{"qName":"Extension","qCardinal":25,"qTags":[],"qSrcTables":["Employees"]}
-{"qName":"Reports To","qCardinal":13,"qTags":["$numeric","$integer"],"qSrcTables":["Employees"]}
-{"qName":"Year Salary","qCardinal":24,"qTags":["$numeric","$integer"],"qSrcTables":["Employees"]}
-{"qName":"Color1","qCardinal":11,"qTags":["$text","$ascii"],"qSrcTables":["Colors"]}
-{"qName":"Color2","qCardinal":12,"qTags":["$text","$ascii"],"qSrcTables":["Colors"]}
-{"qName":"EmpName","qCardinal":35,"qTags":["$text"],"qSrcTables":["Hierarchy"]}
-{"qName":"ManagerID","qCardinal":13,"qTags":["$numeric","$integer"],"qSrcTables":["Hierarchy"]}
-{"qName":"EmpName1","qCardinal":1,"qTags":["$text","$ascii"],"qSrcTables":["Hierarchy"]}
-{"qName":"EmpName2","qCardinal":3,"qTags":["$text","$ascii"],"qSrcTables":["Hierarchy"]}
-{"qName":"EmpName3","qCardinal":12,"qTags":["$text","$ascii"],"qSrcTables":["Hierarchy"]}
-{"qName":"EmpName4","qCardinal":20,"qTags":["$text"],"qSrcTables":["Hierarchy"]}
-{"qName":"EmpName5","qCardinal":3,"qTags":["$text","$ascii"],"qSrcTables":["Hierarchy"]}
-{"qName":"Manager","qCardinal":14,"qTags":["$text"],"qSrcTables":["Hierarchy"]}
-{"qName":"EmpHierarchy","qCardinal":35,"qTags":["$text"],"qSrcTables":["Hierarchy"]}
-{"qName":"Depth","qCardinal":5,"qTags":["$numeric","$integer"],"qSrcTables":["Hierarchy"]}
-{"qName":"vid","qCardinal":3,"qTags":["$numeric","$integer"],"qSrcTables":["videos"]}
-{"qName":"release","qCardinal":3,"qTags":["$text","$ascii"],"qSrcTables":["videos"]}
-{"qName":"video","qCardinal":3,"qTags":["$text","$ascii"],"qSrcTables":["videos"]}
-{"qName":"Ship","qCardinal":35,"qTags":["$text","$ascii"],"qSrcTables":["ships"]}
-{"qName":"ShipCountry","qCardinal":15,"qTags":["$text","$ascii"],"qSrcTables":["ships"]}
-{"qName":"Type","qCardinal":5,"qTags":["$text","$ascii"],"qSrcTables":["ships"]}
-{"qName":"Knots","qCardinal":30,"qTags":["$numeric"],"qSrcTables":["ships"]}
-{"qName":"Dir","qCardinal":31,"qTags":["$numeric","$integer"],"qSrcTables":["ships"]}
-{"qName":"Color","qCardinal":5,"qTags":["$text","$ascii"],"qSrcTables":["ships"]}
-{"qName":"x","qCardinal":35,"qTags":["$numeric"],"qSrcTables":["ships"]}
-{"qName":"y","qCardinal":35,"qTags":["$numeric"],"qSrcTables":["ships"]}
-
-SHEETS
-
-OBJECTS ON SHEETS
-
-DIMENSIONS
-
-MASTER OBJECTS
-
-VARIABLES
-{"qName":"name","qDefinition":"Territories","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"01b1b497-82e8-42cd-950b-fa3b1a6521f1","qType":"variable"},"qData":[],"qIsScriptCreated":true}
-{"qName":"index","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"c50148a5-333a-4488-85dc-42b144f8fb4a","qType":"variable"},"qData":[],"qIsScriptCreated":true}
-{"qName":"currentName","qDefinition":"Territories","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"7cac59ce-365a-421e-b163-f1028b89fab7","qType":"variable"},"qData":[],"qIsScriptCreated":true}
-{"qName":"matches","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"991ffe4c-9c11-43c8-825e-d8eb2758467c","qType":"variable"},"qData":[],"qIsScriptCreated":true}
-
-FIELDS
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Field","qCardinal":40,"qTags":["$ascii","$text","$key","$hidden","$system"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Table","qCardinal":10,"qTags":["$ascii","$text","$key","$hidden","$system"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Rows","qCardinal":9,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Fields","qCardinal":7,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$FieldNo","qCardinal":9,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Info","qCardinal":1,"qTags":["$ascii","$text","$hidden","$system"],"qSrcTables":[]}
-{"qName":"CategoryID","qCardinal":8,"qTags":["$key","$numeric","$integer"],"qSrcTables":["Categories","Products"]}
-{"qName":"CategoryName","qCardinal":8,"qTags":["$text"],"qSrcTables":["Categories"]}
-{"qName":"CustomerID","qCardinal":92,"qTags":["$key","$numeric","$integer"],"qSrcTables":["Customers","Order"]}
-{"qName":"Address","qCardinal":92,"qTags":["$text"],"qSrcTables":["Customers"]}
-{"qName":"City","qCardinal":70,"qTags":["$text","$geoname","$relates_Customers.City_GeoInfo"],"qSrcTables":["Customers"]}
-{"qName":"Customer","qCardinal":92,"qTags":["$text"],"qSrcTables":["Customers"]}
-{"qName":"ContactName","qCardinal":92,"qTags":["$text"],"qSrcTables":["Customers"]}
-{"qName":"Country","qCardinal":21,"qTags":["$ascii","$text","$geoname","$relates_Customers.Country_GeoInfo"],"qSrcTables":["Customers"]}
-{"qName":"PostalCode","qCardinal":84,"qTags":[],"qSrcTables":["Customers"]}
-{"qIsHidden":true,"qName":"Customers.City_GeoInfo","qCardinal":63,"qTags":["$geopoint","$ascii","$text","$hidden","$relates_City"],"qSrcTables":[]}
-{"qIsHidden":true,"qName":"Customers.Country_GeoInfo","qCardinal":21,"qTags":["$ascii","$text","$hidden","$geopolygon","$relates_Country"],"qSrcTables":[]}
-{"qName":"EmployeeID","qCardinal":47,"qTags":["$key","$numeric","$integer"],"qSrcTables":["Employees","Order","Orders Header","Territories"]}
-{"qName":"EmployeeName","qCardinal":47,"qTags":["$text"],"qSrcTables":["Employees"]}
-{"qName":"Office","qCardinal":5,"qTags":["$key","$numeric","$integer"],"qSrcTables":["Employees","Offices"]}
-{"qName":"Reports To","qCardinal":17,"qTags":[],"qSrcTables":["Employees"]}
-{"qName":"Title","qCardinal":10,"qTags":["$ascii","$text"],"qSrcTables":["Employees"]}
-{"qName":"Year Salary","qCardinal":27,"qTags":["$numeric","$integer"],"qSrcTables":["Employees"]}
-{"qName":"SalesOffice","qCardinal":5,"qTags":["$ascii","$text","$geoname","$relates_Offices.SalesOffice_GeoInfo"],"qSrcTables":["Offices"]}
-{"qIsHidden":true,"qName":"Offices.SalesOffice_GeoInfo","qCardinal":5,"qTags":["$geopoint","$ascii","$text","$hidden","$relates_SalesOffice"],"qSrcTables":[]}
-{"qName":"OrderDate","qCardinal":548,"qTags":["$numeric","$integer","$timestamp","$date"],"qDerivedFieldData":{"qDerivedFieldLists":[{"qDerivedDefinitionName":"autoCalendar","qFieldDefs":[{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:Year","qName":"OrderDate.autoCalendar.Year","qMethod":"Year","qExpr":"=${autoCalendar(OrderDate).Year}","qTags":["$axis","$year"]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:Quarter","qName":"OrderDate.autoCalendar.Quarter","qMethod":"Quarter","qExpr":"=${autoCalendar(OrderDate).Quarter}","qTags":["$quarter","$cyclic"]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:YearQuarter","qName":"OrderDate.autoCalendar.YearQuarter","qMethod":"YearQuarter","qExpr":"=${autoCalendar(OrderDate).YearQuarter}","qTags":["$yearquarter","$qualified"]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:Month","qName":"OrderDate.autoCalendar.Month","qMethod":"Month","qExpr":"=${autoCalendar(OrderDate).Month}","qTags":["$month","$cyclic"]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:YearMonth","qName":"OrderDate.autoCalendar.YearMonth","qMethod":"YearMonth","qExpr":"=${autoCalendar(OrderDate).YearMonth}","qTags":["$axis","$yearmonth","$qualified"]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:Week","qName":"OrderDate.autoCalendar.Week","qMethod":"Week","qExpr":"=${autoCalendar(OrderDate).Week}","qTags":["$weeknumber","$cyclic"]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:Date","qName":"OrderDate.autoCalendar.Date","qMethod":"Date","qExpr":"=${autoCalendar(OrderDate).Date}","qTags":["$axis","$date","$qualified"]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:InYTD","qName":"OrderDate.autoCalendar.InYTD","qMethod":"InYTD","qExpr":"=${autoCalendar(OrderDate).InYTD}","qTags":[]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:YearsAgo","qName":"OrderDate.autoCalendar.YearsAgo","qMethod":"YearsAgo","qExpr":"=${autoCalendar(OrderDate).YearsAgo}","qTags":[]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:InQTD","qName":"OrderDate.autoCalendar.InQTD","qMethod":"InQTD","qExpr":"=${autoCalendar(OrderDate).InQTD}","qTags":[]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:QuartersAgo","qName":"OrderDate.autoCalendar.QuartersAgo","qMethod":"QuartersAgo","qExpr":"=${autoCalendar(OrderDate).QuartersAgo}","qTags":[]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:QuarterRelNo","qName":"OrderDate.autoCalendar.QuarterRelNo","qMethod":"QuarterRelNo","qExpr":"=${autoCalendar(OrderDate).QuarterRelNo}","qTags":[]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:InMTD","qName":"OrderDate.autoCalendar.InMTD","qMethod":"InMTD","qExpr":"=${autoCalendar(OrderDate).InMTD}","qTags":[]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:MonthsAgo","qName":"OrderDate.autoCalendar.MonthsAgo","qMethod":"MonthsAgo","qExpr":"=${autoCalendar(OrderDate).MonthsAgo}","qTags":[]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:MonthRelNo","qName":"OrderDate.autoCalendar.MonthRelNo","qMethod":"MonthRelNo","qExpr":"=${autoCalendar(OrderDate).MonthRelNo}","qTags":[]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:InWTD","qName":"OrderDate.autoCalendar.InWTD","qMethod":"InWTD","qExpr":"=${autoCalendar(OrderDate).InWTD}","qTags":[]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:WeeksAgo","qName":"OrderDate.autoCalendar.WeeksAgo","qMethod":"WeeksAgo","qExpr":"=${autoCalendar(OrderDate).WeeksAgo}","qTags":[]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:WeekRelNo","qName":"OrderDate.autoCalendar.WeekRelNo","qMethod":"WeekRelNo","qExpr":"=${autoCalendar(OrderDate).WeekRelNo}","qTags":[]}],"qGroupDefs":[],"qTags":[]}]},"qSrcTables":["Order"]}
-{"qName":"Order.Freight","qCardinal":783,"qTags":["$numeric"],"qSrcTables":["Order"]}
-{"qName":"OrderID","qCardinal":836,"qTags":["$key","$numeric","$integer"],"qSrcTables":["Order","Order Details"]}
-{"qName":"Order.ShipperID","qCardinal":3,"qTags":["$numeric","$integer"],"qSrcTables":["Order"]}
-{"qName":"ProductID","qCardinal":77,"qTags":["$key","$numeric","$integer"],"qSrcTables":["Order Details","Products"]}
-{"qName":"Quantity","qCardinal":56,"qTags":["$numeric","$integer"],"qSrcTables":["Order Details"]}
-{"qName":"Sales","qCardinal":2113,"qTags":["$numeric"],"qSrcTables":["Order Details"]}
-{"qName":"Discount","qCardinal":829,"qTags":["$numeric"],"qSrcTables":["Order Details"]}
-{"qName":"COS","qCardinal":2140,"qTags":["$numeric"],"qSrcTables":["Order Details"]}
-{"qName":"GP","qCardinal":2149,"qTags":["$numeric"],"qSrcTables":["Order Details"]}
-{"qName":"Orders Header.CustomerID","qCardinal":90,"qTags":["$numeric","$integer"],"qSrcTables":["Orders Header"]}
-{"qName":"Orders Header.Freight","qCardinal":783,"qTags":["$numeric"],"qSrcTables":["Orders Header"]}
-{"qName":"Orders Header.OrderID","qCardinal":836,"qTags":["$numeric","$integer"],"qSrcTables":["Orders Header"]}
-{"qName":"Orders Header.ShipperID","qCardinal":3,"qTags":["$numeric","$integer"],"qSrcTables":["Orders Header"]}
-{"qName":"ProductName","qCardinal":77,"qTags":["$text"],"qSrcTables":["Products"]}
-{"qName":"SupplierID-ID","qCardinal":29,"qTags":["$key","$numeric","$integer"],"qSrcTables":["Products","Suppliers"]}
-{"qName":"Supplier","qCardinal":29,"qTags":["$text"],"qSrcTables":["Suppliers"]}
-{"qName":"SupplierCountry","qCardinal":16,"qTags":["$ascii","$text","$geoname","$relates_Suppliers.SupplierCountry_GeoInfo"],"qSrcTables":["Suppliers"]}
-{"qIsHidden":true,"qName":"Suppliers.SupplierCountry_GeoInfo","qCardinal":16,"qTags":["$ascii","$text","$hidden","$geopolygon","$relates_SupplierCountry"],"qSrcTables":[]}
-{"qName":"Territories.ID","qCardinal":49,"qTags":["$numeric","$integer"],"qSrcTables":["Territories"]}
-{"qName":"TerritoryID","qCardinal":49,"qTags":["$numeric","$integer"],"qSrcTables":["Territories"]}
-
-SHEETS
-
-OBJECTS ON SHEETS
-
-DIMENSIONS
-
-MASTER OBJECTS
-
-VARIABLES
-
-FIELDS
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Field","qCardinal":5,"qTags":["$hidden","$system","$ascii","$text","$key"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Table","qCardinal":2,"qTags":["$hidden","$system","$ascii","$text","$key"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Rows","qCardinal":2,"qTags":["$numeric","$integer","$hidden","$system"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Fields","qCardinal":2,"qTags":["$numeric","$integer","$hidden","$system"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$FieldNo","qCardinal":3,"qTags":["$numeric","$integer","$hidden","$system"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Info","qCardinal":1,"qTags":["$hidden","$system","$ascii","$text"],"qSrcTables":[]}
-{"qName":"Datum","qCardinal":455,"qTags":["$numeric","$integer","$timestamp","$date"],"qSrcTables":["LEVEL_1_F_CENY"]}
-{"qName":"Natural 95","qCardinal":29,"qTags":["$numeric"],"qSrcTables":["LEVEL_1_F_CENY"]}
-{"qName":"Diesel","qCardinal":31,"qTags":["$numeric"],"qSrcTables":["LEVEL_1_F_CENY"]}
-{"qName":"Column1","qCardinal":3,"qTags":["$ascii","$text"],"qSrcTables":["Test_store"]}
-{"qName":"Column2","qCardinal":3,"qTags":["$numeric","$integer"],"qSrcTables":["Test_store"]}
-
-SHEETS
-{"qInfo":{"qId":"a777af05-2944-4838-befe-1b609b69b993","qType":"sheet"},"qMeta":{"title":"My new sheet (1)","description":"","_resourcetype":"app.object","_objecttype":"sheet","id":"a777af05-2944-4838-befe-1b609b69b993","approved":false,"published":true,"owner":"auth0|ae0be3409fdbd3316572a8c51d5c0fe0e2c9d76da9c3ccc777330ae942923884","ownerId":"igkHZ3vsLvAdKgGbjQybbnc78LP2p4Si","createdDate":"2022-08-21T01:41:02.127Z","modifiedDate":"2022-08-21T01:42:21.194Z","publishTime":"2022-08-21T01:42:21.194Z","privileges":["read","publish"]},"qData":[]}
-
-OBJECTS ON SHEETS
-{"bounds":{"y":0,"x":0,"width":29.166666666666668,"height":25},"col":0,"colspan":7,"name":"1594f295-a596-4a8e-9ab3-53782ac18c57","row":0,"rowspan":3,"smartGrid":{"rowIdx":0,"itemIdx":0,"item":{"width":1}},"type":"action-button"}
-
-DIMENSIONS
-
-MASTER OBJECTS
-
-VARIABLES
-
-FIELDS
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Field","qCardinal":4,"qTags":["$key","$hidden","$system","$ascii","$text"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Table","qCardinal":3,"qTags":["$key","$hidden","$system","$ascii","$text"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Rows","qCardinal":3,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Fields","qCardinal":2,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$FieldNo","qCardinal":2,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Info","qCardinal":1,"qTags":["$hidden","$system","$ascii","$text"],"qSrcTables":[]}
-{"qName":"a","qCardinal":10,"qTags":["$numeric","$integer"],"qSrcTables":["INLFED"]}
-{"qName":"b","qCardinal":7,"qTags":["$key","$numeric","$integer"],"qSrcTables":["INLFED","Table2"]}
-{"qName":"c","qCardinal":4,"qTags":["$ascii","$text"],"qSrcTables":["Table2"]}
-{"qName":"Dim","qCardinal":3,"qTags":["$ascii","$text"],"qSrcTables":["Table3"]}
-
-SHEETS
-{"qInfo":{"qId":"a777af05-2944-4838-befe-1b609b69b993","qType":"sheet"},"qMeta":{"title":"My new sheet (1)","description":"","_resourcetype":"app.object","_objecttype":"sheet","id":"a777af05-2944-4838-befe-1b609b69b993","approved":false,"published":true,"owner":"auth0|ae0be3409fdbd3316572a8c51d5c0fe0e2c9d76da9c3ccc777330ae942923884","ownerId":"igkHZ3vsLvAdKgGbjQybbnc78LP2p4Si","createdDate":"2022-08-21T01:41:02.127Z","modifiedDate":"2022-08-21T01:42:21.194Z","publishTime":"2022-08-21T01:42:21.194Z","privileges":["read","publish"]},"qData":[]}
-
-OBJECTS ON SHEETS
-{"bounds":{"y":0,"x":0,"width":29.166666666666668,"height":25},"col":0,"colspan":7,"name":"1594f295-a596-4a8e-9ab3-53782ac18c57","row":0,"rowspan":3,"smartGrid":{"rowIdx":0,"itemIdx":0,"item":{"width":1}},"type":"action-button"}
-
-DIMENSIONS
-
-MASTER OBJECTS
-
-VARIABLES
-
-FIELDS
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Field","qCardinal":4,"qTags":["$key","$hidden","$system","$ascii","$text"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Table","qCardinal":3,"qTags":["$key","$hidden","$system","$ascii","$text"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Rows","qCardinal":3,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Fields","qCardinal":2,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$FieldNo","qCardinal":2,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Info","qCardinal":1,"qTags":["$hidden","$system","$ascii","$text"],"qSrcTables":[]}
-{"qName":"a","qCardinal":8,"qTags":["$numeric","$integer"],"qSrcTables":["INLFED"]}
-{"qName":"b","qCardinal":5,"qTags":["$key","$numeric","$integer"],"qSrcTables":["INLFED","Table2"]}
-{"qName":"c","qCardinal":4,"qTags":["$ascii","$text"],"qSrcTables":["Table2"]}
-{"qName":"Dim","qCardinal":3,"qTags":["$ascii","$text"],"qSrcTables":["Table3"]}
-
-SHEETS
-{"qInfo":{"qId":"a777af05-2944-4838-befe-1b609b69b993","qType":"sheet"},"qMeta":{"title":"My new sheet (1)","description":"","_resourcetype":"app.object","_objecttype":"sheet","id":"a777af05-2944-4838-befe-1b609b69b993","approved":false,"published":true,"owner":"auth0|ae0be3409fdbd3316572a8c51d5c0fe0e2c9d76da9c3ccc777330ae942923884","ownerId":"igkHZ3vsLvAdKgGbjQybbnc78LP2p4Si","createdDate":"2022-08-21T01:41:02.127Z","modifiedDate":"2022-08-21T01:42:21.194Z","publishTime":"2022-08-21T01:42:21.194Z","privileges":["read","publish"]},"qData":[]}
-
-OBJECTS ON SHEETS
-{"bounds":{"y":0,"x":0,"width":29.166666666666668,"height":25},"col":0,"colspan":7,"name":"1594f295-a596-4a8e-9ab3-53782ac18c57","row":0,"rowspan":3,"smartGrid":{"rowIdx":0,"itemIdx":0,"item":{"width":1}},"type":"action-button"}
-
-DIMENSIONS
-
-MASTER OBJECTS
-
-VARIABLES
-
-FIELDS
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Field","qCardinal":4,"qTags":["$key","$hidden","$system","$ascii","$text"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Table","qCardinal":3,"qTags":["$key","$hidden","$system","$ascii","$text"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Rows","qCardinal":3,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Fields","qCardinal":2,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$FieldNo","qCardinal":2,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Info","qCardinal":1,"qTags":["$hidden","$system","$ascii","$text"],"qSrcTables":[]}
-{"qName":"a","qCardinal":8,"qTags":["$numeric","$integer"],"qSrcTables":["INLFED"]}
-{"qName":"b","qCardinal":6,"qTags":["$key","$numeric","$integer"],"qSrcTables":["INLFED","Table2"]}
-{"qName":"c","qCardinal":4,"qTags":["$ascii","$text"],"qSrcTables":["Table2"]}
-{"qName":"Dim","qCardinal":3,"qTags":["$ascii","$text"],"qSrcTables":["Table3"]}
+///$tab 3_skript3.qvs
+Table3:
+Load * Inline [
+Dim
+AA
+BB
+CC
+];
