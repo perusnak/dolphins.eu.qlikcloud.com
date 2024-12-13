@@ -1,0 +1,23 @@
+
+SHEETS
+
+OBJECTS ON SHEETS
+
+DIMENSIONS
+
+MEASURES
+
+VARIABLES
+
+FIELDS
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Field","qCardinal":5,"qTags":["$hidden","$system","$ascii","$text","$key"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Table","qCardinal":2,"qTags":["$hidden","$system","$ascii","$text","$key"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Rows","qCardinal":2,"qTags":["$numeric","$integer","$hidden","$system"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Fields","qCardinal":2,"qTags":["$numeric","$integer","$hidden","$system"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$FieldNo","qCardinal":3,"qTags":["$numeric","$integer","$hidden","$system"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Info","qCardinal":1,"qTags":["$hidden","$system","$ascii","$text"],"qSrcTables":[]}
+{"qName":"Datum","qCardinal":455,"qTags":["$numeric","$integer","$timestamp","$date"],"qSrcTables":["LEVEL_1_F_CENY"]}
+{"qName":"Natural 95","qCardinal":29,"qTags":["$numeric"],"qSrcTables":["LEVEL_1_F_CENY"]}
+{"qName":"Diesel","qCardinal":31,"qTags":["$numeric"],"qSrcTables":["LEVEL_1_F_CENY"]}
+{"qName":"Column1","qCardinal":3,"qTags":["$ascii","$text"],"qSrcTables":["Test_store"]}
+{"qName":"Column2","qCardinal":3,"qTags":["$numeric","$integer"],"qSrcTables":["Test_store"]}
