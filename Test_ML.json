@@ -1,0 +1,45 @@
+
+SHEETS
+{"qInfo":{"qId":"3dc81e12-6f19-4e98-b71d-c07a68b768b4","qType":"sheet"},"qMeta":{"title":"My new sheet","description":"","_resourcetype":"app.object","_objecttype":"sheet","id":"3dc81e12-6f19-4e98-b71d-c07a68b768b4","approved":false,"published":true,"owner":"Yjo-xbgstmBgqSfq7BvNzEKYwNZJHaPRLBt-97AaKB0","ownerId":"62bb2bd0dafcf0abdc713e6a","createdDate":"2022-09-06T09:19:36.701Z","modifiedDate":"2022-09-06T09:24:52.666Z","publishTime":"2022-09-06T09:24:52.666Z","privileges":["read","publish"]},"qData":[]}
+
+OBJECTS ON SHEETS
+{"bounds":{"x":0,"y":0,"width":100,"height":100},"col":0,"colspan":24,"name":"FVRjk","row":0,"rowspan":12,"smartGrid":{"rowIdx":0,"itemIdx":0,"item":{"width":1}},"type":"auto-chart"}
+
+DIMENSIONS
+
+MEASURES
+
+VARIABLES
+
+FIELDS
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Field","qCardinal":25,"qTags":["$key","$hidden","$system","$text"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Table","qCardinal":2,"qTags":["$key","$hidden","$system","$text","$ascii"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Rows","qCardinal":2,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Fields","qCardinal":2,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$FieldNo","qCardinal":16,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Info","qCardinal":1,"qTags":["$hidden","$system","$text","$ascii"],"qSrcTables":[]}
+{"qName":"ID","qCardinal":8,"qTags":["$text","$ascii"],"qSrcTables":["Sheet1"]}
+{"qName":"Country","qCardinal":1,"qTags":["$text","$ascii"],"qSrcTables":["Sheet1"]}
+{"qName":"Product","qCardinal":8,"qTags":["$text","$ascii"],"qSrcTables":["Sheet1"]}
+{"qName":"jan","qCardinal":6,"qTags":["$numeric","$integer"],"qSrcTables":["Sheet1"]}
+{"qName":"feb","qCardinal":6,"qTags":["$numeric","$integer"],"qSrcTables":["Sheet1"]}
+{"qName":"mar","qCardinal":6,"qTags":["$numeric","$integer"],"qSrcTables":["Sheet1"]}
+{"qName":"apr","qCardinal":6,"qTags":["$numeric","$integer"],"qSrcTables":["Sheet1"]}
+{"qName":"may","qCardinal":6,"qTags":["$numeric","$integer"],"qSrcTables":["Sheet1"]}
+{"qName":"june","qCardinal":6,"qTags":["$numeric","$integer"],"qSrcTables":["Sheet1"]}
+{"qName":"july","qCardinal":6,"qTags":["$numeric","$integer"],"qSrcTables":["Sheet1"]}
+{"qName":"aug","qCardinal":6,"qTags":["$numeric","$integer"],"qSrcTables":["Sheet1"]}
+{"qName":"sep","qCardinal":6,"qTags":["$numeric","$integer"],"qSrcTables":["Sheet1"]}
+{"qName":"oct","qCardinal":7,"qTags":["$numeric","$integer"],"qSrcTables":["Sheet1"]}
+{"qName":"nov","qCardinal":7,"qTags":["$numeric","$integer"],"qSrcTables":["Sheet1"]}
+{"qName":"dec","qCardinal":8,"qTags":["$numeric","$integer"],"qSrcTables":["Sheet1"]}
+{"qName":"Change date","qCardinal":4,"qTags":["$numeric","$timestamp"],"qSrcTables":["Sheet1"]}
+{"qName":"Obchod","qCardinal":3,"qTags":["$text"],"qSrcTables":["Sheet1-1"]}
+{"qName":"Co chci koupit - slovn\u00ed popis, konkr\u00e9tn\u00ed typ produktu, zna\u010dka...","qCardinal":10,"qTags":["$text"],"qSrcTables":["Sheet1-1"]}
+{"qName":"Cena K\u010d v\u010d. DPH za 1 ks","qCardinal":7,"qTags":["$numeric","$integer"],"qSrcTables":["Sheet1-1"]}
+{"qName":"Mno\u017estv\u00ed ks","qCardinal":2,"qTags":["$numeric","$integer"],"qSrcTables":["Sheet1-1"]}
+{"qName":"Kone\u010dn\u00e1 \u010d\u00e1stka = cena kr\u00e1t po\u010det ks","qCardinal":8,"qTags":["$numeric","$integer"],"qSrcTables":["Sheet1-1"]}
+{"qName":"\u017dadatel = va\u0161e jm\u00e9no","qCardinal":7,"qTags":["$text"],"qSrcTables":["Sheet1-1"]}
+{"qName":"N\u00e1kup schv\u00e1lil","qCardinal":1,"qTags":["$text","$ascii"],"qSrcTables":["Sheet1-1"]}
+{"qName":"Urgentn\u00ed n\u00e1kup \r\n(do 3 dn\u00ed)","qCardinal":3,"qTags":["$text"],"qSrcTables":["Sheet1-1"]}
+{"qName":"Prokliknuteln\u00fd odkaz na v\u00fdrobek","qCardinal":7,"qTags":["$text","$ascii"],"qSrcTables":["Sheet1-1"]}
