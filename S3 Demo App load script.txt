@@ -1,0 +1,40 @@
+///$tab user_settings
+//PERSONAL SETTINGS
+//insert connection with path to your local repository up to but NOT including SCRIPT 
+//example: 'OneDrive - chytilm/Qlik_Repository/PROJECT_A'
+SET vLocalRepo = 'OneDrive - chytilm/Qlik_Repository/PROJECT_A'; 
+//--------------------------------------------------------------------------------------
+
+//APP SETTINGS
+//DEV  - uses your local repo as setup in vLocalRepo on it's current branch
+//UAT  - uses UAT repo on develop branch
+//PROD - uses PROD repo on main branch
+
+Set vEnv = 'DEV'; //[DEV,UAT,PROD]
+//--------------------------------------------------------------------------------------
+
+///$tab conn_settings
+//CONN SETTINGS - do not touch this
+Set vUatRepo  = 'Qlik Technology:S3_PROJECT_A/PROJECT_A';
+Set vProdRepo = 'TBD';
+
+Let vRepo = Pick(
+    Match('$(vEnv)',
+    'DEV',
+    'UAT',
+    'PROD'),
+	'$(vLocalRepo)',
+    '$(vUatRepo)',
+    '$(vProdRepo)'
+	)
+;
+
+Trace >> This load uses "$(vRepo)" as base path.;
+///$tab main
+//--------------------------------------------------------------------------------------  
+
+$(Must_Include=[lib://$(vRepo)/SCRIPT/0.Settings/L0_Global_Variables.qvs]);
+$(Must_Include=[lib://$(vRepo)/SCRIPT/1.Extract/L1_extract.qvs]);
+$(Must_Include=[lib://$(vRepo)/SCRIPT/1.Extract/L1_extract_new.qvs]);
+$(Must_Include=[lib://$(vRepo)/SCRIPT/1.Extract/L1_nova_tabulka.qvs]);
+$(Must_Include=[lib://$(vRepo)/SCRIPT/2.Transform/L2_transform.qvs]);
