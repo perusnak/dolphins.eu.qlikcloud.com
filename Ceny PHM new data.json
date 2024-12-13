@@ -1,0 +1,70 @@
+
+SHEETS
+{"qInfo":{"qId":"f40d442e-0992-40f5-8156-d6be043b630c","qType":"sheet"},"qMeta":{"title":"Sheet 2","description":"","createdDate":"2022-08-02T12:09:43.824Z","modifiedDate":"2022-12-15T12:57:53.866Z","published":true,"publishTime":"2022-12-15T12:57:53.866Z","approved":false,"qSize":-1,"sourceObject":"","draftObject":"","_resourcetype":"app.object","_objecttype":"sheet","id":"f40d442e-0992-40f5-8156-d6be043b630c","owner":"auth0|88c6c400fc1ff7014636a0b920e03edf459272caabfa443ee1dc2addc486b76c","ownerId":"30rJrQZuW4Cg50OCPWdunbQfsQ3gNOLQ","privileges":["read","publish"]},"qData":[]}
+{"qInfo":{"qId":"8d2974d3-f8eb-4fe8-904d-ac9df9f8625b","qType":"sheet"},"qMeta":{"title":"Ceny PHM","description":"","createdDate":"2022-08-02T12:09:43.841Z","modifiedDate":"2022-12-15T12:57:51.700Z","published":true,"publishTime":"2022-12-15T12:57:51.700Z","approved":false,"qSize":-1,"sourceObject":"","draftObject":"","_resourcetype":"app.object","_objecttype":"sheet","id":"8d2974d3-f8eb-4fe8-904d-ac9df9f8625b","owner":"auth0|88c6c400fc1ff7014636a0b920e03edf459272caabfa443ee1dc2addc486b76c","ownerId":"30rJrQZuW4Cg50OCPWdunbQfsQ3gNOLQ","privileges":["read","publish"]},"qData":[]}
+
+OBJECTS ON SHEETS
+{"name":"PMSKPG","type":"table","col":12,"row":0,"colspan":12,"rowspan":12,"bounds":{"y":0,"x":50,"width":50,"height":100}}
+{"name":"jfShr","type":"barchart","col":0,"row":0,"colspan":12,"rowspan":6,"bounds":{"y":0,"x":0,"width":50,"height":50}}
+{"name":"JzpmJ","type":"kpi","col":0,"row":1,"colspan":5,"rowspan":2,"bounds":{"y":6.666666666666667,"x":0,"width":16.666666666666664,"height":13.333333333333334}}
+{"name":"gJCCVyA","type":"kpi","col":5,"row":1,"colspan":5,"rowspan":2,"bounds":{"y":6.666666666666667,"x":16.666666666666664,"width":16.666666666666664,"height":13.333333333333334}}
+{"name":"pEfCPp","type":"text-image","col":0,"row":0,"colspan":10,"rowspan":1,"bounds":{"y":0,"x":0,"width":33.33333333333333,"height":6.666666666666667}}
+{"name":"UmxrSkj","type":"linechart","col":0,"row":3,"colspan":30,"rowspan":12,"bounds":{"y":20,"x":0,"width":100,"height":80}}
+{"name":"FgDh","type":"filterpane","col":10,"row":0,"colspan":2,"rowspan":3,"bounds":{"y":0,"x":33.33333333333333,"width":6.666666666666667,"height":20}}
+{"name":"FuPRdAX","type":"action-button","col":21,"row":2,"colspan":3,"rowspan":1,"bounds":{"y":13.333333333333334,"x":70,"width":10,"height":6.666666666666667}}
+{"name":"GkQmBF","type":"action-button","col":24,"row":2,"colspan":3,"rowspan":1,"bounds":{"y":13.333333333333334,"x":80,"width":10,"height":6.666666666666667}}
+{"name":"ktwhtSp","type":"action-button","col":27,"row":2,"colspan":3,"rowspan":1,"bounds":{"y":13.333333333333334,"x":90,"width":10,"height":6.666666666666667}}
+{"name":"vzRYxm","type":"kpi","col":13,"row":0,"colspan":3,"rowspan":1,"bounds":{"y":0,"x":43.333333333333336,"width":10,"height":6.666666666666667}}
+{"name":"FRMcY","type":"kpi","col":13,"row":1,"colspan":3,"rowspan":1,"bounds":{"y":6.666666666666667,"x":43.333333333333336,"width":10,"height":6.666666666666667}}
+{"name":"wfrUg","type":"kpi","col":13,"row":2,"colspan":3,"rowspan":1,"bounds":{"y":13.333333333333334,"x":43.333333333333336,"width":10,"height":6.666666666666667}}
+{"name":"maVemm","type":"kpi","col":16,"row":0,"colspan":3,"rowspan":1,"bounds":{"y":0,"x":53.333333333333336,"width":10,"height":6.666666666666667}}
+{"name":"uZppRP","type":"kpi","col":16,"row":1,"colspan":3,"rowspan":1,"bounds":{"y":6.666666666666667,"x":53.333333333333336,"width":10,"height":6.666666666666667}}
+{"name":"xKbVmn","type":"kpi","col":16,"row":2,"colspan":3,"rowspan":1,"bounds":{"y":13.333333333333334,"x":53.333333333333336,"width":10,"height":6.666666666666667}}
+{"name":"YQydLH","type":"text-image","col":21,"row":1,"colspan":9,"rowspan":1,"bounds":{"y":6.666666666666667,"x":70,"width":30,"height":6.666666666666667}}
+
+DIMENSIONS
+
+MEASURES
+{"qInfo":{"qId":"DzDugy","qType":"measure"},"qMeta":{"title":"Natural 95","description":"","createdDate":"2022-08-02T12:09:43.832Z","modifiedDate":"2022-08-02T12:09:43.832Z","published":false,"publishTime":"1753-01-01T00:00:00.000Z","approved":false,"qSize":-1,"sourceObject":"","draftObject":"","_resourcetype":"app.object","_objecttype":"measure","id":"DzDugy","owner":"auth0|88c6c400fc1ff7014636a0b920e03edf459272caabfa443ee1dc2addc486b76c","ownerId":"30rJrQZuW4Cg50OCPWdunbQfsQ3gNOLQ","privileges":["read","update","delete","publish"],"tags":[]},"qData":[]}
+{"qInfo":{"qId":"MZpTu","qType":"measure"},"qMeta":{"title":"Diesel","description":"","createdDate":"2022-08-02T12:09:43.836Z","modifiedDate":"2022-08-02T12:09:43.836Z","published":false,"publishTime":"1753-01-01T00:00:00.000Z","approved":false,"qSize":-1,"sourceObject":"","draftObject":"","_resourcetype":"app.object","_objecttype":"measure","id":"MZpTu","owner":"auth0|88c6c400fc1ff7014636a0b920e03edf459272caabfa443ee1dc2addc486b76c","ownerId":"30rJrQZuW4Cg50OCPWdunbQfsQ3gNOLQ","privileges":["read","update","delete","publish"],"tags":[]},"qData":[]}
+
+VARIABLES
+{"qName":"v.TransformFolderPath","qDefinition":"Dropbox\/Qlik Cloud projects\/PHM","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"cec8c854-2e08-4aab-ba44-2c0508465df9","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"v.KeyDateInvasionStarted","qDefinition":"24.2.2022","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"4d25bb19-55d2-4f43-be04-6b17fa9720f7","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"v.ExtractFolderPath","qDefinition":"Dropbox\/Qlik Cloud projects\/PHM","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"4f4965ba-cc89-4942-9f83-4faee3a3fec6","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"v.LoadFolderPath","qDefinition":"Dropbox\/Qlik Cloud projects\/PHM","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"c8227496-1bb7-4034-9c33-64f034efdb43","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"v.LastKnownDate","qDefinition":"15.12.2022","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"462d3193-9905-4484-884a-516196f2f9f6","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"v.DWHConnection","qDefinition":"Dropbox\/Qlik Cloud projects\/PHM","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"9ef3b158-951e-4a0d-93c4-09edde55341b","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"v.ActualCurrency","qDefinition":"CZK","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"d3d66492-db37-4942-bcb8-a5b5bad2b406","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"v.LastDate","qDefinition":"44910","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"4e0088b0-2260-4080-997a-6de1bbbf3d07","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"v.FirstDate","qDefinition":"43831","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"11a56414-9aaa-476f-882a-75e03eaf6308","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"v.StartYear","qDefinition":"2020","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"1fe793ec-f64f-49af-868b-28e30d44be3a","qType":"variable"},"qData":[]}
+{"qName":"v.NumberOfRows","qDefinition":"828","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"95835837-62c9-49d3-a9ed-988647dd03ef","qType":"variable"},"qData":[]}
+{"qName":"x","qDefinition":"1","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"0c44c016-d55c-415d-9e87-f5026508bc84","qType":"variable"},"qData":[]}
+{"qName":"v.First","qDefinition":"29.9","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"c5cd0c1c-8edc-4cd7-983a-c274fe44225f","qType":"variable"},"qData":[]}
+{"qName":"v.Second","qDefinition":"29.9","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"334e83d8-f868-4484-ac72-e4518a753936","qType":"variable"},"qData":[]}
+
+FIELDS
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Field","qCardinal":17,"qTags":["$hidden","$system","$key","$ascii","$text"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Table","qCardinal":4,"qTags":["$hidden","$system","$key","$ascii","$text"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Rows","qCardinal":2,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Fields","qCardinal":4,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$FieldNo","qCardinal":9,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Info","qCardinal":1,"qTags":["$hidden","$system","$ascii","$text"],"qSrcTables":[]}
+{"qName":"%KEY_DATE","qCardinal":1080,"qTags":["$numeric","$integer","$timestamp","$date","$key"],"qSrcTables":["F_PRICES","MasterCalendar","Pom"]}
+{"qName":"Natural95CZK","qCardinal":46,"qTags":["$numeric"],"qSrcTables":["F_PRICES"]}
+{"qName":"Natural95EUR","qCardinal":46,"qTags":["$numeric"],"qSrcTables":["F_PRICES"]}
+{"qName":"DieselCZK","qCardinal":44,"qTags":["$numeric"],"qSrcTables":["F_PRICES"]}
+{"qName":"DieselEUR","qCardinal":44,"qTags":["$numeric"],"qSrcTables":["F_PRICES"]}
+{"qName":"ChangeFlag","qCardinal":2,"qTags":["$numeric","$integer"],"qSrcTables":["F_PRICES"]}
+{"qName":"Calendar Week","qCardinal":53,"qTags":["$numeric","$integer"],"qSrcTables":["MasterCalendar"]}
+{"qName":"Calendar Year","qCardinal":3,"qTags":["$numeric","$integer"],"qSrcTables":["MasterCalendar"]}
+{"qName":"Calendar Month","qCardinal":12,"qTags":["$numeric","$integer"],"qSrcTables":["MasterCalendar"]}
+{"qName":"Calendar Day","qCardinal":31,"qTags":["$numeric","$integer"],"qSrcTables":["MasterCalendar"]}
+{"qName":"Weekday","qCardinal":7,"qTags":["$numeric","$integer"],"qSrcTables":["MasterCalendar"]}
+{"qName":"Quarter","qCardinal":4,"qTags":["$ascii","$text"],"qSrcTables":["MasterCalendar"]}
+{"qName":"MonthYear","qCardinal":36,"qTags":["$numeric","$integer","$timestamp","$date"],"qSrcTables":["MasterCalendar"]}
+{"qName":"WeekYear","qCardinal":157,"qTags":["$ascii","$text"],"qSrcTables":["MasterCalendar"]}
+{"qName":"Currency","qCardinal":2,"qTags":["$ascii","$text"],"qSrcTables":["CURRENCY_ISLAND"]}
+{"qName":"First","qCardinal":46,"qTags":["$numeric"],"qSrcTables":["Pom"]}
+{"qName":"Second","qCardinal":46,"qTags":["$numeric"],"qSrcTables":["Pom"]}
