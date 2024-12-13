@@ -1,0 +1,64 @@
+
+SHEETS
+
+OBJECTS ON SHEETS
+
+DIMENSIONS
+
+MEASURES
+{"qInfo":{"qId":"LhJyps","qType":"measure"},"qMeta":{"title":"Total Sales CY","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"LhJyps","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2022-01-30T10:28:21.053Z","modifiedDate":"2022-01-30T10:28:21.053Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"nTbhPZD","qType":"measure"},"qMeta":{"title":"Gross Profit CY","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"nTbhPZD","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2022-01-30T10:28:21.056Z","modifiedDate":"2022-01-30T10:28:21.056Z","privileges":["read","update","delete","publish"]},"qData":[]}
+
+VARIABLES
+{"qName":"name","qDefinition":"Territories","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"01b1b497-82e8-42cd-950b-fa3b1a6521f1","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"index","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"c50148a5-333a-4488-85dc-42b144f8fb4a","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"currentName","qDefinition":"Territories","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"7cac59ce-365a-421e-b163-f1028b89fab7","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"matches","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"991ffe4c-9c11-43c8-825e-d8eb2758467c","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+
+FIELDS
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Field","qCardinal":40,"qTags":["$ascii","$text","$key","$hidden","$system"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Table","qCardinal":10,"qTags":["$ascii","$text","$key","$hidden","$system"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Rows","qCardinal":9,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Fields","qCardinal":7,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$FieldNo","qCardinal":9,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Info","qCardinal":1,"qTags":["$ascii","$text","$hidden","$system"],"qSrcTables":[]}
+{"qName":"CategoryID","qCardinal":8,"qTags":["$key","$numeric","$integer"],"qSrcTables":["Categories","Products"]}
+{"qName":"CategoryName","qCardinal":8,"qTags":["$text"],"qSrcTables":["Categories"]}
+{"qName":"CustomerID","qCardinal":92,"qTags":["$key","$numeric","$integer"],"qSrcTables":["Customers","Order"]}
+{"qName":"Address","qCardinal":92,"qTags":["$text"],"qSrcTables":["Customers"]}
+{"qName":"City","qCardinal":70,"qTags":["$text","$geoname","$relates_Customers.City_GeoInfo"],"qSrcTables":["Customers"]}
+{"qName":"Customer","qCardinal":92,"qTags":["$text"],"qSrcTables":["Customers"]}
+{"qName":"ContactName","qCardinal":92,"qTags":["$text"],"qSrcTables":["Customers"]}
+{"qName":"Country","qCardinal":21,"qTags":["$ascii","$text","$geoname","$relates_Customers.Country_GeoInfo"],"qSrcTables":["Customers"]}
+{"qName":"PostalCode","qCardinal":84,"qTags":[],"qSrcTables":["Customers"]}
+{"qIsHidden":true,"qName":"Customers.City_GeoInfo","qCardinal":63,"qTags":["$geopoint","$ascii","$text","$hidden","$relates_City"],"qSrcTables":[]}
+{"qIsHidden":true,"qName":"Customers.Country_GeoInfo","qCardinal":21,"qTags":["$ascii","$text","$hidden","$geopolygon","$relates_Country"],"qSrcTables":[]}
+{"qName":"EmployeeID","qCardinal":47,"qTags":["$key","$numeric","$integer"],"qSrcTables":["Employees","Order","Orders Header","Territories"]}
+{"qName":"EmployeeName","qCardinal":47,"qTags":["$text"],"qSrcTables":["Employees"]}
+{"qName":"Office","qCardinal":5,"qTags":["$key","$numeric","$integer"],"qSrcTables":["Employees","Offices"]}
+{"qName":"Reports To","qCardinal":17,"qTags":[],"qSrcTables":["Employees"]}
+{"qName":"Title","qCardinal":10,"qTags":["$ascii","$text"],"qSrcTables":["Employees"]}
+{"qName":"Year Salary","qCardinal":27,"qTags":["$numeric","$integer"],"qSrcTables":["Employees"]}
+{"qName":"SalesOffice","qCardinal":5,"qTags":["$ascii","$text","$geoname","$relates_Offices.SalesOffice_GeoInfo"],"qSrcTables":["Offices"]}
+{"qIsHidden":true,"qName":"Offices.SalesOffice_GeoInfo","qCardinal":5,"qTags":["$geopoint","$ascii","$text","$hidden","$relates_SalesOffice"],"qSrcTables":[]}
+{"qName":"OrderDate","qCardinal":548,"qTags":["$numeric","$integer","$timestamp","$date"],"qDerivedFieldData":{"qDerivedFieldLists":[{"qDerivedDefinitionName":"autoCalendar","qFieldDefs":[{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:Year","qName":"OrderDate.autoCalendar.Year","qMethod":"Year","qExpr":"=${autoCalendar(OrderDate).Year}","qTags":["$axis","$year"]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:Quarter","qName":"OrderDate.autoCalendar.Quarter","qMethod":"Quarter","qExpr":"=${autoCalendar(OrderDate).Quarter}","qTags":["$quarter","$cyclic"]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:YearQuarter","qName":"OrderDate.autoCalendar.YearQuarter","qMethod":"YearQuarter","qExpr":"=${autoCalendar(OrderDate).YearQuarter}","qTags":["$yearquarter","$qualified"]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:Month","qName":"OrderDate.autoCalendar.Month","qMethod":"Month","qExpr":"=${autoCalendar(OrderDate).Month}","qTags":["$month","$cyclic"]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:YearMonth","qName":"OrderDate.autoCalendar.YearMonth","qMethod":"YearMonth","qExpr":"=${autoCalendar(OrderDate).YearMonth}","qTags":["$axis","$yearmonth","$qualified"]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:Week","qName":"OrderDate.autoCalendar.Week","qMethod":"Week","qExpr":"=${autoCalendar(OrderDate).Week}","qTags":["$weeknumber","$cyclic"]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:Date","qName":"OrderDate.autoCalendar.Date","qMethod":"Date","qExpr":"=${autoCalendar(OrderDate).Date}","qTags":["$axis","$date","$qualified"]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:InYTD","qName":"OrderDate.autoCalendar.InYTD","qMethod":"InYTD","qExpr":"=${autoCalendar(OrderDate).InYTD}","qTags":[]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:YearsAgo","qName":"OrderDate.autoCalendar.YearsAgo","qMethod":"YearsAgo","qExpr":"=${autoCalendar(OrderDate).YearsAgo}","qTags":[]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:InQTD","qName":"OrderDate.autoCalendar.InQTD","qMethod":"InQTD","qExpr":"=${autoCalendar(OrderDate).InQTD}","qTags":[]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:QuartersAgo","qName":"OrderDate.autoCalendar.QuartersAgo","qMethod":"QuartersAgo","qExpr":"=${autoCalendar(OrderDate).QuartersAgo}","qTags":[]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:QuarterRelNo","qName":"OrderDate.autoCalendar.QuarterRelNo","qMethod":"QuarterRelNo","qExpr":"=${autoCalendar(OrderDate).QuarterRelNo}","qTags":[]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:InMTD","qName":"OrderDate.autoCalendar.InMTD","qMethod":"InMTD","qExpr":"=${autoCalendar(OrderDate).InMTD}","qTags":[]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:MonthsAgo","qName":"OrderDate.autoCalendar.MonthsAgo","qMethod":"MonthsAgo","qExpr":"=${autoCalendar(OrderDate).MonthsAgo}","qTags":[]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:MonthRelNo","qName":"OrderDate.autoCalendar.MonthRelNo","qMethod":"MonthRelNo","qExpr":"=${autoCalendar(OrderDate).MonthRelNo}","qTags":[]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:InWTD","qName":"OrderDate.autoCalendar.InWTD","qMethod":"InWTD","qExpr":"=${autoCalendar(OrderDate).InWTD}","qTags":[]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:WeeksAgo","qName":"OrderDate.autoCalendar.WeeksAgo","qMethod":"WeeksAgo","qExpr":"=${autoCalendar(OrderDate).WeeksAgo}","qTags":[]},{"qId":"5d354c40-df5a-4b96-b702-453136e1946a:WeekRelNo","qName":"OrderDate.autoCalendar.WeekRelNo","qMethod":"WeekRelNo","qExpr":"=${autoCalendar(OrderDate).WeekRelNo}","qTags":[]}],"qGroupDefs":[],"qTags":[]}]},"qSrcTables":["Order"]}
+{"qName":"Order.Freight","qCardinal":783,"qTags":["$numeric"],"qSrcTables":["Order"]}
+{"qName":"OrderID","qCardinal":836,"qTags":["$key","$numeric","$integer"],"qSrcTables":["Order","Order Details"]}
+{"qName":"Order.ShipperID","qCardinal":3,"qTags":["$numeric","$integer"],"qSrcTables":["Order"]}
+{"qName":"ProductID","qCardinal":77,"qTags":["$key","$numeric","$integer"],"qSrcTables":["Order Details","Products"]}
+{"qName":"Quantity","qCardinal":56,"qTags":["$numeric","$integer"],"qSrcTables":["Order Details"]}
+{"qName":"Sales","qCardinal":2113,"qTags":["$numeric"],"qSrcTables":["Order Details"]}
+{"qName":"Discount","qCardinal":829,"qTags":["$numeric"],"qSrcTables":["Order Details"]}
+{"qName":"COS","qCardinal":2140,"qTags":["$numeric"],"qSrcTables":["Order Details"]}
+{"qName":"GP","qCardinal":2149,"qTags":["$numeric"],"qSrcTables":["Order Details"]}
+{"qName":"Orders Header.CustomerID","qCardinal":90,"qTags":["$numeric","$integer"],"qSrcTables":["Orders Header"]}
+{"qName":"Orders Header.Freight","qCardinal":783,"qTags":["$numeric"],"qSrcTables":["Orders Header"]}
+{"qName":"Orders Header.OrderID","qCardinal":836,"qTags":["$numeric","$integer"],"qSrcTables":["Orders Header"]}
+{"qName":"Orders Header.ShipperID","qCardinal":3,"qTags":["$numeric","$integer"],"qSrcTables":["Orders Header"]}
+{"qName":"ProductName","qCardinal":77,"qTags":["$text"],"qSrcTables":["Products"]}
+{"qName":"SupplierID-ID","qCardinal":29,"qTags":["$key","$numeric","$integer"],"qSrcTables":["Products","Suppliers"]}
+{"qName":"Supplier","qCardinal":29,"qTags":["$text"],"qSrcTables":["Suppliers"]}
+{"qName":"SupplierCountry","qCardinal":16,"qTags":["$ascii","$text","$geoname","$relates_Suppliers.SupplierCountry_GeoInfo"],"qSrcTables":["Suppliers"]}
+{"qIsHidden":true,"qName":"Suppliers.SupplierCountry_GeoInfo","qCardinal":16,"qTags":["$ascii","$text","$hidden","$geopolygon","$relates_SupplierCountry"],"qSrcTables":[]}
+{"qName":"Territories.ID","qCardinal":49,"qTags":["$numeric","$integer"],"qSrcTables":["Territories"]}
+{"qName":"TerritoryID","qCardinal":49,"qTags":["$numeric","$integer"],"qSrcTables":["Territories"]}
