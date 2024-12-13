@@ -1,0 +1,597 @@
+///$tab Main
+SET ThousandSep=',';
+SET DecimalSep='.';
+SET MoneyThousandSep=',';
+SET MoneyDecimalSep='.';
+SET MoneyFormat='$#,##0.00;-$#,##0.00';
+SET TimeFormat='h:mm:ss TT';
+SET DateFormat='M/D/YYYY';
+SET TimestampFormat='M/D/YYYY h:mm:ss[.fff] TT';
+SET FirstWeekDay=6;
+SET BrokenWeeks=1;
+SET ReferenceDay=0;
+SET FirstMonthOfYear=1;
+SET CollationLocale='en-US';
+SET CreateSearchIndexOnReload=1;
+SET MonthNames='Jan;Feb;Mar;Apr;May;Jun;Jul;Aug;Sep;Oct;Nov;Dec';
+SET LongMonthNames='January;February;March;April;May;June;July;August;September;October;November;December';
+SET DayNames='Mon;Tue;Wed;Thu;Fri;Sat;Sun';
+SET LongDayNames='Monday;Tuesday;Wednesday;Thursday;Friday;Saturday;Sunday';
+SET NumericalAbbreviation='3:k;6:M;9:G;12:T;15:P;18:E;21:Z;24:Y;-3:m;-6:μ;-9:n;-12:p;-15:f;-18:a;-21:z;-24:y';
+
+///$tab Base Variables
+set v.DWHConnection = QlikCircle_FOLDER_SHARED;
+
+
+set v.ExtractFolderPath = DataFiles;
+set v.TransformFolderPath = DataFiles;
+set v.LoadFolderPath = DataFiles;
+
+
+///$tab L1
+///// 1.1 Výpočet počtu stránek API loadu
+///// 1.2 Generický load API
+///// 2.1 Store a drop vybraných tabulek
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////// 1.1 Výpočet počtu stránek API loadu ///////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+[labelsAll]:
+LOAD	
+	[@Value_u1],
+	[__KEY_labelsAll]
+FROM [lib://DataFiles/Sreality - DUMMY data 2.0.xlsx]
+(ooxml, embedded labels, table is LEVEL_1_LABELSALL);
+
+
+[labelsAll_u0]:
+LOAD	
+	[__KEY_labelsAll],
+	[__KEY_estates]
+FROM [lib://DataFiles/Sreality - DUMMY data 2.0.xlsx]
+(ooxml, embedded labels, table is LEVEL_1_LABELSALL_U0);
+
+
+[seo]:
+LOAD	
+	[category_main_cb],
+	[category_sub_cb],
+	[category_type_cb],
+	[locality],
+	[__KEY_estates]
+FROM [lib://DataFiles/Sreality - DUMMY data 2.0.xlsx]
+(ooxml, embedded labels, table is LEVEL_1_SEO);
+
+
+[company]:
+LOAD	
+	[url],
+	[id],
+	[name],
+	[logo_small],
+	[__KEY__embedded_u0]
+FROM [lib://DataFiles/Sreality - DUMMY data 2.0.xlsx]
+(ooxml, embedded labels, table is LEVEL_1_COMPANY);
+
+
+[embedded]:
+LOAD	
+	[__KEY__embedded_u0],
+	[__KEY_estates]
+FROM [lib://DataFiles/Sreality - DUMMY data 2.0.xlsx]
+(ooxml, embedded labels, table is LEVEL_1_EMBEDDED);
+
+
+[images]:
+LOAD	
+	[href_u5],
+	[__KEY__links_u1]
+FROM [lib://DataFiles/Sreality - DUMMY data 2.0.xlsx]
+(ooxml, embedded labels, table is LEVEL_1_IMAGES);
+
+
+[gps]:
+LOAD	
+	[lat],
+	[lon],
+	[__KEY_estates]
+FROM [lib://DataFiles/Sreality - DUMMY data 2.0.xlsx]
+(ooxml, embedded labels, table is LEVEL_1_GPS);
+
+
+[estates]:
+LOAD	
+	[has_panorama],
+	[is_auction],
+	[exclusively_at_rk],
+	[category],
+	[has_floor_plan],
+	[paid_logo],
+	[locality_u0],
+	[has_video],
+	[new],
+	[auctionPrice],
+	[type],
+	[hash_id],
+	[attractive_offer],
+	[price],
+	[rus],
+	[name_u1],
+	[region_tip],
+	[has_matterport_url],
+	[__KEY_estates],
+	[__KEY__embedded]
+FROM [lib://DataFiles/Sreality - DUMMY data 2.0.xlsx]
+(ooxml, embedded labels, table is LEVEL_1_ESTATES);
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////// 2.1 Store a drop //////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+STORE seo 			INTO [lib://$(v.ExtractFolderPath)/LEVEL_1_SEO.qvd](qvd);
+STORE labelsAll 	INTO [lib://$(v.ExtractFolderPath)/LEVEL_1_LABELSALL.qvd](qvd);
+STORE labelsAll_u0 	INTO [lib://$(v.ExtractFolderPath)/LEVEL_1_LABELSALL_U0.qvd](qvd);
+STORE company 		INTO [lib://$(v.ExtractFolderPath)/LEVEL_1_COMPANY.qvd](qvd);
+STORE embedded		INTO [lib://$(v.ExtractFolderPath)/LEVEL_1_EMBEDDED.qvd](qvd);
+STORE images 		INTO [lib://$(v.ExtractFolderPath)/LEVEL_1_IMAGES.qvd](qvd);
+STORE gps 			INTO [lib://$(v.ExtractFolderPath)/LEVEL_1_GPS.qvd](qvd);
+STORE estates 		INTO [lib://$(v.ExtractFolderPath)/LEVEL_1_ESTATES.qvd](qvd);
+
+DROP TABLE seo;
+DROP TABLE labelsAll;
+DROP TABLE labelsAll_u0;
+DROP TABLE company;
+DROP TABLE embedded;
+DROP TABLE images;
+DROP TABLE gps;
+DROP TABLE estates;
+
+
+
+///$tab L2
+///// 1.1 F tabulka - tabulka NEMOVITOST
+///// 2.1 D tabulky - originální
+///// 2.2 D tabulky - manuální kategorizace
+///// 3.1 Store a drop
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////// 1.1 F tabulka - NEMOVITOST ////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+MAP_LOKALITA:
+MAPPING LOAD DISTINCT
+	[__KEY_estates],
+	[locality]
+FROM [lib://$(v.ExtractFolderPath)/LEVEL_1_SEO.qvd](qvd);
+
+temp_DISPOZICE:
+LOAD DISTINCT
+	[__KEY_estates],
+	[category_sub_cb]
+FROM [lib://$(v.ExtractFolderPath)/LEVEL_1_SEO.qvd](qvd);
+INNER JOIN
+LOAD * INLINE [
+	category_sub_cb,	Dispozice,				Pomoc_rozloha
+	2,					1+kk,					4
+	3,					1+1,					4
+	4,					2+kk,					4
+	5,					2+1,					4
+	6,					3+kk,					4
+	7,					3+1,					4
+	8,					4+kk,					4
+	9,					4+1,					4
+	10,					5+kk,					4
+	11,					5+1,					4
+	12,					6 a více,				7
+	16,					atypický,				4
+    18,					komerční pozemek,		5
+    19,					stavební pozemek,		5
+    20,					pole,					4
+    21,					les,					4
+    22,					louka,					4
+    23,					zahrada,				4
+    24,					pozemek,				4
+    25,					kancelář,				3
+    26,					skladový prostor,		4
+    27,					výrobní hala,			5
+    28,					obchodní prostor,		4
+    29,					ubytovací zařízení,		4
+    30,					restaurace,				3
+    31,					zemědělský objekt,		4
+    32,					komerční nemovitost,	4
+    34,					garáž,					3
+	33,					chata,					4
+	35,					památka,				4
+    36,					specifický typ,			5
+	37,					rodinný dům,			5
+    38,					činžovní dům,			4
+	39,					vila,					4
+	40,					projekt na klíč,		6
+    43,					chalupa,				4
+	44,					zemědělská usedlost,	5
+    46,					rybník,					6
+	47,					pokoj v objektu,		4
+    48,					vinice,					5
+    52,					garážové stání,			4
+    53,					mobilheim,				5
+    54,					vícegenerační dům,		5
+    57,					apartmán,				3
+];
+
+MAP_DISPOZICE:
+MAPPING LOAD DISTINCT
+	[__KEY_estates],
+    Dispozice
+RESIDENT temp_DISPOZICE;
+
+MAP_ROZLOHA:
+MAPPING LOAD DISTINCT
+	[__KEY_estates],
+    Pomoc_rozloha
+RESIDENT temp_DISPOZICE;
+
+// MAP_DATUM:
+// MAPPING LOAD DISTINCT
+// 	"Hash ID",
+//     "Datum přidání"
+// FROM [lib://$(v.TransformFolderPath)/LEVEL_2_F_NEMOVITOST.qvd](qvd);
+
+
+F_NEMOVITOST:
+LOAD
+	*,
+	Money(round(alt(Cena/Rozloha)), '#,##0 CZK') 		AS "Cena za m2",
+    'https://www.sreality.cz/detail/prodej/byt/' &
+    Dispozice &'/'& Link_Lokalita & '/' & "Hash ID" 	AS Link
+    ;
+LOAD DISTINCT
+	[__KEY_estates]										AS "%KEY_OBRAZEK",
+	[__KEY_estates]										AS "%KEY_REALITKA",
+	[__KEY_estates]										AS "%KEY_ESTATES",
+    [__KEY_estates]										AS "%KEY_MATERIAL",
+    [__KEY_estates]										AS "%KEY_VLASTNICTVI",
+    [__KEY_estates]										AS "%KEY_VYBAVENI",
+    [__KEY_estates]										AS "%KEY_BLIZKO",
+    [category]											AS "%KEY_TYP_NEMOV",
+    [type]												AS "%KEY_TYP_PRODEJ",
+// 	[__KEY__embedded],
+// 	[has_panorama]										AS "has Panorama",
+// 	[is_auction]										AS "is Auction",
+// 	[exclusively_at_rk]									AS "Exclusively At RK",
+// 	[has_floor_plan]									AS "has Floor Plan",
+// 	[paid_logo]											AS "Paid Logo",
+	[locality_u0]										AS "Lokalita",
+// 	[has_video]											AS "has Video",
+// 	[new]												AS "New",
+	Money([auctionPrice], '#,##0 CZK')					AS "Aukční cena",
+	[hash_id]											AS "Hash ID",
+// 	[attractive_offer]									AS "Attractive Offer",
+// 	[rus]												AS "Rus",
+	[name_u1]											AS "Název",
+// 	[region_tip]										AS "Region Tip",
+    [has_matterport_url]								AS "has Matterport URL",
+    Money([price], '#,##0 CZK')							AS "Cena",
+    applymap('MAP_DISPOZICE',[__KEY_estates],null()) 	AS "Dispozice",
+    Replace(Replace(
+    	SubField(replace([name_u1],' ',' ')
+    		, ' '
+        	,applymap('MAP_ROZLOHA',[__KEY_estates])
+    	)
+    	&
+    	SubField(replace([name_u1],' ',' ')
+    		, ' '
+        	,applymap('MAP_ROZLOHA',[__KEY_estates])+1
+    	)
+    ,'m²',''),',','')									AS "Rozloha",
+    applymap('MAP_LOKALITA',[__KEY_estates],null()) 	AS Link_Lokalita,
+//     date(applymap('MAP_DATUM',[hash_id],today())) 		AS "Datum přidání"
+	today() 											AS "Datum přidání"
+FROM [lib://$(v.ExtractFolderPath)/LEVEL_1_ESTATES.qvd](qvd);
+
+LEFT JOIN
+
+LOAD DISTINCT
+	[__KEY_estates] 			AS "%KEY_ESTATES",
+	[lat]						AS "Latitude",
+	[lon]						AS "Longitude"
+FROM [lib://$(v.ExtractFolderPath)/LEVEL_1_GPS.qvd](qvd);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////// 2.1 D tabulky - originální ////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+D_REALITNI_KANCELAR:
+LOAD
+	[__KEY__embedded_u0],
+// 	[url],
+// 	[id],
+	[name] 					AS "Realitní kancelář",
+	[logo_small] 			AS "RK Logo"
+FROM [lib://$(v.ExtractFolderPath)/LEVEL_1_COMPANY.qvd](qvd);
+INNER JOIN
+LOAD
+	[__KEY__embedded_u0],
+	[__KEY_estates] AS %KEY_REALITKA
+FROM [lib://$(v.ExtractFolderPath)/LEVEL_1_EMBEDDED.qvd](qvd);
+
+D_FOTO:
+LOAD DISTINCT
+	[__KEY__links_u1] 		AS %KEY_OBRAZEK,
+	[href_u5] 				AS "Link na fotky"
+FROM [lib://$(v.ExtractFolderPath)/LEVEL_1_IMAGES.qvd](qvd);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////// 2.2 D tabulky - manuální kategorizace /////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+temp_PARAMETRY:
+LOAD
+	[__KEY_labelsAll],
+	[@Value_u1]  			AS "Value"
+FROM [lib://$(v.ExtractFolderPath)/LEVEL_1_LABELSALL.qvd](qvd);
+INNER JOIN
+LOAD
+	[__KEY_labelsAll],
+	[__KEY_estates] 		AS "%KEY_ESTATES"
+FROM [lib://$(v.ExtractFolderPath)/LEVEL_1_LABELSALL_U0.qvd](qvd);
+
+
+D_TYP_NEMOVITOSTI:
+LOAD * INLINE [
+	%KEY_TYP_NEMOV, Typ nemovitosti
+    1, Byty
+    2, Domy
+    3, Pozemky
+    4, Nebytové prostory a komerční nemovitosti
+    5, Ostatní nemovitosti
+];
+
+
+D_TYP_PRODEJE:
+LOAD * INLINE [
+	%KEY_TYP_PRODEJ, Typ prodeje
+    1, Prodej
+    2, Pronájem
+    3, Aukce
+];
+
+
+D_VLASTNICTVI:
+LOAD DISTINCT
+	"%KEY_ESTATES" AS "%KEY_VLASTNICTVI",
+	"Value"
+RESIDENT temp_PARAMETRY;
+INNER JOIN
+LOAD * INLINE [
+	Value, Vlastnictví
+    personal, Osobní
+    collective, Družstevní
+    state, Státní/obecní
+];
+
+
+D_MATERIAL:
+LOAD DISTINCT
+	"%KEY_ESTATES" AS "%KEY_MATERIAL",
+	"Value"
+RESIDENT temp_PARAMETRY;
+INNER JOIN
+LOAD * INLINE [
+	Value, Materiál
+    panel, Panel
+    brick, Cihla
+];
+
+
+D_VYBAVENI:
+LOAD DISTINCT
+	"%KEY_ESTATES" AS "%KEY_VYBAVENI",
+	"Value"
+RESIDENT temp_PARAMETRY;
+INNER JOIN
+LOAD * INLINE [
+	Value, Vybavení
+    elevator, Výtah
+    cellar, Sklep
+    loggia, Lodžie
+    garage, Garáž
+    easy_access, Bezbariérový
+    terrace, Terasa
+    balcony, Balkón
+    parking_lots, Parkování
+    garden, Zahrada
+    basin, Bazén
+];
+
+
+D_BLIZKO_BYDLISTE:
+LOAD DISTINCT
+	"%KEY_ESTATES" AS "%KEY_BLIZKO",
+	"Value"
+RESIDENT temp_PARAMETRY;
+INNER JOIN
+LOAD * INLINE [
+	Value, Blízko bydliště
+    atm, Bankomat
+    bus_public_transport, Autobusová zastávka
+    candy_shop, Cukrárna
+    drugstore, Lékárna
+    kindergarten, Mateřská škola
+    medic, Praktický lékař
+    metro, Metro
+    movies, Kino
+    playground, Dětské hřiště
+    post_office, Pošta
+    restaurant, Restaurace
+    school, Základní škola
+    shop, 'Supermarket, hypermarket'
+    small_shop, Malý obchod s potravinami
+    sports, Sportoviště
+    tavern, Hospoda
+    natural_attraction, Přírodní atrakce
+    theater, Divadlo
+    train, Vlakové nádraží
+    tram, Tramvaj
+    vet, Veterinář
+];
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////// 3.1 Store a drop //////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+DROP FIELD Value 				FROM D_VLASTNICTVI, D_MATERIAL, D_VYBAVENI, D_BLIZKO_BYDLISTE;
+DROP FIELD Link_Lokalita 		FROM F_NEMOVITOST;
+DROP FIELD __KEY__embedded_u0 	FROM D_REALITNI_KANCELAR;
+
+STORE F_NEMOVITOST 			INTO [lib://$(v.TransformFolderPath)/LEVEL_2_F_NEMOVITOST.qvd](qvd);
+STORE D_REALITNI_KANCELAR 	INTO [lib://$(v.TransformFolderPath)/LEVEL_2_D_REALITNI_KANCELAR.qvd](qvd);
+STORE D_FOTO 				INTO [lib://$(v.TransformFolderPath)/LEVEL_2_D_FOTO.qvd](qvd);
+STORE D_TYP_NEMOVITOSTI 	INTO [lib://$(v.TransformFolderPath)/LEVEL_2_D_TYP_NEMOVITOSTI.qvd](qvd);
+STORE D_TYP_PRODEJE 		INTO [lib://$(v.TransformFolderPath)/LEVEL_2_D_TYP_PRODEJE.qvd](qvd);
+STORE D_VLASTNICTVI 		INTO [lib://$(v.TransformFolderPath)/LEVEL_2_D_VLASTNICTVI.qvd](qvd);
+STORE D_MATERIAL 			INTO [lib://$(v.TransformFolderPath)/LEVEL_2_D_MATERIAL.qvd](qvd);
+STORE D_VYBAVENI 			INTO [lib://$(v.TransformFolderPath)/LEVEL_2_D_VYBAVENI.qvd](qvd);
+STORE D_BLIZKO_BYDLISTE 	INTO [lib://$(v.TransformFolderPath)/LEVEL_2_D_BLIZKO_BYDLISTE.qvd](qvd);
+
+DROP TABLE temp_DISPOZICE;
+DROP TABLE temp_PARAMETRY;
+DROP TABLE F_NEMOVITOST;
+DROP TABLE D_REALITNI_KANCELAR;
+DROP TABLE D_FOTO;
+DROP TABLE D_TYP_NEMOVITOSTI;
+DROP TABLE D_TYP_PRODEJE;
+DROP TABLE D_VLASTNICTVI;
+DROP TABLE D_MATERIAL;
+DROP TABLE D_VYBAVENI;
+DROP TABLE D_BLIZKO_BYDLISTE;
+
+///$tab L3
+///// 1.1 F tabulka - tabulka NEMOVITOST
+///// 2.1 D tabulky - originální
+///// 2.2 D tabulky - manuální kategorizace
+///// 3.1 Store a drop
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////// 1.1 F tabulka - NEMOVITOST ////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+F_NEMOVITOST:
+LOAD
+	"%KEY_OBRAZEK",
+	"%KEY_REALITKA",
+	"%KEY_ESTATES",
+    "%KEY_MATERIAL",
+    "%KEY_VLASTNICTVI",
+    "%KEY_VYBAVENI",
+    "%KEY_BLIZKO",
+    "%KEY_TYP_NEMOV",
+    "%KEY_TYP_PRODEJ",
+	"Lokalita",
+	"Aukční cena",
+	"Hash ID",
+	"Název",
+	"Cena",
+    "Dispozice",
+    "Rozloha",
+    "Cena za m2",
+    Link,
+    "Datum přidání",
+    "Latitude",
+    "Longitude"
+FROM [lib://$(v.TransformFolderPath)/LEVEL_2_F_NEMOVITOST.qvd](qvd);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////// 2.1 D tabulky - originální ////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+D_REALITNI_KANCELAR:
+LOAD DISTINCT
+	%KEY_REALITKA,
+	"Realitní kancelář",
+	"RK Logo"
+FROM [lib://$(v.TransformFolderPath)/LEVEL_2_D_REALITNI_KANCELAR.qvd](qvd);
+
+D_FOTO:
+LOAD DISTINCT
+	%KEY_OBRAZEK,
+	"Link na fotky"
+FROM [lib://$(v.TransformFolderPath)/LEVEL_2_D_FOTO.qvd](qvd);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////// 2.2 D tabulky - manuální kategorizace /////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+D_TYP_NEMOVITOSTI:
+LOAD
+	%KEY_TYP_NEMOV,
+    "Typ nemovitosti"
+FROM [lib://$(v.TransformFolderPath)/LEVEL_2_D_TYP_NEMOVITOSTI.qvd](qvd);
+
+D_TYP_PRODEJE:
+LOAD 
+	%KEY_TYP_PRODEJ,
+    "Typ prodeje"
+FROM [lib://$(v.TransformFolderPath)/LEVEL_2_D_TYP_PRODEJE.qvd](qvd);
+
+D_VLASTNICTVI:
+LOAD 
+	"%KEY_VLASTNICTVI",
+	Vlastnictví
+FROM [lib://$(v.TransformFolderPath)/LEVEL_2_D_VLASTNICTVI.qvd](qvd);
+
+
+D_MATERIAL:
+LOAD 
+	"%KEY_MATERIAL",
+	Materiál
+FROM [lib://$(v.TransformFolderPath)/LEVEL_2_D_MATERIAL.qvd](qvd);
+    
+    
+D_VYBAVENI:
+LOAD
+	"%KEY_VYBAVENI",
+	Vybavení
+FROM [lib://$(v.TransformFolderPath)/LEVEL_2_D_VYBAVENI.qvd](qvd);
+    
+D_BLIZKO_BYDLISTE:
+LOAD 
+	"%KEY_BLIZKO",
+	"Blízko bydliště"
+FROM [lib://$(v.TransformFolderPath)/LEVEL_2_D_BLIZKO_BYDLISTE.qvd](qvd);
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////// 3.1 Store a drop //////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+STORE F_NEMOVITOST 			INTO [lib://$(v.LoadFolderPath)/LEVEL_2_R_PARAMETERS.qvd](qvd);
+STORE D_REALITNI_KANCELAR 	INTO [lib://$(v.LoadFolderPath)/LEVEL_2_R_PARAMETERS.qvd](qvd);
+STORE D_FOTO 				INTO [lib://$(v.LoadFolderPath)/LEVEL_2_R_PARAMETERS.qvd](qvd);
+STORE D_TYP_NEMOVITOSTI 	INTO [lib://$(v.LoadFolderPath)/LEVEL_2_R_PARAMETERS.qvd](qvd);
+STORE D_TYP_PRODEJE 		INTO [lib://$(v.LoadFolderPath)/LEVEL_2_R_PARAMETERS.qvd](qvd);
+STORE D_VLASTNICTVI 		INTO [lib://$(v.LoadFolderPath)/LEVEL_2_R_PARAMETERS.qvd](qvd);
+STORE D_MATERIAL 			INTO [lib://$(v.LoadFolderPath)/LEVEL_2_R_PARAMETERS.qvd](qvd);
+STORE D_VYBAVENI 			INTO [lib://$(v.LoadFolderPath)/LEVEL_2_R_PARAMETERS.qvd](qvd);
+STORE D_BLIZKO_BYDLISTE 	INTO [lib://$(v.LoadFolderPath)/LEVEL_2_R_PARAMETERS.qvd](qvd);
+
+// DROP TABLE F_NEMOVITOST;
+// DROP TABLE D_REALITNI_KANCELAR;
+// DROP TABLE D_FOTO;
+// DROP TABLE D_TYP_NEMOVITOSTI;
+// DROP TABLE D_TYP_PRODEJE;
+// DROP TABLE D_VLASTNICTVI;
+// DROP TABLE D_MATERIAL;
+// DROP TABLE D_VYBAVENI;
+// DROP TABLE D_BLIZKO_BYDLISTE;
+
+///$tab ExitScript
+Exit Script;
