@@ -1,0 +1,177 @@
+
+SHEETS
+{"qInfo":{"qId":"278f33cd-b378-40db-a077-50780087e7ff","qType":"sheet"},"qMeta":{"title":"Obecn\u00fd p\u0159ehled","description":"","_resourcetype":"app.object","_objecttype":"sheet","id":"278f33cd-b378-40db-a077-50780087e7ff","approved":true,"published":true,"owner":"XjE_vmEkJ4FApRRIO4xgOmGzH5giHx0U0VvZrVGNKs8","ownerId":"MjsSAuOQVHM5FjQAOUYVhnDEJ8Ge3MXh","createdDate":"2023-01-30T12:54:33.484Z","modifiedDate":"2023-01-30T13:03:28.545Z","publishTime":"2023-01-30T13:03:26.163Z","privileges":["read"]},"qData":[]}
+{"qInfo":{"qId":"13adc374-4f2d-4565-a435-c93a7e46e6b6","qType":"sheet"},"qMeta":{"title":"Fakt\/Nefakt projekty detail","description":"","_resourcetype":"app.object","_objecttype":"sheet","id":"13adc374-4f2d-4565-a435-c93a7e46e6b6","approved":true,"published":true,"owner":"X5ehpuPQiHJCOmYswcFG2epwf1uvINFoa4as6QrohRg","ownerId":"62ecafe6b53d818a688e30b7","createdDate":"2022-11-07T14:49:31.938Z","modifiedDate":"2023-01-27T14:59:06.103Z","publishTime":"2023-01-27T14:59:06.103Z","privileges":["read"]},"qData":[]}
+{"qInfo":{"qId":"4c44ab7c-2ab8-4c7a-89e5-065c4591661e","qType":"sheet"},"qMeta":{"title":"Dovolen\u00e9","description":"","_resourcetype":"app.object","_objecttype":"sheet","id":"4c44ab7c-2ab8-4c7a-89e5-065c4591661e","approved":true,"published":true,"owner":"X5ehpuPQiHJCOmYswcFG2epwf1uvINFoa4as6QrohRg","ownerId":"62ecafe6b53d818a688e30b7","createdDate":"2022-10-18T11:56:15.517Z","modifiedDate":"2023-01-27T14:59:04.194Z","publishTime":"2023-01-27T14:59:04.194Z","privileges":["read"]},"qData":[]}
+{"qInfo":{"qId":"951e4a57-507e-4e84-9f7b-c39eb2ebd31d","qType":"sheet"},"qMeta":{"title":"Vykazov\u00e1n\u00ed o v\u00edkendech","description":"","_resourcetype":"app.object","_objecttype":"sheet","id":"951e4a57-507e-4e84-9f7b-c39eb2ebd31d","approved":true,"published":true,"owner":"X5ehpuPQiHJCOmYswcFG2epwf1uvINFoa4as6QrohRg","ownerId":"62ecafe6b53d818a688e30b7","createdDate":"2022-10-06T13:36:46.560Z","modifiedDate":"2023-01-27T14:59:01.687Z","publishTime":"2023-01-27T14:59:01.687Z","privileges":["read"]},"qData":[]}
+{"qInfo":{"qId":"db872be5-cab6-4996-a2ba-259415677a3b","qType":"sheet"},"qMeta":{"title":"Trend vykazovan\u00fdch hodin","description":"","_resourcetype":"app.object","_objecttype":"sheet","id":"db872be5-cab6-4996-a2ba-259415677a3b","approved":true,"published":true,"owner":"X5ehpuPQiHJCOmYswcFG2epwf1uvINFoa4as6QrohRg","ownerId":"62ecafe6b53d818a688e30b7","createdDate":"2022-10-04T06:46:56.616Z","modifiedDate":"2023-01-27T14:58:59.487Z","publishTime":"2023-01-27T14:58:59.487Z","privileges":["read"]},"qData":[]}
+{"qInfo":{"qId":"ad5aa66c-95a3-4184-9a1f-8961298e467d","qType":"sheet"},"qMeta":{"title":"Vykazov\u00e1n\u00ed v\u016f\u010di \u00favazku","description":"","_resourcetype":"app.object","_objecttype":"sheet","id":"ad5aa66c-95a3-4184-9a1f-8961298e467d","approved":true,"published":true,"owner":"X5ehpuPQiHJCOmYswcFG2epwf1uvINFoa4as6QrohRg","ownerId":"62ecafe6b53d818a688e30b7","createdDate":"2022-10-04T07:25:56.958Z","modifiedDate":"2023-01-27T14:58:57.514Z","publishTime":"2023-01-27T14:58:57.514Z","privileges":["read"]},"qData":[]}
+{"qInfo":{"qId":"f1c8c0fc-3d73-4928-b4cb-c1f944eb2ef3","qType":"sheet"},"qMeta":{"title":"Rozd\u011blen\u00ed do kruh\u016f","description":"","_resourcetype":"app.object","_objecttype":"sheet","id":"f1c8c0fc-3d73-4928-b4cb-c1f944eb2ef3","approved":true,"published":true,"owner":"X5ehpuPQiHJCOmYswcFG2epwf1uvINFoa4as6QrohRg","ownerId":"62ecafe6b53d818a688e30b7","createdDate":"2022-10-04T07:22:10.314Z","modifiedDate":"2023-01-27T14:58:53.818Z","publishTime":"2023-01-27T14:58:53.818Z","privileges":["read"]},"qData":[]}
+{"qInfo":{"qId":"d41f52f9-f60e-4791-a524-5d679ff0aa32","qType":"sheet"},"qMeta":{"title":"Vykazov\u00e1n\u00ed aktivit u delf\u00edn\u016f","description":"","_resourcetype":"app.object","_objecttype":"sheet","id":"d41f52f9-f60e-4791-a524-5d679ff0aa32","approved":true,"published":true,"owner":"X5ehpuPQiHJCOmYswcFG2epwf1uvINFoa4as6QrohRg","ownerId":"62ecafe6b53d818a688e30b7","createdDate":"2022-10-18T07:12:20.174Z","modifiedDate":"2023-01-27T14:58:51.511Z","publishTime":"2023-01-27T14:58:51.511Z","privileges":["read"]},"qData":[]}
+{"qInfo":{"qId":"451a6d63-0118-4ddf-abbe-507994565e7f","qType":"sheet"},"qMeta":{"title":"Projekty v kruz\u00edch","description":"","_resourcetype":"app.object","_objecttype":"sheet","id":"451a6d63-0118-4ddf-abbe-507994565e7f","approved":true,"published":true,"owner":"X5ehpuPQiHJCOmYswcFG2epwf1uvINFoa4as6QrohRg","ownerId":"62ecafe6b53d818a688e30b7","createdDate":"2022-10-03T07:55:36.585Z","modifiedDate":"2023-01-27T14:58:47.127Z","publishTime":"2023-01-27T14:58:47.127Z","privileges":["read"]},"qData":[]}
+{"qInfo":{"qId":"3810e14e-4317-49f2-b91b-3b19ef1b9247","qType":"sheet"},"qMeta":{"title":"Vykazov\u00e1n\u00ed projekt\u016f","description":"","_resourcetype":"app.object","_objecttype":"sheet","id":"3810e14e-4317-49f2-b91b-3b19ef1b9247","approved":true,"published":true,"owner":"X5ehpuPQiHJCOmYswcFG2epwf1uvINFoa4as6QrohRg","ownerId":"62ecafe6b53d818a688e30b7","createdDate":"2022-10-03T13:36:24.209Z","modifiedDate":"2023-01-27T14:58:44.177Z","publishTime":"2023-01-27T14:58:44.177Z","privileges":["read"]},"qData":[]}
+
+OBJECTS ON SHEETS
+{"name":"1b421e15-8c4f-4c5d-8869-670d2342f4a0","type":"kpi","col":20,"row":1,"colspan":14,"rowspan":3,"bounds":{"y":5.555555555555555,"x":55.55555555555556,"width":38.88888888888889,"height":16.666666666666664}}
+{"name":"cd9b74d1-7fcc-45c9-8aa3-fc039f94f3ea","type":"linechart","col":19,"row":4,"colspan":16,"rowspan":4,"bounds":{"y":22.22222222222222,"x":52.77777777777778,"width":44.44444444444444,"height":22.22222222222222}}
+{"name":"d7f5236e-f842-43d9-a996-a20978dbe37a","type":"linechart","col":1,"row":4,"colspan":16,"rowspan":4,"bounds":{"y":22.22222222222222,"x":2.7777777777777777,"width":44.44444444444444,"height":22.22222222222222}}
+{"name":"1f171deb-087a-4858-922c-aed6bff55806","type":"kpi","col":2,"row":1,"colspan":14,"rowspan":3,"bounds":{"y":5.555555555555555,"x":5.555555555555555,"width":38.88888888888889,"height":16.666666666666664}}
+{"name":"792dd07c-4905-4d31-852f-182406445794","type":"combochart","col":1,"row":13,"colspan":16,"rowspan":5,"bounds":{"y":72.22222222222221,"x":2.7777777777777777,"width":44.44444444444444,"height":27.77777777777778}}
+{"name":"23a00c22-d805-416c-89db-d22c0a74d9b5","type":"kpi","col":2,"row":10,"colspan":14,"rowspan":3,"bounds":{"y":55.55555555555556,"x":5.555555555555555,"width":38.88888888888889,"height":16.666666666666664}}
+{"name":"a2ba3e0f-fdbd-4144-8669-ea6a3283109d","type":"barchart","col":19,"row":13,"colspan":16,"rowspan":4,"bounds":{"y":72.22222222222221,"x":52.77777777777778,"width":44.44444444444444,"height":22.22222222222222}}
+{"name":"c65e54ce-de40-4131-b47b-393ed9c5f5fb","type":"kpi","col":20,"row":10,"colspan":14,"rowspan":3,"bounds":{"y":55.55555555555556,"x":55.55555555555556,"width":38.88888888888889,"height":16.666666666666664}}
+{"name":"0bb96a30-1174-4e0f-a66e-005dffd61b60","type":"filterpane","col":8,"row":0,"colspan":20,"rowspan":1,"bounds":{"y":0,"x":22.22222222222222,"width":55.55555555555556,"height":5.555555555555555}}
+{"name":"90cf9e73-1b11-490f-afb6-461068bde635","type":"barchart","col":10,"row":2,"colspan":16,"rowspan":3,"bounds":{"y":11.11111111111111,"x":27.77777777777778,"width":44.44444444444444,"height":16.666666666666664}}
+{"name":"747bd06a-910a-4e25-bb77-fe5e41f4f246","type":"table","col":26,"row":6,"colspan":9,"rowspan":11,"bounds":{"y":33.33333333333333,"x":72.22222222222221,"width":25,"height":61.111111111111114}}
+{"name":"a7286b93-2ab9-46d5-beec-a712377780ec","type":"table","col":1,"row":6,"colspan":9,"rowspan":11,"bounds":{"y":33.33333333333333,"x":2.7777777777777777,"width":25,"height":61.111111111111114}}
+{"name":"d5520cdd-bbc7-4c86-b666-a6982e9377cc","type":"kpi","col":0,"row":1,"colspan":10,"rowspan":5,"bounds":{"y":5.555555555555555,"x":0,"width":27.77777777777778,"height":27.77777777777778}}
+{"name":"44962547-1a9a-409d-a578-089ad25fe309","type":"kpi","col":26,"row":1,"colspan":10,"rowspan":5,"bounds":{"y":5.555555555555555,"x":72.22222222222221,"width":27.77777777777778,"height":27.77777777777778}}
+{"name":"2d6e4266-d966-472a-bfc5-f4521e5bce6d","type":"barchart","col":10,"row":5,"colspan":16,"rowspan":12,"bounds":{"y":27.77777777777778,"x":27.77777777777778,"width":44.44444444444444,"height":66.66666666666666}}
+{"name":"tfaA","type":"filterpane","col":2,"row":0,"colspan":32,"rowspan":1,"bounds":{"y":0,"x":5.555555555555555,"width":88.88888888888889,"height":5.555555555555555}}
+{"name":"EzMmm","type":"container","col":1,"row":10,"colspan":34,"rowspan":7,"bounds":{"y":55.55555555555556,"x":2.7777777777777777,"width":94.44444444444444,"height":38.88888888888889}}
+{"name":"WhqmF","type":"table","col":19,"row":1,"colspan":16,"rowspan":8,"bounds":{"y":5.555555555555555,"x":52.77777777777778,"width":44.44444444444444,"height":44.44444444444444}}
+{"name":"gHhyajU","type":"barchart","col":1,"row":1,"colspan":17,"rowspan":8,"bounds":{"y":5.555555555555555,"x":2.7777777777777777,"width":47.22222222222222,"height":44.44444444444444}}
+{"name":"FscHX","type":"filterpane","col":2,"row":0,"colspan":32,"rowspan":1,"bounds":{"y":0,"x":5.555555555555555,"width":88.88888888888889,"height":5.555555555555555}}
+{"name":"ETypJaM","type":"barchart","col":1,"row":1,"colspan":34,"rowspan":8,"bounds":{"y":5.555555555555555,"x":2.7777777777777777,"width":94.44444444444444,"height":44.44444444444444}}
+{"name":"uQqbF","type":"linechart","col":1,"row":9,"colspan":34,"rowspan":8,"bounds":{"y":50,"x":2.7777777777777777,"width":94.44444444444444,"height":44.44444444444444}}
+{"name":"KwQZJwK","type":"filterpane","col":2,"row":0,"colspan":32,"rowspan":1,"bounds":{"y":0,"x":5.555555555555555,"width":88.88888888888889,"height":5.555555555555555}}
+{"name":"hGddsk","type":"linechart","col":1,"row":16,"colspan":34,"rowspan":9,"bounds":{"x":2.7777777777777777,"y":64,"width":94.44444444444444,"height":36}}
+{"name":"MgnbmJ","type":"table","col":18,"row":1,"colspan":17,"rowspan":7,"bounds":{"x":50,"y":4,"width":47.22222222222222,"height":28}}
+{"name":"GFkP","type":"linechart","col":1,"row":8,"colspan":34,"rowspan":8,"bounds":{"x":2.7777777777777777,"y":32,"width":94.44444444444444,"height":32}}
+{"name":"jMWPb","type":"kpi","col":1,"row":2,"colspan":9,"rowspan":5,"bounds":{"y":8,"x":2.7777777777777777,"width":25,"height":20}}
+{"name":"fjwHeYa","type":"kpi","col":11,"row":3,"colspan":6,"rowspan":3,"bounds":{"y":12,"x":30.555555555555557,"width":16.666666666666664,"height":12}}
+{"name":"mjCajA","type":"filterpane","col":2,"row":0,"colspan":32,"rowspan":1,"bounds":{"x":5.555555555555555,"y":0,"width":88.88888888888889,"height":4}}
+{"name":"cKXVVdG","type":"qlik-variable-input","col":1,"row":1,"colspan":21,"rowspan":2,"bounds":{"y":5.555555555555555,"x":2.7777777777777777,"width":58.333333333333336,"height":11.11111111111111}}
+{"name":"JPPYdJ","type":"qlik-variable-input","col":1,"row":3,"colspan":21,"rowspan":2,"bounds":{"y":16.666666666666664,"x":2.7777777777777777,"width":58.333333333333336,"height":11.11111111111111}}
+{"name":"JUKyg","type":"combochart","col":1,"row":5,"colspan":34,"rowspan":12,"bounds":{"y":27.77777777777778,"x":2.7777777777777777,"width":94.44444444444444,"height":66.66666666666666}}
+{"name":"HrzTGB","type":"map","col":1,"row":1,"colspan":34,"rowspan":13,"bounds":{"y":5.555555555555555,"x":2.7777777777777777,"width":94.44444444444444,"height":72.22222222222221}}
+{"name":"EPcpQgt","type":"qlik-variable-input","col":21,"row":14,"colspan":7,"rowspan":2,"bounds":{"y":77.77777777777779,"x":58.333333333333336,"width":19.444444444444446,"height":11.11111111111111}}
+{"name":"jfNcVN","type":"qlik-variable-input","col":14,"row":14,"colspan":7,"rowspan":2,"bounds":{"y":77.77777777777779,"x":38.88888888888889,"width":19.444444444444446,"height":11.11111111111111}}
+{"name":"vnJQefs","type":"qlik-variable-input","col":6,"row":14,"colspan":8,"rowspan":2,"bounds":{"y":77.77777777777779,"x":16.666666666666664,"width":22.22222222222222,"height":11.11111111111111}}
+{"name":"Jnp","type":"filterpane","col":1,"row":0,"colspan":5,"rowspan":1,"bounds":{"y":0,"x":2.7777777777777777,"width":13.88888888888889,"height":5.555555555555555}}
+{"name":"fea905f2-ba26-4495-a994-35873bbbc7e3","type":"barchart","col":1,"row":1,"colspan":34,"rowspan":8,"bounds":{"y":5.555555555555555,"x":2.7777777777777777,"width":94.44444444444444,"height":44.44444444444444}}
+{"name":"4528c0bf-8532-49a3-a145-75ce30acaffc","type":"linechart","col":1,"row":9,"colspan":34,"rowspan":8,"bounds":{"y":50,"x":2.7777777777777777,"width":94.44444444444444,"height":44.44444444444444}}
+{"name":"FtrXG","type":"filterpane","col":2,"row":0,"colspan":32,"rowspan":1,"bounds":{"y":0,"x":5.555555555555555,"width":88.88888888888889,"height":5.555555555555555}}
+{"name":"wXudcH","type":"container","col":17,"row":1,"colspan":18,"rowspan":8,"bounds":{"y":5.555555555555555,"x":47.22222222222222,"width":50,"height":44.44444444444444}}
+{"name":"MRDzUb","type":"kpi","col":0,"row":3,"colspan":8,"rowspan":4,"bounds":{"y":16.666666666666664,"x":0,"width":22.22222222222222,"height":22.22222222222222}}
+{"name":"rQFRYu","type":"piechart","col":8,"row":3,"colspan":8,"rowspan":4,"bounds":{"y":16.666666666666664,"x":22.22222222222222,"width":22.22222222222222,"height":22.22222222222222}}
+{"name":"jpgPZjc","type":"container","col":1,"row":9,"colspan":34,"rowspan":9,"bounds":{"y":50,"x":2.7777777777777777,"width":94.44444444444444,"height":50}}
+{"name":"BDhtVhV","type":"filterpane","col":2,"row":0,"colspan":32,"rowspan":1,"bounds":{"y":0,"x":5.555555555555555,"width":88.88888888888889,"height":5.555555555555555}}
+{"name":"JTpaaA","type":"combochart","col":1,"row":1,"colspan":34,"rowspan":12,"bounds":{"y":5.555555555555555,"x":2.7777777777777777,"width":94.44444444444444,"height":66.66666666666666}}
+{"name":"AtAg","type":"treemap","col":1,"row":13,"colspan":34,"rowspan":4,"bounds":{"y":72.22222222222221,"x":2.7777777777777777,"width":94.44444444444444,"height":22.22222222222222}}
+{"name":"jLJBatG","type":"filterpane","col":2,"row":0,"colspan":32,"rowspan":1,"bounds":{"y":0,"x":5.555555555555555,"width":88.88888888888889,"height":5.555555555555555}}
+
+DIMENSIONS
+{"qInfo":{"qId":"xSunWp","qType":"dimension"},"qMeta":{"title":"=[N\u00e1zev Projektu]","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"dimension","id":"xSunWp","approved":true,"published":false,"owner":"X5ehpuPQiHJCOmYswcFG2epwf1uvINFoa4as6QrohRg","ownerId":"62ecafe6b53d818a688e30b7","createdDate":"2023-01-27T13:05:27.884Z","modifiedDate":"2023-01-27T13:05:27.884Z","privileges":["read"]},"qData":[]}
+{"qInfo":{"qId":"QwbJpmq","qType":"dimension"},"qMeta":{"title":"Kruh delf\u00edna","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"dimension","id":"QwbJpmq","approved":true,"published":false,"owner":"TQ8pKJo9Ta4xlGFR4bTs-NumZXE0YryUOeAdJlyz9CA","ownerId":"krBdpQNvUDjiP0ucCCwMeSI8FOl2npuc","createdDate":"2022-10-04T11:52:33.259Z","modifiedDate":"2022-10-11T07:33:17.091Z","privileges":["read"]},"qData":[]}
+
+MEASURES
+{"qInfo":{"qId":"EQmKEuN","qType":"measure"},"qMeta":{"title":"Po\u010det hodin \u00favazku","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"EQmKEuN","approved":true,"published":false,"owner":"X5ehpuPQiHJCOmYswcFG2epwf1uvINFoa4as6QrohRg","ownerId":"62ecafe6b53d818a688e30b7","createdDate":"2023-01-24T13:55:28.641Z","modifiedDate":"2023-01-24T14:02:20.766Z","privileges":["read"]},"qData":[]}
+{"qInfo":{"qId":"QnKWpNB","qType":"measure"},"qMeta":{"title":"Po\u010det vyk\u00e1zn\u00fdch hodin","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"QnKWpNB","approved":true,"published":false,"owner":"X5ehpuPQiHJCOmYswcFG2epwf1uvINFoa4as6QrohRg","ownerId":"62ecafe6b53d818a688e30b7","createdDate":"2023-01-24T13:54:08.248Z","modifiedDate":"2023-01-24T14:02:10.609Z","privileges":["read"]},"qData":[]}
+{"qInfo":{"qId":"pemTtu","qType":"measure"},"qMeta":{"title":"Nep\u0159\u00edtomnost","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"pemTtu","approved":true,"published":false,"owner":"X5ehpuPQiHJCOmYswcFG2epwf1uvINFoa4as6QrohRg","ownerId":"62ecafe6b53d818a688e30b7","createdDate":"2023-01-24T13:37:56.318Z","modifiedDate":"2023-01-24T13:37:56.318Z","privileges":["read"]},"qData":[]}
+{"qInfo":{"qId":"VDjXfrV","qType":"measure"},"qMeta":{"title":"Nefakturovan\u00e9 MD","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"VDjXfrV","approved":true,"published":false,"owner":"X5ehpuPQiHJCOmYswcFG2epwf1uvINFoa4as6QrohRg","ownerId":"62ecafe6b53d818a688e30b7","createdDate":"2023-01-24T13:34:19.603Z","modifiedDate":"2023-01-24T13:34:19.603Z","privileges":["read"]},"qData":[]}
+{"qInfo":{"qId":"UBYfLB","qType":"measure"},"qMeta":{"title":"Fakturovan\u00e9 MD","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"UBYfLB","approved":true,"published":false,"owner":"X5ehpuPQiHJCOmYswcFG2epwf1uvINFoa4as6QrohRg","ownerId":"62ecafe6b53d818a688e30b7","createdDate":"2023-01-24T13:33:38.624Z","modifiedDate":"2023-01-24T13:33:38.624Z","privileges":["read"]},"qData":[]}
+{"qInfo":{"qId":"YQssEZ","qType":"measure"},"qMeta":{"title":"Minul\u00fd rok","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"YQssEZ","approved":true,"published":false,"owner":"TQ8pKJo9Ta4xlGFR4bTs-NumZXE0YryUOeAdJlyz9CA","ownerId":"krBdpQNvUDjiP0ucCCwMeSI8FOl2npuc","createdDate":"2022-10-03T13:30:02.731Z","modifiedDate":"2022-10-03T13:30:02.731Z","privileges":["read"]},"qData":[]}
+{"qInfo":{"qId":"JYJhPw","qType":"measure"},"qMeta":{"title":"Minul\u00fd rok","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"JYJhPw","approved":true,"published":false,"owner":"TQ8pKJo9Ta4xlGFR4bTs-NumZXE0YryUOeAdJlyz9CA","ownerId":"krBdpQNvUDjiP0ucCCwMeSI8FOl2npuc","createdDate":"2022-10-03T13:23:07.197Z","modifiedDate":"2022-10-03T13:26:29.344Z","privileges":["read"]},"qData":[]}
+
+VARIABLES
+{"qName":"vL.Store_Level","qDefinition":"L1","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"bf4d0c19-fe0c-4046-8bfc-13037c6df4ef","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"vL.F_Pracovni_Vykaz","qDefinition":"F_Pracovni_Vykaz","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"04b615aa-a3b4-4aeb-a6c9-fa1524fadc67","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"vL.D_Pracovni_Ukol","qDefinition":"D_Pracovni_Ukol","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"c04cfe1b-969c-4eba-b507-d49d48bbc71e","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"vL.D_Zakazka","qDefinition":"D_Zakazka","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"754cd533-e1b7-4b40-acb1-2462e09736ee","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"vL.D_Zakazka_Subjekt","qDefinition":"D_Zakazka_Subjekt","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"7d10514f-d72d-4acb-923a-4ab7af0a5b36","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"vL.D_Delfin","qDefinition":"D_Delfin","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"e12b45dc-0d4e-4b18-be73-0ccd4e1be3f7","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"vL.D_Datum_Vykazu","qDefinition":"D_Datum_Vykazu","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"a08503c4-ae7c-45d3-b63b-98ae61df4a47","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"vL.Space","qDefinition":"Applications (Shared)","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"9f4417db-90ab-4dd1-8e60-bffc82fc2777","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"vL.Database","qDefinition":"AdventureWorksEDU_SQLSERVER","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"0c9eb883-a176-4fa1-9e25-3dc4d7528ae9","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"vL.Store_Folder","qDefinition":"DataFiles","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"9b2d5824-f498-490d-842d-d46853db9573","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"vL.Store_Path","qDefinition":"lib:\/\/:DataFiles","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"ce828088-c23e-4bdd-97e3-39d3b6ac38ca","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"vL.PracovniVykaz","qDefinition":"F_Pracovni_Vykaz","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"f468057a-7269-4f13-adc9-bafd68167fd7","qType":"variable"},"qData":[]}
+{"qName":"Table","qDefinition":"6","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"a484dcdd-0bbb-4273-bda5-516743a7f328","qType":"variable"},"qData":[]}
+{"qName":"vTableName","qDefinition":"D_Datum_Vykazu","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"dc265d16-4ee3-4a2e-885b-64c4e1ade5c1","qType":"variable"},"qData":[]}
+{"qName":"vRows","qDefinition":"4","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"908ac915-7a32-4b52-93f3-e6e664f14075","qType":"variable"},"qData":[]}
+{"qName":"vOffset","qDefinition":"-0.33","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"427776f5-685f-4928-960f-059a4e6aa80e","qType":"variable"},"qData":[]}
+{"qName":"vSeats","qDefinition":"123","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"d736cc12-84a7-42d1-9b40-2058b8147ccf","qType":"variable"},"qData":[]}
+{"qName":"vRadius","qDefinition":"3","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"2988169e-bfa0-4db9-8a10-d51563d2e558","qType":"variable"},"qData":[]}
+{"qName":"vMonth","qDefinition":"3","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"b0a5bfb0-d2d3-43df-aa5f-bea25911cd5a","qType":"variable"},"qData":[]}
+{"qName":"vYear","qDefinition":"2022","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"e53d3f0c-6222-42ac-b9bf-545c265efac3","qType":"variable"},"qData":[]}
+{"qName":"vDelfin","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"90c1249f-7ad8-42f2-8865-b088ca6f8838","qType":"variable"},"qData":[]}
+{"qName":"vProjekt","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"1b3a2fd3-9051-4d51-8b35-df64952eb58f","qType":"variable"},"qData":[]}
+
+FIELDS
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Field","qCardinal":70,"qTags":["$hidden","$system","$text","$key"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Table","qCardinal":6,"qTags":["$hidden","$system","$text","$ascii","$key"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Rows","qCardinal":6,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Fields","qCardinal":5,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$FieldNo","qCardinal":18,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Info","qCardinal":1,"qTags":["$hidden","$system","$text","$ascii"],"qSrcTables":[]}
+{"qName":"ID Pracovn\u00edho V\u00fdkazu","qCardinal":78264,"qTags":["$numeric","$integer"],"qSrcTables":["F_Pracovni_Vykaz"]}
+{"qName":"ID Delf\u00edna","qCardinal":123,"qTags":["$numeric","$integer","$key"],"qSrcTables":["F_Pracovni_Vykaz","D_Delfin"]}
+{"qName":"ID Pracovn\u00edho \u00dakolu","qCardinal":381,"qTags":["$numeric","$integer","$key"],"qSrcTables":["F_Pracovni_Vykaz","D_Pracovni_Ukol"]}
+{"qName":"Datum V\u00fdkazu","qCardinal":2557,"qTags":["$numeric","$integer","$timestamp","$date","$key"],"qSrcTables":["F_Pracovni_Vykaz","D_Datum_Vykazu"]}
+{"qName":"ID Zak\u00e1zky","qCardinal":72,"qTags":["$numeric","$integer","$key"],"qSrcTables":["F_Pracovni_Vykaz","D_Zakazka"]}
+{"qName":"ID Subjektu Zak\u00e1zky","qCardinal":935,"qTags":["$numeric","$integer","$key"],"qSrcTables":["F_Pracovni_Vykaz","D_Zakazka_Subjekt"]}
+{"qName":"Zdroj V\u00fdkazu","qCardinal":2,"qTags":["$text"],"qSrcTables":["F_Pracovni_Vykaz"]}
+{"qName":"Popis Pr\u00e1ce","qCardinal":283,"qTags":["$text"],"qSrcTables":["F_Pracovni_Vykaz"]}
+{"qName":"Po\u010det Vyk\u00e1zan\u00fdch Minut","qCardinal":177,"qTags":["$numeric","$integer"],"qSrcTables":["F_Pracovni_Vykaz"]}
+{"qName":"Po\u010det Vyk\u00e1zan\u00fdch Hodin","qCardinal":177,"qTags":["$numeric"],"qSrcTables":["F_Pracovni_Vykaz"]}
+{"qName":"Po\u010det Vyk\u00e1zan\u00fdch MD","qCardinal":177,"qTags":["$numeric"],"qSrcTables":["F_Pracovni_Vykaz"]}
+{"qName":"Datum platnosti Od","qCardinal":196,"qTags":["$numeric","$integer","$timestamp","$date"],"qSrcTables":["F_Pracovni_Vykaz"]}
+{"qName":"Datum platnosti Do","qCardinal":51,"qTags":["$numeric","$integer","$timestamp","$date"],"qSrcTables":["F_Pracovni_Vykaz"]}
+{"qName":"Aktu\u00e1ln\u00ed z\u00e1znam","qCardinal":2,"qTags":["$text","$ascii"],"qSrcTables":["F_Pracovni_Vykaz"]}
+{"qName":"Smazan\u00fd z\u00e1znam","qCardinal":2,"qTags":["$text","$ascii"],"qSrcTables":["F_Pracovni_Vykaz"]}
+{"qName":"Jm\u00e9no Z\u00e1kazn\u00edka","qCardinal":372,"qTags":["$text","$ascii"],"qSrcTables":["D_Pracovni_Ukol"]}
+{"qName":"N\u00e1zev Projektu","qCardinal":372,"qTags":["$text","$ascii"],"qSrcTables":["D_Pracovni_Ukol"]}
+{"qName":"N\u00e1zev \u00dakolu","qCardinal":372,"qTags":["$text","$ascii"],"qSrcTables":["D_Pracovni_Ukol"]}
+{"qName":"Popis \u00dakolu","qCardinal":1,"qTags":["$text","$ascii"],"qSrcTables":["D_Pracovni_Ukol"]}
+{"qName":"Fakturovateln\u00fd \u00dakol","qCardinal":3,"qTags":["$text","$ascii"],"qSrcTables":["D_Pracovni_Ukol"]}
+{"qName":"Term\u00edn \u00dakolu","qCardinal":2,"qTags":["$numeric","$integer","$timestamp","$date"],"qSrcTables":["D_Pracovni_Ukol"]}
+{"qName":"Limit MD","qCardinal":26,"qTags":["$numeric","$integer"],"qSrcTables":["D_Pracovni_Ukol"]}
+{"qName":"Datum Dokon\u010den\u00ed \u00dakolu","qCardinal":72,"qTags":["$numeric","$integer","$timestamp","$date"],"qSrcTables":["D_Pracovni_Ukol"]}
+{"qName":"Typ Za\u00fa\u010dtov\u00e1n\u00ed","qCardinal":6,"qTags":["$text","$ascii"],"qSrcTables":["D_Pracovni_Ukol"]}
+{"qName":"Zdroj","qCardinal":3,"qTags":["$text","$ascii"],"qSrcTables":["D_Pracovni_Ukol"]}
+{"qName":"K\u00f3d Zak\u00e1zky","qCardinal":72,"qTags":["$text","$ascii"],"qSrcTables":["D_Zakazka"]}
+{"qName":"N\u00e1zev Zak\u00e1zky","qCardinal":72,"qTags":["$text"],"qSrcTables":["D_Zakazka"]}
+{"qName":"N\u00e1zev Subjektu Zak\u00e1zky","qCardinal":439,"qTags":["$text","$ascii"],"qSrcTables":["D_Zakazka_Subjekt"]}
+{"qName":"Popis Subjektu Zak\u00e1zky","qCardinal":27,"qTags":["$text"],"qSrcTables":["D_Zakazka_Subjekt"]}
+{"qName":"Unifikovan\u00fd N\u00e1zev Subjektu Zak\u00e1zky","qCardinal":439,"qTags":["$text","$ascii"],"qSrcTables":["D_Zakazka_Subjekt"]}
+{"qName":"I\u010cO Subjektu Zak\u00e1zky","qCardinal":935,"qTags":["$text","$ascii"],"qSrcTables":["D_Zakazka_Subjekt"]}
+{"qName":"DI\u010c Subjektu Zak\u00e1zky","qCardinal":824,"qTags":["$text","$ascii"],"qSrcTables":["D_Zakazka_Subjekt"]}
+{"qName":"Ulice Subjektu Zak\u00e1zky","qCardinal":446,"qTags":["$text"],"qSrcTables":["D_Zakazka_Subjekt"]}
+{"qName":"M\u011bsto Subjektu Zak\u00e1zky","qCardinal":270,"qTags":["$text","$ascii"],"qSrcTables":["D_Zakazka_Subjekt"]}
+{"qName":"PS\u010c Subjektu Zak\u00e1zky","qCardinal":304,"qTags":["$text","$ascii"],"qSrcTables":["D_Zakazka_Subjekt"]}
+{"qName":"Zem\u011b Subjektu Zak\u00e1zky","qCardinal":22,"qTags":["$text","$ascii"],"qSrcTables":["D_Zakazka_Subjekt"]}
+{"qName":"Jm\u00e9no Delf\u00edna","qCardinal":91,"qTags":["$text","$ascii"],"qSrcTables":["D_Delfin"]}
+{"qName":"P\u0159\u00edjmen\u00ed Delf\u00edna","qCardinal":98,"qTags":["$text","$ascii"],"qSrcTables":["D_Delfin"]}
+{"qName":"Delf\u00edn","qCardinal":104,"qTags":["$text","$ascii"],"qSrcTables":["D_Delfin"]}
+{"qName":"Zkratka Delf\u00edna","qCardinal":89,"qTags":["$text","$ascii"],"qSrcTables":["D_Delfin"]}
+{"qName":"Typ Pracovn\u00ed Smlouvy","qCardinal":4,"qTags":["$text"],"qSrcTables":["D_Delfin"]}
+{"qName":"Email Delf\u00edna","qCardinal":104,"qTags":["$text","$ascii"],"qSrcTables":["D_Delfin"]}
+{"qName":"Datum N\u00e1stupu Delf\u00edna","qCardinal":1,"qTags":["$numeric","$integer","$timestamp","$date"],"qSrcTables":["D_Delfin"]}
+{"qName":"Datum Ukon\u010den\u00ed Pom\u011bru","qCardinal":16,"qTags":["$numeric","$integer"],"qSrcTables":["D_Delfin"]}
+{"qName":"Po\u010det Dn\u00ed \u00davazku","qCardinal":7,"qTags":["$numeric"],"qSrcTables":["D_Delfin"]}
+{"qName":"Po\u010det Hodin \u00davazku","qCardinal":4,"qTags":["$numeric","$integer"],"qSrcTables":["D_Delfin"]}
+{"qName":"Po\u010det Hodin V T\u00fddnu","qCardinal":8,"qTags":["$numeric","$integer"],"qSrcTables":["D_Delfin"]}
+{"qName":"Aktivn\u00ed smlouva","qCardinal":2,"qTags":["$text","$ascii"],"qSrcTables":["D_Delfin"]}
+{"qName":"Platnost Z\u00e1znamu Od","qCardinal":87,"qTags":["$numeric","$integer"],"qSrcTables":["D_Delfin"]}
+{"qName":"Platnost Z\u00e1znamu Do","qCardinal":19,"qTags":["$numeric","$integer","$timestamp","$date"],"qSrcTables":["D_Delfin"]}
+{"qName":"Kruh Delf\u00edna","qCardinal":11,"qTags":["$text"],"qSrcTables":["D_Delfin"]}
+{"qName":"Kruh_Seat","qCardinal":104,"qTags":["$text"],"qSrcTables":["D_Delfin"]}
+{"qName":"Pozice Delf\u00edna","qCardinal":1,"qTags":["$text","$ascii"],"qSrcTables":["D_Delfin"]}
+{"qName":"Den","qCardinal":31,"qTags":["$numeric","$integer"],"qSrcTables":["D_Datum_Vykazu"]}
+{"qName":"Den v T\u00fddnu","qCardinal":7,"qTags":["$numeric","$integer"],"qSrcTables":["D_Datum_Vykazu"]}
+{"qName":"Den N\u00e1zev","qCardinal":7,"qTags":["$text"],"qSrcTables":["D_Datum_Vykazu"]}
+{"qName":"Den Zkr.","qCardinal":7,"qTags":["$text"],"qSrcTables":["D_Datum_Vykazu"]}
+{"qName":"V\u00edkend","qCardinal":2,"qTags":["$text","$ascii"],"qSrcTables":["D_Datum_Vykazu"]}
+{"qName":"T\u00fdden","qCardinal":53,"qTags":["$numeric","$integer"],"qSrcTables":["D_Datum_Vykazu"]}
+{"qName":"Rok-T\u00fdden","qCardinal":371,"qTags":["$text","$ascii"],"qSrcTables":["D_Datum_Vykazu"]}
+{"qName":"T\u00fdden Rozd\u011blen\u00fd V Ultimu M\u011bs\u00edce","qCardinal":63,"qTags":["$numeric","$integer"],"qSrcTables":["D_Datum_Vykazu"]}
+{"qName":"M\u011bs\u00edc","qCardinal":12,"qTags":["$numeric","$integer"],"qSrcTables":["D_Datum_Vykazu"]}
+{"qName":"M\u011bs\u00edc N\u00e1zev","qCardinal":12,"qTags":["$text"],"qSrcTables":["D_Datum_Vykazu"]}
+{"qName":"M\u011bs\u00edc Zkr.","qCardinal":12,"qTags":["$text"],"qSrcTables":["D_Datum_Vykazu"]}
+{"qName":"Qvart\u00e1l","qCardinal":4,"qTags":["$numeric","$integer"],"qSrcTables":["D_Datum_Vykazu"]}
+{"qName":"Qvart\u00e1l N\u00e1zev","qCardinal":4,"qTags":["$text","$ascii"],"qSrcTables":["D_Datum_Vykazu"]}
+{"qName":"Rok","qCardinal":7,"qTags":["$numeric","$integer"],"qSrcTables":["D_Datum_Vykazu"]}
+{"qName":"Rok-M\u011bs\u00edc","qCardinal":84,"qTags":["$numeric","$integer"],"qSrcTables":["D_Datum_Vykazu"]}
+{"qName":"Sv\u00e1tek","qCardinal":2,"qTags":["$text","$ascii"],"qSrcTables":["D_Datum_Vykazu"]}
+{"qName":"Rok-Qvart\u00e1l","qCardinal":28,"qTags":["$text","$ascii"],"qSrcTables":["D_Datum_Vykazu"]}
