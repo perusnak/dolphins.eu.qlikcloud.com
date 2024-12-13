@@ -4,122 +4,23 @@ SHEETS
 OBJECTS ON SHEETS
 
 DIMENSIONS
-{"qInfo":{"qId":"FCDT","qType":"dimension"},"qMeta":{"title":"Kruh Delfina update","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"dimension","id":"FCDT","approved":true,"published":false,"owner":"a1XYcJyUR3roTwjkDUydFpTh0lBLe7SWHXm3IulJZ6w","ownerId":"CN711y7MK-GchUj9yGcEFoG8n5GqN5lM","createdDate":"2023-03-06T14:00:10.201Z","modifiedDate":"2023-03-15T14:59:48.441Z","privileges":["read"]},"qData":[]}
-{"qInfo":{"qId":"deycWKA","qType":"dimension"},"qMeta":{"title":"Rok-Kvart\u00e1l-M\u011bs\u00edc","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"dimension","id":"deycWKA","approved":true,"published":false,"owner":"a1XYcJyUR3roTwjkDUydFpTh0lBLe7SWHXm3IulJZ6w","ownerId":"CN711y7MK-GchUj9yGcEFoG8n5GqN5lM","createdDate":"2023-03-06T15:27:22.324Z","modifiedDate":"2023-03-06T15:27:22.324Z","privileges":["read"]},"qData":[]}
-{"qInfo":{"qId":"QwbJpmq","qType":"dimension"},"qMeta":{"title":"Kruh delf\u00edna","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"dimension","id":"QwbJpmq","approved":true,"published":false,"owner":"TQ8pKJo9Ta4xlGFR4bTs-NumZXE0YryUOeAdJlyz9CA","ownerId":"krBdpQNvUDjiP0ucCCwMeSI8FOl2npuc","createdDate":"2022-10-04T11:52:33.259Z","modifiedDate":"2023-03-06T15:02:54.789Z","privileges":["read"]},"qData":[]}
-{"qInfo":{"qId":"xSunWp","qType":"dimension"},"qMeta":{"title":"=[N\u00e1zev Projektu]","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"dimension","id":"xSunWp","approved":true,"published":false,"owner":"X5ehpuPQiHJCOmYswcFG2epwf1uvINFoa4as6QrohRg","ownerId":"62ecafe6b53d818a688e30b7","createdDate":"2023-01-27T13:05:27.884Z","modifiedDate":"2023-01-27T13:05:27.884Z","privileges":["read"]},"qData":[]}
 
 MEASURES
-{"qInfo":{"qId":"UBYfLB","qType":"measure"},"qMeta":{"title":"Fakturovan\u00e9 MD","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"UBYfLB","approved":true,"published":false,"owner":"X5ehpuPQiHJCOmYswcFG2epwf1uvINFoa4as6QrohRg","ownerId":"62ecafe6b53d818a688e30b7","createdDate":"2023-01-24T13:33:38.624Z","modifiedDate":"2023-03-06T14:53:27.011Z","privileges":["read"]},"qData":[]}
-{"qInfo":{"qId":"VDjXfrV","qType":"measure"},"qMeta":{"title":"Nefakturovan\u00e9 MD","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"VDjXfrV","approved":true,"published":false,"owner":"X5ehpuPQiHJCOmYswcFG2epwf1uvINFoa4as6QrohRg","ownerId":"62ecafe6b53d818a688e30b7","createdDate":"2023-01-24T13:34:19.603Z","modifiedDate":"2023-03-06T14:52:46.671Z","privileges":["read"]},"qData":[]}
-{"qInfo":{"qId":"EQmKEuN","qType":"measure"},"qMeta":{"title":"Po\u010det hodin \u00favazku","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"EQmKEuN","approved":true,"published":false,"owner":"X5ehpuPQiHJCOmYswcFG2epwf1uvINFoa4as6QrohRg","ownerId":"62ecafe6b53d818a688e30b7","createdDate":"2023-01-24T13:55:28.641Z","modifiedDate":"2023-03-06T14:51:56.250Z","privileges":["read"]},"qData":[]}
-{"qInfo":{"qId":"QnKWpNB","qType":"measure"},"qMeta":{"title":"Po\u010det vyk\u00e1zn\u00fdch hodin","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"QnKWpNB","approved":true,"published":false,"owner":"X5ehpuPQiHJCOmYswcFG2epwf1uvINFoa4as6QrohRg","ownerId":"62ecafe6b53d818a688e30b7","createdDate":"2023-01-24T13:54:08.248Z","modifiedDate":"2023-03-06T14:51:41.068Z","privileges":["read"]},"qData":[]}
-{"qInfo":{"qId":"pemTtu","qType":"measure"},"qMeta":{"title":"Nep\u0159\u00edtomnost","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"pemTtu","approved":true,"published":false,"owner":"X5ehpuPQiHJCOmYswcFG2epwf1uvINFoa4as6QrohRg","ownerId":"62ecafe6b53d818a688e30b7","createdDate":"2023-01-24T13:37:56.318Z","modifiedDate":"2023-01-24T13:37:56.318Z","privileges":["read"]},"qData":[]}
-{"qInfo":{"qId":"YQssEZ","qType":"measure"},"qMeta":{"title":"Minul\u00fd rok","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"YQssEZ","approved":true,"published":false,"owner":"TQ8pKJo9Ta4xlGFR4bTs-NumZXE0YryUOeAdJlyz9CA","ownerId":"krBdpQNvUDjiP0ucCCwMeSI8FOl2npuc","createdDate":"2022-10-03T13:30:02.731Z","modifiedDate":"2022-10-03T13:30:02.731Z","privileges":["read"]},"qData":[]}
-{"qInfo":{"qId":"JYJhPw","qType":"measure"},"qMeta":{"title":"Minul\u00fd rok","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"JYJhPw","approved":true,"published":false,"owner":"TQ8pKJo9Ta4xlGFR4bTs-NumZXE0YryUOeAdJlyz9CA","ownerId":"krBdpQNvUDjiP0ucCCwMeSI8FOl2npuc","createdDate":"2022-10-03T13:23:07.197Z","modifiedDate":"2022-10-03T13:26:29.344Z","privileges":["read"]},"qData":[]}
 
 VARIABLES
-{"qName":"vL.D_Pracovni_Ukol","qDefinition":"D_Pracovni_Ukol","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"c04cfe1b-969c-4eba-b507-d49d48bbc71e","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"vL.Store_Level","qDefinition":"L1","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"bf4d0c19-fe0c-4046-8bfc-13037c6df4ef","qType":"variable"},"qData":[],"qIsScriptCreated":true}
 {"qName":"vL.F_Pracovni_Vykaz","qDefinition":"F_Pracovni_Vykaz","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"04b615aa-a3b4-4aeb-a6c9-fa1524fadc67","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"vL.D_Pracovni_Ukol","qDefinition":"D_Pracovni_Ukol","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"c04cfe1b-969c-4eba-b507-d49d48bbc71e","qType":"variable"},"qData":[],"qIsScriptCreated":true}
 {"qName":"vL.D_Zakazka","qDefinition":"D_Zakazka","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"754cd533-e1b7-4b40-acb1-2462e09736ee","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"vL.D_Zakazka_Subjekt","qDefinition":"D_Zakazka_Subjekt","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"7d10514f-d72d-4acb-923a-4ab7af0a5b36","qType":"variable"},"qData":[],"qIsScriptCreated":true}
 {"qName":"vL.D_Delfin","qDefinition":"D_Delfin","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"e12b45dc-0d4e-4b18-be73-0ccd4e1be3f7","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"vL.D_Datum_Vykazu","qDefinition":"D_Datum_Vykazu","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"a08503c4-ae7c-45d3-b63b-98ae61df4a47","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"Table","qDefinition":"6","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"a484dcdd-0bbb-4273-bda5-516743a7f328","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"vTableName","qDefinition":"D_Datum_Vykazu","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"dc265d16-4ee3-4a2e-885b-64c4e1ade5c1","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"vL.Space","qDefinition":"Applications (Shared)","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"9f4417db-90ab-4dd1-8e60-bffc82fc2777","qType":"variable"},"qData":[],"qIsScriptCreated":true}
 {"qName":"vL.Database","qDefinition":"AdventureWorksEDU_SQLSERVER","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"0c9eb883-a176-4fa1-9e25-3dc4d7528ae9","qType":"variable"},"qData":[],"qIsScriptCreated":true}
 {"qName":"vL.Store_Folder","qDefinition":"DataFiles","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"9b2d5824-f498-490d-842d-d46853db9573","qType":"variable"},"qData":[],"qIsScriptCreated":true}
-{"qName":"vL.D_Zakazka_Subjekt","qDefinition":"D_Zakazka_Subjekt","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"7d10514f-d72d-4acb-923a-4ab7af0a5b36","qType":"variable"},"qData":[],"qIsScriptCreated":true}
-{"qName":"vL.Space","qDefinition":"Applications (Shared)","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"9f4417db-90ab-4dd1-8e60-bffc82fc2777","qType":"variable"},"qData":[],"qIsScriptCreated":true}
-{"qName":"vL.D_Datum_Vykazu","qDefinition":"D_Datum_Vykazu","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"a08503c4-ae7c-45d3-b63b-98ae61df4a47","qType":"variable"},"qData":[],"qIsScriptCreated":true}
 {"qName":"vL.Store_Path","qDefinition":"lib:\/\/:DataFiles","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"ce828088-c23e-4bdd-97e3-39d3b6ac38ca","qType":"variable"},"qData":[],"qIsScriptCreated":true}
-{"qName":"vL.Store_Level","qDefinition":"L1","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"bf4d0c19-fe0c-4046-8bfc-13037c6df4ef","qType":"variable"},"qData":[],"qIsScriptCreated":true}
-{"qName":"vYear","qDefinition":"2022","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"e53d3f0c-6222-42ac-b9bf-545c265efac3","qType":"variable"},"qData":[]}
-{"qName":"vDelfin","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"90c1249f-7ad8-42f2-8865-b088ca6f8838","qType":"variable"},"qData":[]}
-{"qName":"vProjekt","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"1b3a2fd3-9051-4d51-8b35-df64952eb58f","qType":"variable"},"qData":[]}
-{"qName":"vTableName","qDefinition":"D_Datum_Vykazu","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"dc265d16-4ee3-4a2e-885b-64c4e1ade5c1","qType":"variable"},"qData":[]}
-{"qName":"vSeats","qDefinition":"123","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"d736cc12-84a7-42d1-9b40-2058b8147ccf","qType":"variable"},"qData":[]}
-{"qName":"Table","qDefinition":"6","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"a484dcdd-0bbb-4273-bda5-516743a7f328","qType":"variable"},"qData":[]}
-{"qName":"vL.RokProjektu","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"f7cada22-c4cf-483a-b58d-d380d35e11a2","qType":"variable"},"qData":[]}
-{"qName":"vOffset","qDefinition":"-0.5","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"427776f5-685f-4928-960f-059a4e6aa80e","qType":"variable"},"qData":[]}
-{"qName":"vRadius","qDefinition":"4","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"2988169e-bfa0-4db9-8a10-d51563d2e558","qType":"variable"},"qData":[]}
-{"qName":"vMonth","qDefinition":"3","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"b0a5bfb0-d2d3-43df-aa5f-bea25911cd5a","qType":"variable"},"qData":[]}
-{"qName":"vRows","qDefinition":"6","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"908ac915-7a32-4b52-93f3-e6e664f14075","qType":"variable"},"qData":[]}
 {"qName":"vL.PracovniVykaz","qDefinition":"F_Pracovni_Vykaz","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"f468057a-7269-4f13-adc9-bafd68167fd7","qType":"variable"},"qData":[]}
-{"qName":"vL.KruhDelfina","qDefinition":"=Pick(Match([Kruh Delf\u00edna],'Ba','Be','Ce','Cs','Dt','L\u0148','Mt','Oe','Qk','N\/A','NA'),'T\u00fdm 1','T\u00fdm 2','T\u00fdm 3','T\u00fdm 4','T\u00fdm 5','T\u00fdm 6','T\u00fdm 7','T\u00fdm 8','T\u00fdm 9','Nep\u0159i\u0159azeno','Nep\u0159i\u0159azeno')\r\n\n","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"9c6b3558-f151-4b3b-a30f-4fa4571ae55a","qType":"variable"},"qData":[]}
 
 FIELDS
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Field","qCardinal":72,"qTags":["$hidden","$system","$text","$key"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Table","qCardinal":6,"qTags":["$hidden","$system","$text","$ascii","$key"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Rows","qCardinal":6,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Fields","qCardinal":6,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$FieldNo","qCardinal":20,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
-{"qIsHidden":true,"qIsSystem":true,"qName":"$Info","qCardinal":1,"qTags":["$hidden","$system","$text","$ascii"],"qSrcTables":[]}
-{"qName":"ID Pracovn\u00edho V\u00fdkazu","qCardinal":77992,"qTags":["$numeric","$integer"],"qSrcTables":["F_Pracovni_Vykaz"]}
-{"qName":"ID Delf\u00edna","qCardinal":123,"qTags":["$numeric","$integer","$key"],"qSrcTables":["F_Pracovni_Vykaz","D_Delfin"]}
-{"qName":"ID Pracovn\u00edho \u00dakolu","qCardinal":381,"qTags":["$numeric","$integer","$key"],"qSrcTables":["F_Pracovni_Vykaz","D_Pracovni_Ukol"]}
-{"qName":"Datum V\u00fdkazu","qCardinal":2404,"qTags":["$numeric","$integer","$timestamp","$date","$key"],"qSrcTables":["F_Pracovni_Vykaz","D_Datum_Vykazu"]}
-{"qName":"ID Zak\u00e1zky","qCardinal":72,"qTags":["$numeric","$integer","$key"],"qSrcTables":["F_Pracovni_Vykaz","D_Zakazka"]}
-{"qName":"ID Subjektu Zak\u00e1zky","qCardinal":935,"qTags":["$numeric","$integer","$key"],"qSrcTables":["F_Pracovni_Vykaz","D_Zakazka_Subjekt"]}
-{"qName":"Zdroj V\u00fdkazu","qCardinal":2,"qTags":["$text"],"qSrcTables":["F_Pracovni_Vykaz"]}
-{"qName":"Popis Pr\u00e1ce","qCardinal":283,"qTags":["$text"],"qSrcTables":["F_Pracovni_Vykaz"]}
-{"qName":"Po\u010det Vyk\u00e1zan\u00fdch Minut","qCardinal":177,"qTags":["$numeric","$integer"],"qSrcTables":["F_Pracovni_Vykaz"]}
-{"qName":"Po\u010det Vyk\u00e1zan\u00fdch Hodin","qCardinal":177,"qTags":["$numeric"],"qSrcTables":["F_Pracovni_Vykaz"]}
-{"qName":"Po\u010det Vyk\u00e1zan\u00fdch MD","qCardinal":177,"qTags":["$numeric"],"qSrcTables":["F_Pracovni_Vykaz"]}
-{"qName":"Datum platnosti Od","qCardinal":196,"qTags":["$numeric","$integer","$timestamp","$date"],"qSrcTables":["F_Pracovni_Vykaz"]}
-{"qName":"Datum platnosti Do","qCardinal":51,"qTags":["$numeric","$integer","$timestamp","$date"],"qSrcTables":["F_Pracovni_Vykaz"]}
-{"qName":"Aktu\u00e1ln\u00ed z\u00e1znam","qCardinal":2,"qTags":["$text","$ascii"],"qSrcTables":["F_Pracovni_Vykaz"]}
-{"qName":"Smazan\u00fd z\u00e1znam","qCardinal":2,"qTags":["$text","$ascii"],"qSrcTables":["F_Pracovni_Vykaz"]}
-{"qName":"Jm\u00e9no Z\u00e1kazn\u00edka","qCardinal":372,"qTags":["$text"],"qSrcTables":["D_Pracovni_Ukol"]}
-{"qName":"N\u00e1zev Projektu","qCardinal":372,"qTags":["$text","$ascii"],"qSrcTables":["D_Pracovni_Ukol"]}
-{"qName":"N\u00e1zev \u00dakolu","qCardinal":372,"qTags":["$text","$ascii"],"qSrcTables":["D_Pracovni_Ukol"]}
-{"qName":"Popis \u00dakolu","qCardinal":1,"qTags":["$text","$ascii"],"qSrcTables":["D_Pracovni_Ukol"]}
-{"qName":"Fakturovateln\u00fd \u00dakol","qCardinal":3,"qTags":["$text","$ascii"],"qSrcTables":["D_Pracovni_Ukol"]}
-{"qName":"Term\u00edn \u00dakolu","qCardinal":2,"qTags":["$numeric","$integer","$timestamp","$date"],"qSrcTables":["D_Pracovni_Ukol"]}
-{"qName":"Limit MD","qCardinal":26,"qTags":["$numeric","$integer"],"qSrcTables":["D_Pracovni_Ukol"]}
-{"qName":"Datum Dokon\u010den\u00ed \u00dakolu","qCardinal":72,"qTags":["$numeric","$integer","$timestamp","$date"],"qSrcTables":["D_Pracovni_Ukol"]}
-{"qName":"Typ Za\u00fa\u010dtov\u00e1n\u00ed","qCardinal":6,"qTags":["$text","$ascii"],"qSrcTables":["D_Pracovni_Ukol"]}
-{"qName":"Zdroj","qCardinal":3,"qTags":["$text","$ascii"],"qSrcTables":["D_Pracovni_Ukol"]}
-{"qName":"K\u00f3d Zak\u00e1zky","qCardinal":72,"qTags":["$text","$ascii"],"qSrcTables":["D_Zakazka"]}
-{"qName":"N\u00e1zev Zak\u00e1zky","qCardinal":72,"qTags":["$text"],"qSrcTables":["D_Zakazka"]}
-{"qName":"N\u00e1zev Subjektu Zak\u00e1zky","qCardinal":439,"qTags":["$text","$ascii"],"qSrcTables":["D_Zakazka_Subjekt"]}
-{"qName":"Popis Subjektu Zak\u00e1zky","qCardinal":27,"qTags":["$text"],"qSrcTables":["D_Zakazka_Subjekt"]}
-{"qName":"Unifikovan\u00fd N\u00e1zev Subjektu Zak\u00e1zky","qCardinal":439,"qTags":["$text","$ascii"],"qSrcTables":["D_Zakazka_Subjekt"]}
-{"qName":"I\u010cO Subjektu Zak\u00e1zky","qCardinal":935,"qTags":[],"qSrcTables":["D_Zakazka_Subjekt"]}
-{"qName":"DI\u010c Subjektu Zak\u00e1zky","qCardinal":824,"qTags":["$text","$ascii"],"qSrcTables":["D_Zakazka_Subjekt"]}
-{"qName":"Ulice Subjektu Zak\u00e1zky","qCardinal":446,"qTags":["$text"],"qSrcTables":["D_Zakazka_Subjekt"]}
-{"qName":"M\u011bsto Subjektu Zak\u00e1zky","qCardinal":270,"qTags":["$text","$ascii"],"qSrcTables":["D_Zakazka_Subjekt"]}
-{"qName":"PS\u010c Subjektu Zak\u00e1zky","qCardinal":304,"qTags":["$text","$ascii"],"qSrcTables":["D_Zakazka_Subjekt"]}
-{"qName":"Zem\u011b Subjektu Zak\u00e1zky","qCardinal":22,"qTags":["$text","$ascii"],"qSrcTables":["D_Zakazka_Subjekt"]}
-{"qName":"Jm\u00e9no Delf\u00edna","qCardinal":91,"qTags":["$text","$ascii"],"qSrcTables":["D_Delfin"]}
-{"qName":"P\u0159\u00edjmen\u00ed Delf\u00edna","qCardinal":98,"qTags":["$text","$ascii"],"qSrcTables":["D_Delfin"]}
-{"qName":"Delf\u00edn","qCardinal":104,"qTags":["$text"],"qSrcTables":["D_Delfin"]}
-{"qName":"Zkratka Delf\u00edna","qCardinal":89,"qTags":["$text","$ascii"],"qSrcTables":["D_Delfin"]}
-{"qName":"Typ Pracovn\u00ed Smlouvy","qCardinal":4,"qTags":["$text"],"qSrcTables":["D_Delfin"]}
-{"qName":"Email Delf\u00edna","qCardinal":104,"qTags":["$text","$ascii"],"qSrcTables":["D_Delfin"]}
-{"qName":"Datum N\u00e1stupu Delf\u00edna","qCardinal":1,"qTags":["$numeric","$integer","$timestamp","$date"],"qSrcTables":["D_Delfin"]}
-{"qName":"Datum Ukon\u010den\u00ed Pom\u011bru","qCardinal":16,"qTags":["$numeric","$integer"],"qSrcTables":["D_Delfin"]}
-{"qName":"Po\u010det Dn\u00ed \u00davazku","qCardinal":7,"qTags":["$numeric"],"qSrcTables":["D_Delfin"]}
-{"qName":"Po\u010det Hodin \u00davazku","qCardinal":4,"qTags":["$numeric","$integer"],"qSrcTables":["D_Delfin"]}
-{"qName":"Po\u010det Hodin V T\u00fddnu","qCardinal":8,"qTags":["$numeric","$integer"],"qSrcTables":["D_Delfin"]}
-{"qName":"Aktivn\u00ed smlouva","qCardinal":2,"qTags":["$text","$ascii"],"qSrcTables":["D_Delfin"]}
-{"qName":"Platnost Z\u00e1znamu Od","qCardinal":87,"qTags":["$numeric","$integer"],"qSrcTables":["D_Delfin"]}
-{"qName":"Platnost Z\u00e1znamu Do","qCardinal":19,"qTags":["$numeric","$integer","$timestamp","$date"],"qSrcTables":["D_Delfin"]}
-{"qName":"Kruh Delf\u00edna","qCardinal":11,"qTags":["$text"],"qSrcTables":["D_Delfin"]}
-{"qName":"Kruh_Seat","qCardinal":104,"qTags":["$text"],"qSrcTables":["D_Delfin"]}
-{"qName":"Pozice Delf\u00edna","qCardinal":1,"qTags":["$text","$ascii"],"qSrcTables":["D_Delfin"]}
-{"qName":"Posledn\u00ed den v m\u011bs\u00edci","qCardinal":79,"qTags":["$numeric","$timestamp"],"qSrcTables":["D_Datum_Vykazu"]}
-{"qName":"Den","qCardinal":31,"qTags":["$numeric","$integer"],"qSrcTables":["D_Datum_Vykazu"]}
-{"qName":"Den v T\u00fddnu","qCardinal":7,"qTags":["$numeric","$integer"],"qSrcTables":["D_Datum_Vykazu"]}
-{"qName":"Den N\u00e1zev","qCardinal":7,"qTags":["$text"],"qSrcTables":["D_Datum_Vykazu"]}
-{"qName":"Den Zkr.","qCardinal":7,"qTags":["$text"],"qSrcTables":["D_Datum_Vykazu"]}
-{"qName":"V\u00edkend","qCardinal":2,"qTags":["$text","$ascii"],"qSrcTables":["D_Datum_Vykazu"]}
-{"qName":"T\u00fdden","qCardinal":53,"qTags":["$numeric","$integer"],"qSrcTables":["D_Datum_Vykazu"]}
-{"qName":"Rok-T\u00fdden","qCardinal":349,"qTags":["$text","$ascii"],"qSrcTables":["D_Datum_Vykazu"]}
-{"qName":"T\u00fdden Rozd\u011blen\u00fd V Ultimu M\u011bs\u00edce","qCardinal":63,"qTags":["$numeric","$integer"],"qSrcTables":["D_Datum_Vykazu"]}
-{"qName":"M\u011bs\u00edc","qCardinal":12,"qTags":["$numeric","$integer"],"qSrcTables":["D_Datum_Vykazu"]}
-{"qName":"M\u011bs\u00edc N\u00e1zev","qCardinal":12,"qTags":["$text"],"qSrcTables":["D_Datum_Vykazu"]}
-{"qName":"M\u011bs\u00edc Zkr.","qCardinal":12,"qTags":["$text"],"qSrcTables":["D_Datum_Vykazu"]}
-{"qName":"Qvart\u00e1l","qCardinal":4,"qTags":["$numeric","$integer"],"qSrcTables":["D_Datum_Vykazu"]}
-{"qName":"Qvart\u00e1l N\u00e1zev","qCardinal":4,"qTags":["$text","$ascii"],"qSrcTables":["D_Datum_Vykazu"]}
-{"qName":"Rok","qCardinal":7,"qTags":["$numeric","$integer"],"qSrcTables":["D_Datum_Vykazu"]}
-{"qName":"Rok-M\u011bs\u00edc","qCardinal":79,"qTags":["$numeric","$integer"],"qSrcTables":["D_Datum_Vykazu"]}
-{"qName":"Sv\u00e1tek","qCardinal":2,"qTags":["$text","$ascii"],"qSrcTables":["D_Datum_Vykazu"]}
-{"qName":"Rok-Qvart\u00e1l","qCardinal":27,"qTags":["$text","$ascii"],"qSrcTables":["D_Datum_Vykazu"]}
-{"qName":"M\u011bs\u00edc\/Rok","qCardinal":79,"qTags":["$text","$ascii"],"qSrcTables":["D_Datum_Vykazu"]}
