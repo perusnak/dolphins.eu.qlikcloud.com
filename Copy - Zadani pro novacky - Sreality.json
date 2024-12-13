@@ -1,0 +1,66 @@
+
+SHEETS
+{"qInfo":{"qId":"ff113f4e-b6e8-473e-8e6c-564911e9f7aa","qType":"sheet"},"qMeta":{"title":"P\u0159ehled obsahu datov\u00e9ho modelu","description":"","createdDate":"2022-09-14T14:28:59.871Z","modifiedDate":"2022-09-14T14:28:59.871Z","published":true,"publishTime":"2022-03-21T21:35:50.153Z","approved":true,"qSize":-1,"sourceObject":"","draftObject":"","_resourcetype":"app.object","_objecttype":"sheet","id":"ff113f4e-b6e8-473e-8e6c-564911e9f7aa","owner":"7Z70b87cTFw5fsMrAhiXm6PWgO37R9nN1LXklvmvqig","ownerId":"-nTfQiNNLPazoMZ_RvCX271ATqbPrM97","privileges":["read","publish"]},"qData":[]}
+
+OBJECTS ON SHEETS
+{"name":"Jykja","type":"kpi","col":1,"row":1,"colspan":6,"rowspan":2,"bounds":{"x":4.166666666666666,"y":4.999999999999999,"width":25,"height":9.999999999999998}}
+{"name":"fSwLXDu","type":"table","col":0,"row":9,"colspan":24,"rowspan":4,"bounds":{"x":0,"y":45,"width":100,"height":19.999999999999996}}
+{"name":"nsrg","type":"kpi","col":8,"row":1,"colspan":8,"rowspan":2,"bounds":{"x":33.33333333333333,"y":4.999999999999999,"width":33.33333333333333,"height":9.999999999999998}}
+{"name":"WPDaSdc","type":"kpi","col":17,"row":1,"colspan":6,"rowspan":2,"bounds":{"x":70.83333333333334,"y":4.999999999999999,"width":25,"height":9.999999999999998}}
+{"name":"QGJVF","type":"filterpane","col":0,"row":0,"colspan":24,"rowspan":1,"bounds":{"x":0,"y":0,"width":100,"height":4.999999999999999}}
+{"name":"JQbRr","type":"map","col":0,"row":3,"colspan":24,"rowspan":6,"bounds":{"x":0,"y":15,"width":100,"height":30}}
+{"name":"Fvnnvej","type":"scatterplot","col":0,"row":13,"colspan":12,"rowspan":7,"bounds":{"x":0,"y":65,"width":50,"height":35}}
+{"name":"YSYbdTe","type":"linechart","col":12,"row":13,"colspan":12,"rowspan":7,"bounds":{"x":50,"y":65,"width":50,"height":35}}
+
+DIMENSIONS
+
+MEASURES
+
+VARIABLES
+{"qName":"v.DWHConnection","qDefinition":"QlikCircle_FOLDER_SHARED","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"03c9e140-697c-4b4d-9edf-3fd6c128f20e","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"v.ExtractFolderPath","qDefinition":"DataFiles","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"627ba87b-5310-4513-bfe5-55b72a661af4","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"v.TransformFolderPath","qDefinition":"DataFiles","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"910548c0-0087-42e6-b7dd-80db4f58c670","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"v.LoadFolderPath","qDefinition":"DataFiles","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"d97800fa-070c-45f9-84c0-330a0494fa93","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"total","qDefinition":"13","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"a6703790-166f-4a7e-bb00-963777a5737c","qType":"variable"},"qData":[]}
+{"qName":"startAt","qDefinition":"14","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"16308fc0-1656-4485-8d0c-3cda9adedbce","qType":"variable"},"qData":[]}
+{"qName":"vL.ResultsTotal","qDefinition":"12496","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"71af3afc-7aab-4c91-bd59-59bacadb0616","qType":"variable"},"qData":[]}
+{"qName":"APIurl","qDefinition":"https:\/\/www.sreality.cz\/api\/cs\/v2\/estates?category_main_cb=2&no_auction=0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"6ae0c015-611d-47ea-83c9-2324392de49c","qType":"variable"},"qData":[]}
+{"qName":"i","qDefinition":"3","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"e9e8bd77-d6e2-43e2-a1ba-66be949385eb","qType":"variable"},"qData":[]}
+
+FIELDS
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Field","qCardinal":30,"qTags":["$hidden","$system","$text","$key"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Table","qCardinal":9,"qTags":["$hidden","$system","$ascii","$text","$key"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Rows","qCardinal":8,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Fields","qCardinal":3,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$FieldNo","qCardinal":21,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Info","qCardinal":1,"qTags":["$hidden","$system","$ascii","$text"],"qSrcTables":[]}
+{"qName":"%KEY_OBRAZEK","qCardinal":1998,"qTags":["$key","$numeric","$integer"],"qSrcTables":["F_NEMOVITOST","D_FOTO"]}
+{"qName":"%KEY_REALITKA","qCardinal":1998,"qTags":["$key","$numeric","$integer"],"qSrcTables":["F_NEMOVITOST","D_REALITNI_KANCELAR"]}
+{"qName":"%KEY_ESTATES","qCardinal":1998,"qTags":["$numeric","$integer"],"qSrcTables":["F_NEMOVITOST"]}
+{"qName":"%KEY_MATERIAL","qCardinal":1998,"qTags":["$key","$numeric","$integer"],"qSrcTables":["F_NEMOVITOST","D_MATERIAL"]}
+{"qName":"%KEY_VLASTNICTVI","qCardinal":1998,"qTags":["$key","$numeric","$integer"],"qSrcTables":["F_NEMOVITOST","D_VLASTNICTVI"]}
+{"qName":"%KEY_VYBAVENI","qCardinal":1998,"qTags":["$key","$numeric","$integer"],"qSrcTables":["F_NEMOVITOST","D_VYBAVENI"]}
+{"qName":"%KEY_BLIZKO","qCardinal":1998,"qTags":["$key","$numeric","$integer"],"qSrcTables":["F_NEMOVITOST","D_BLIZKO_BYDLISTE"]}
+{"qName":"%KEY_TYP_NEMOV","qCardinal":5,"qTags":["$key","$numeric","$integer"],"qSrcTables":["F_NEMOVITOST","D_TYP_NEMOVITOSTI"]}
+{"qName":"%KEY_TYP_PRODEJ","qCardinal":3,"qTags":["$key","$numeric","$integer"],"qSrcTables":["F_NEMOVITOST","D_TYP_PRODEJE"]}
+{"qName":"Lokalita","qCardinal":1667,"qTags":["$text"],"qSrcTables":["F_NEMOVITOST"]}
+{"qName":"Auk\u010dn\u00ed cena","qCardinal":9,"qTags":["$numeric","$integer"],"qSrcTables":["F_NEMOVITOST"]}
+{"qName":"Hash ID","qCardinal":1998,"qTags":["$numeric","$integer"],"qSrcTables":["F_NEMOVITOST"]}
+{"qName":"N\u00e1zev","qCardinal":1480,"qTags":["$text"],"qSrcTables":["F_NEMOVITOST"]}
+{"qName":"Cena","qCardinal":1847,"qTags":["$numeric","$integer"],"qSrcTables":["F_NEMOVITOST"]}
+{"qName":"Dispozice","qCardinal":20,"qTags":["$text"],"qSrcTables":["F_NEMOVITOST"]}
+{"qName":"Rozloha","qCardinal":359,"qTags":["$numeric","$integer"],"qSrcTables":["F_NEMOVITOST"]}
+{"qName":"Cena za m2","qCardinal":1729,"qTags":["$numeric","$integer"],"qSrcTables":["F_NEMOVITOST"]}
+{"qName":"Link","qCardinal":1998,"qTags":["$text"],"qSrcTables":["F_NEMOVITOST"]}
+{"qName":"Datum p\u0159id\u00e1n\u00ed","qCardinal":1,"qTags":["$numeric","$integer","$timestamp","$date"],"qSrcTables":["F_NEMOVITOST"]}
+{"qName":"Latitude","qCardinal":1743,"qTags":["$numeric"],"qSrcTables":["F_NEMOVITOST"]}
+{"qName":"Longitude","qCardinal":1750,"qTags":["$numeric"],"qSrcTables":["F_NEMOVITOST"]}
+{"qName":"Realitn\u00ed kancel\u00e1\u0159","qCardinal":172,"qTags":["$text"],"qSrcTables":["D_REALITNI_KANCELAR"]}
+{"qName":"RK Logo","qCardinal":1,"qTags":["$ascii","$text"],"qSrcTables":["D_REALITNI_KANCELAR"]}
+{"qName":"Link na fotky","qCardinal":1,"qTags":["$ascii","$text"],"qSrcTables":["D_FOTO"]}
+{"qName":"Typ nemovitosti","qCardinal":5,"qTags":["$text"],"qSrcTables":["D_TYP_NEMOVITOSTI"]}
+{"qName":"Typ prodeje","qCardinal":3,"qTags":["$text"],"qSrcTables":["D_TYP_PRODEJE"]}
+{"qName":"Vlastnictv\u00ed","qCardinal":2,"qTags":["$text"],"qSrcTables":["D_VLASTNICTVI"]}
+{"qName":"Materi\u00e1l","qCardinal":2,"qTags":["$ascii","$text"],"qSrcTables":["D_MATERIAL"]}
+{"qName":"Vybaven\u00ed","qCardinal":8,"qTags":["$text"],"qSrcTables":["D_VYBAVENI"]}
+{"qName":"Bl\u00edzko bydli\u0161t\u011b","qCardinal":21,"qTags":["$text"],"qSrcTables":["D_BLIZKO_BYDLISTE"]}
