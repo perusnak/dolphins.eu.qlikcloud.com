@@ -1,0 +1,124 @@
+
+SHEETS
+
+OBJECTS ON SHEETS
+
+DIMENSIONS
+{"qInfo":{"qId":"fhJLp","qType":"dimension"},"qMeta":{"title":"YearMonth","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"dimension","id":"fhJLp","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.727Z","modifiedDate":"2021-12-10T12:46:46.727Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"SWeLpDj","qType":"dimension"},"qMeta":{"title":"Category Name","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"dimension","id":"SWeLpDj","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.790Z","modifiedDate":"2021-12-10T12:46:46.790Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"LpmZEK","qType":"dimension"},"qMeta":{"title":"Day","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"dimension","id":"LpmZEK","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.791Z","modifiedDate":"2021-12-10T12:46:46.791Z","privileges":["read","update","delete","publish"]},"qData":[]}
+
+MEASURES
+{"qInfo":{"qId":"yEfjpB","qType":"measure"},"qMeta":{"title":"Diff","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"yEfjpB","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.720Z","modifiedDate":"2021-12-10T12:46:46.720Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"fCYWAxT","qType":"measure"},"qMeta":{"title":"% Var","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"fCYWAxT","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.742Z","modifiedDate":"2021-12-10T12:46:46.742Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"bmbZy","qType":"measure"},"qMeta":{"title":"Sales CY","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"bmbZy","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.769Z","modifiedDate":"2021-12-10T12:46:46.769Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"ZjkGbH","qType":"measure"},"qMeta":{"title":"Sales%","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"ZjkGbH","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.787Z","modifiedDate":"2021-12-10T12:46:46.787Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"ZHbzks","qType":"measure"},"qMeta":{"title":"Bal LY","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"ZHbzks","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.788Z","modifiedDate":"2021-12-10T12:46:46.788Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"YSLrCg","qType":"measure"},"qMeta":{"title":"Balance","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"YSLrCg","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.788Z","modifiedDate":"2021-12-10T12:46:46.788Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"XjSeYp","qType":"measure"},"qMeta":{"title":"All Sales","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"XjSeYp","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.788Z","modifiedDate":"2021-12-10T12:46:46.788Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"VspXGg","qType":"measure"},"qMeta":{"title":"CostOfSales","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"VspXGg","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.789Z","modifiedDate":"2021-12-10T12:46:46.789Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"VffpX","qType":"measure"},"qMeta":{"title":"Sales LY","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"VffpX","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.789Z","modifiedDate":"2021-12-10T12:46:46.789Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"QpuVF","qType":"measure"},"qMeta":{"title":"Sales","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"QpuVF","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.790Z","modifiedDate":"2021-12-10T12:46:46.790Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"PzVMUt","qType":"measure"},"qMeta":{"title":"SumOfSales","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"PzVMUt","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.790Z","modifiedDate":"2021-12-10T12:46:46.790Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"PGWgJ","qType":"measure"},"qMeta":{"title":"CY vs LY","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"PGWgJ","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.791Z","modifiedDate":"2021-12-10T12:46:46.791Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"JKcjCU","qType":"measure"},"qMeta":{"title":"Sales","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"JKcjCU","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.792Z","modifiedDate":"2021-12-10T12:46:46.792Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"HjWwdNk","qType":"measure"},"qMeta":{"title":"Margin","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"HjWwdNk","approved":false,"published":false,"owner":"auth0|1d0a0140-fdca-4991-8eae-677f2ad09a69","ownerId":"gi6D6C0Z_ZNhT0arH5gIF-_Uq1V3YQRk","createdDate":"2021-12-10T12:46:46.793Z","modifiedDate":"2021-12-10T12:46:46.793Z","privileges":["read","update","delete","publish"]},"qData":[]}
+
+VARIABLES
+{"qName":"name","qDefinition":"SalesData","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"b69a136d-2a50-4c9e-b108-ba46540a4558","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"index","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"112bdd24-5dcd-4eea-9e63-02419ba0b163","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"currentName","qDefinition":"SalesData","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"e8f61e7a-0ba6-463c-b275-b5e4fac39861","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"matches","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"6205a401-d148-4d48-9a60-db1f449cda0a","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"vGeo","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"bb1f61b6-1550-47d6-8246-a55414ddd0c1","qType":"variable"},"qData":[]}
+{"qName":"vIndicator","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"de75e5fc-c709-4fa1-b6c5-8f23f1e89a04","qType":"variable"},"qData":[]}
+{"qName":"vTrend","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"6649977e-e0ae-43c7-bcaf-fd2736b6fabb","qType":"variable"},"qData":[]}
+{"qName":"vTime","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"a25bc6f1-9335-4dbb-8014-d352d50f85f1","qType":"variable"},"qData":[]}
+{"qName":"budget","qDefinition":"20%","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"bdcff267-5f15-4da3-bf5b-83f260721d47","qType":"variable"},"qData":[]}
+{"qName":"vCurr","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"684fe6d8-2b77-4736-bd69-ddd0a7405fe0","qType":"variable"},"qData":[]}
+{"qName":"vBgMap","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"c6fcc2f7-aa77-48e3-bee1-a2c6460c3a11","qType":"variable"},"qData":[]}
+{"qName":"vAcc","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"70a3e282-9b83-4da1-8e51-25dd72a5414e","qType":"variable"},"qData":[]}
+{"qName":"vShow","qDefinition":"-1","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"a2bc0116-3efc-46f8-a3de-e95d8de4ef82","qType":"variable"},"qData":[]}
+{"qName":"vPlay","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"d232b71c-491d-4ed1-8f9b-49e0c85a33c6","qType":"variable"},"qData":[]}
+{"qName":"vYear","qDefinition":"2019","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"55990acd-fba1-42de-ab06-f8b8c66c9f7f","qType":"variable"},"qData":[]}
+{"qName":"vColor","qDefinition":"Orange","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"f4ac701a-6823-429a-b39f-983c35410422","qType":"variable"},"qData":[]}
+{"qName":"vSlide","qDefinition":"18","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"e63dc1cd-dc26-4d07-9dcd-20841c89705e","qType":"variable"},"qData":[]}
+
+FIELDS
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Field","qCardinal":72,"qTags":["$text","$ascii","$key","$hidden","$system"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Table","qCardinal":8,"qTags":["$text","$ascii","$key","$hidden","$system"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Rows","qCardinal":6,"qTags":["$numeric","$integer","$hidden","$system"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Fields","qCardinal":6,"qTags":["$numeric","$integer","$hidden","$system"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$FieldNo","qCardinal":34,"qTags":["$numeric","$integer","$hidden","$system"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Info","qCardinal":1,"qTags":["$text","$ascii","$hidden","$system"],"qSrcTables":[]}
+{"qName":"color_id","qCardinal":15,"qTags":["$numeric","$integer"],"qSrcTables":["colors"]}
+{"qName":"color_type","qCardinal":4,"qTags":["$text","$ascii"],"qSrcTables":["colors"]}
+{"qName":"color_name","qCardinal":15,"qTags":["$text","$ascii"],"qSrcTables":["colors"]}
+{"qName":"color_r","qCardinal":11,"qTags":["$numeric","$integer"],"qSrcTables":["colors"]}
+{"qName":"color_g","qCardinal":13,"qTags":["$numeric","$integer"],"qSrcTables":["colors"]}
+{"qName":"color_b","qCardinal":14,"qTags":["$numeric","$integer"],"qSrcTables":["colors"]}
+{"qName":"color_hex","qCardinal":15,"qTags":["$text","$ascii"],"qSrcTables":["colors"]}
+{"qName":"Address","qCardinal":90,"qTags":["$text"],"qSrcTables":["SalesData"]}
+{"qName":"CategoryID","qCardinal":8,"qTags":["$numeric","$integer"],"qSrcTables":["SalesData"]}
+{"qName":"CategoryName","qCardinal":8,"qTags":["$text"],"qSrcTables":["SalesData"]}
+{"qName":"City","qCardinal":69,"qTags":["$text","$geoname","$relates_SalesData.City_GeoInfo"],"qSrcTables":["SalesData"]}
+{"qName":"ContactName","qCardinal":90,"qTags":["$text"],"qSrcTables":["SalesData"]}
+{"qName":"COS","qCardinal":2140,"qTags":["$numeric"],"qSrcTables":["SalesData"]}
+{"qName":"Country","qCardinal":21,"qTags":["$text","$geoname","$relates_SalesData.Country_GeoInfo","$ascii"],"qSrcTables":["SalesData"]}
+{"qName":"Customer","qCardinal":90,"qTags":["$text"],"qSrcTables":["SalesData"]}
+{"qName":"CustomerID","qCardinal":90,"qTags":["$numeric","$integer"],"qSrcTables":["SalesData"]}
+{"qName":"Description","qCardinal":8,"qTags":["$text"],"qSrcTables":["SalesData"]}
+{"qName":"Discount","qCardinal":829,"qTags":["$numeric"],"qSrcTables":["SalesData"]}
+{"qName":"EmployeeID","qCardinal":35,"qTags":["$numeric","$integer","$key"],"qSrcTables":["SalesData","Employees","Hierarchy"]}
+{"qName":"Fax","qCardinal":68,"qTags":[],"qSrcTables":["SalesData"]}
+{"qName":"Freight","qCardinal":783,"qTags":["$numeric"],"qSrcTables":["SalesData"]}
+{"qName":"GP","qCardinal":2149,"qTags":["$numeric"],"qSrcTables":["SalesData"]}
+{"qName":"Month","qCardinal":12,"qTags":["$numeric","$integer"],"qSrcTables":["SalesData"]}
+{"qName":"OrderDate","qCardinal":545,"qTags":["$numeric","$integer","$timestamp","$date"],"qDerivedFieldData":{"qDerivedFieldLists":[{"qDerivedDefinitionName":"autoCalendar","qFieldDefs":[{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:Year","qName":"OrderDate.autoCalendar.Year","qMethod":"Year","qExpr":"=${autoCalendar(OrderDate).Year}","qTags":["$axis","$year"]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:Quarter","qName":"OrderDate.autoCalendar.Quarter","qMethod":"Quarter","qExpr":"=${autoCalendar(OrderDate).Quarter}","qTags":["$quarter","$cyclic"]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:YearQuarter","qName":"OrderDate.autoCalendar.YearQuarter","qMethod":"YearQuarter","qExpr":"=${autoCalendar(OrderDate).YearQuarter}","qTags":["$yearquarter","$qualified"]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:Month","qName":"OrderDate.autoCalendar.Month","qMethod":"Month","qExpr":"=${autoCalendar(OrderDate).Month}","qTags":["$month","$cyclic"]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:YearMonth","qName":"OrderDate.autoCalendar.YearMonth","qMethod":"YearMonth","qExpr":"=${autoCalendar(OrderDate).YearMonth}","qTags":["$axis","$yearmonth","$qualified"]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:Week","qName":"OrderDate.autoCalendar.Week","qMethod":"Week","qExpr":"=${autoCalendar(OrderDate).Week}","qTags":["$weeknumber","$cyclic"]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:Date","qName":"OrderDate.autoCalendar.Date","qMethod":"Date","qExpr":"=${autoCalendar(OrderDate).Date}","qTags":["$axis","$date","$qualified"]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:InYTD","qName":"OrderDate.autoCalendar.InYTD","qMethod":"InYTD","qExpr":"=${autoCalendar(OrderDate).InYTD}","qTags":[]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:YearsAgo","qName":"OrderDate.autoCalendar.YearsAgo","qMethod":"YearsAgo","qExpr":"=${autoCalendar(OrderDate).YearsAgo}","qTags":[]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:InQTD","qName":"OrderDate.autoCalendar.InQTD","qMethod":"InQTD","qExpr":"=${autoCalendar(OrderDate).InQTD}","qTags":[]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:QuartersAgo","qName":"OrderDate.autoCalendar.QuartersAgo","qMethod":"QuartersAgo","qExpr":"=${autoCalendar(OrderDate).QuartersAgo}","qTags":[]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:QuarterRelNo","qName":"OrderDate.autoCalendar.QuarterRelNo","qMethod":"QuarterRelNo","qExpr":"=${autoCalendar(OrderDate).QuarterRelNo}","qTags":[]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:InMTD","qName":"OrderDate.autoCalendar.InMTD","qMethod":"InMTD","qExpr":"=${autoCalendar(OrderDate).InMTD}","qTags":[]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:MonthsAgo","qName":"OrderDate.autoCalendar.MonthsAgo","qMethod":"MonthsAgo","qExpr":"=${autoCalendar(OrderDate).MonthsAgo}","qTags":[]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:MonthRelNo","qName":"OrderDate.autoCalendar.MonthRelNo","qMethod":"MonthRelNo","qExpr":"=${autoCalendar(OrderDate).MonthRelNo}","qTags":[]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:InWTD","qName":"OrderDate.autoCalendar.InWTD","qMethod":"InWTD","qExpr":"=${autoCalendar(OrderDate).InWTD}","qTags":[]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:WeeksAgo","qName":"OrderDate.autoCalendar.WeeksAgo","qMethod":"WeeksAgo","qExpr":"=${autoCalendar(OrderDate).WeeksAgo}","qTags":[]},{"qId":"5e369d70-e7c6-4e82-afb1-465228010578:WeekRelNo","qName":"OrderDate.autoCalendar.WeekRelNo","qMethod":"WeekRelNo","qExpr":"=${autoCalendar(OrderDate).WeekRelNo}","qTags":[]}],"qGroupDefs":[],"qTags":[]}]},"qSrcTables":["SalesData"]}
+{"qName":"fiscyear","qCardinal":545,"qTags":["$numeric","$integer","$timestamp","$date"],"qDerivedFieldData":{"qDerivedFieldLists":[{"qDerivedDefinitionName":"r","qFieldDefs":[{"qId":"9780d64e-f293-4e0b-aa59-202bc172e034:Year","qName":"fiscyear.r.Year","qMethod":"Year","qExpr":"=${r(fiscyear).Year}","qTags":["$axis"]},{"qId":"9780d64e-f293-4e0b-aa59-202bc172e034:StartWeekQuarter","qName":"fiscyear.r.StartWeekQuarter","qMethod":"StartWeekQuarter","qExpr":"=${r(fiscyear).StartWeekQuarter}","qTags":["$axis","$simplified"]},{"qId":"9780d64e-f293-4e0b-aa59-202bc172e034:Week","qName":"fiscyear.r.Week","qMethod":"Week","qExpr":"=${r(fiscyear).Week}","qTags":["$axis","$qualified"]}],"qGroupDefs":[],"qTags":[]}]},"qSrcTables":["SalesData"]}
+{"qName":"GridDay","qCardinal":31,"qTags":["$numeric","$integer"],"qSrcTables":["SalesData"]}
+{"qName":"GridYearMonth","qCardinal":33,"qTags":["$numeric","$integer","$timestamp","$date"],"qSrcTables":["SalesData"]}
+{"qName":"OrderID","qCardinal":836,"qTags":["$numeric","$integer"],"qSrcTables":["SalesData"]}
+{"qName":"Phone","qCardinal":90,"qTags":[],"qSrcTables":["SalesData"]}
+{"qName":"PostalCode","qCardinal":82,"qTags":[],"qSrcTables":["SalesData"]}
+{"qName":"ProductID","qCardinal":77,"qTags":["$numeric","$integer"],"qSrcTables":["SalesData"]}
+{"qName":"ProductName","qCardinal":77,"qTags":["$text"],"qSrcTables":["SalesData"]}
+{"qName":"Quantity","qCardinal":56,"qTags":["$numeric","$integer"],"qSrcTables":["SalesData"]}
+{"qName":"Quarter","qCardinal":5,"qTags":["$text","$ascii"],"qSrcTables":["SalesData"]}
+{"qName":"Sales","qCardinal":2113,"qTags":["$numeric"],"qSrcTables":["SalesData"]}
+{"qName":"ShipperID","qCardinal":3,"qTags":["$numeric","$integer"],"qSrcTables":["SalesData"]}
+{"qName":"SupplierID","qCardinal":29,"qTags":["$numeric","$integer"],"qSrcTables":["SalesData"]}
+{"qName":"Year","qCardinal":5,"qTags":["$numeric","$integer"],"qSrcTables":["SalesData"]}
+{"qName":"SalesData.City_GeoInfo","qCardinal":65,"qTags":["$text","$ascii","$geopoint","$relates_City"],"qSrcTables":["SalesData"]}
+{"qName":"SalesData.Country_GeoInfo","qCardinal":22,"qTags":["$text","$ascii","$geopolygon","$relates_Country"],"qSrcTables":["SalesData"]}
+{"qName":"ISO3Code","qCardinal":247,"qTags":["$text","$ascii","$key"],"qSrcTables":["SalesData","countryGeo"]}
+{"qName":"CountryCode","qCardinal":247,"qTags":["$text","$ascii"],"qSrcTables":["countryGeo"]}
+{"qName":"EmployeeName","qCardinal":35,"qTags":["$text"],"qSrcTables":["Employees"]}
+{"qName":"Title","qCardinal":12,"qTags":["$text","$ascii","$key"],"qSrcTables":["Employees","Colors"]}
+{"qName":"Hire Date","qCardinal":34,"qTags":["$numeric","$integer","$timestamp","$date"],"qSrcTables":["Employees"]}
+{"qName":"Office","qCardinal":5,"qTags":["$numeric","$integer"],"qSrcTables":["Employees"]}
+{"qName":"Extension","qCardinal":25,"qTags":[],"qSrcTables":["Employees"]}
+{"qName":"Reports To","qCardinal":13,"qTags":["$numeric","$integer"],"qSrcTables":["Employees"]}
+{"qName":"Year Salary","qCardinal":24,"qTags":["$numeric","$integer"],"qSrcTables":["Employees"]}
+{"qName":"Color1","qCardinal":11,"qTags":["$text","$ascii"],"qSrcTables":["Colors"]}
+{"qName":"Color2","qCardinal":12,"qTags":["$text","$ascii"],"qSrcTables":["Colors"]}
+{"qName":"EmpName","qCardinal":35,"qTags":["$text"],"qSrcTables":["Hierarchy"]}
+{"qName":"ManagerID","qCardinal":13,"qTags":["$numeric","$integer"],"qSrcTables":["Hierarchy"]}
+{"qName":"EmpName1","qCardinal":1,"qTags":["$text","$ascii"],"qSrcTables":["Hierarchy"]}
+{"qName":"EmpName2","qCardinal":3,"qTags":["$text","$ascii"],"qSrcTables":["Hierarchy"]}
+{"qName":"EmpName3","qCardinal":12,"qTags":["$text","$ascii"],"qSrcTables":["Hierarchy"]}
+{"qName":"EmpName4","qCardinal":20,"qTags":["$text"],"qSrcTables":["Hierarchy"]}
+{"qName":"EmpName5","qCardinal":3,"qTags":["$text","$ascii"],"qSrcTables":["Hierarchy"]}
+{"qName":"Manager","qCardinal":14,"qTags":["$text"],"qSrcTables":["Hierarchy"]}
+{"qName":"EmpHierarchy","qCardinal":35,"qTags":["$text"],"qSrcTables":["Hierarchy"]}
+{"qName":"Depth","qCardinal":5,"qTags":["$numeric","$integer"],"qSrcTables":["Hierarchy"]}
+{"qName":"vid","qCardinal":3,"qTags":["$numeric","$integer"],"qSrcTables":["videos"]}
+{"qName":"release","qCardinal":3,"qTags":["$text","$ascii"],"qSrcTables":["videos"]}
+{"qName":"video","qCardinal":3,"qTags":["$text","$ascii"],"qSrcTables":["videos"]}
+{"qName":"Ship","qCardinal":35,"qTags":["$text","$ascii"],"qSrcTables":["ships"]}
+{"qName":"ShipCountry","qCardinal":15,"qTags":["$text","$ascii"],"qSrcTables":["ships"]}
+{"qName":"Type","qCardinal":5,"qTags":["$text","$ascii"],"qSrcTables":["ships"]}
+{"qName":"Knots","qCardinal":30,"qTags":["$numeric"],"qSrcTables":["ships"]}
+{"qName":"Dir","qCardinal":31,"qTags":["$numeric","$integer"],"qSrcTables":["ships"]}
+{"qName":"Color","qCardinal":5,"qTags":["$text","$ascii"],"qSrcTables":["ships"]}
+{"qName":"x","qCardinal":35,"qTags":["$numeric"],"qSrcTables":["ships"]}
+{"qName":"y","qCardinal":35,"qTags":["$numeric"],"qSrcTables":["ships"]}
