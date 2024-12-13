@@ -1,0 +1,33 @@
+
+SHEETS
+{"qInfo":{"qId":"d13661d8-71f5-4f50-a203-a18acd858229","qType":"sheet"},"qMeta":{"title":"Dashboard","description":"","_resourcetype":"app.object","_objecttype":"sheet","id":"d13661d8-71f5-4f50-a203-a18acd858229","approved":false,"published":true,"owner":"FETb5VafDDmlo6N8Z0Oaw22sEHpwrNDj77EM--l5jfA","ownerId":"igkHZ3vsLvAdKgGbjQybbnc78LP2p4Si","createdDate":"2023-03-15T16:35:11.754Z","modifiedDate":"2023-03-16T13:26:27.972Z","publishTime":"2023-03-16T13:26:27.972Z","privileges":["read","publish"]},"qData":[]}
+
+OBJECTS ON SHEETS
+{"name":"MGZPBtX","type":"table","col":0,"row":3,"colspan":24,"rowspan":4,"bounds":{"y":25,"x":0,"width":100,"height":33.33333333333333}}
+{"name":"jkGZ","type":"kpi","col":0,"row":0,"colspan":12,"rowspan":3,"bounds":{"y":0,"x":0,"width":50,"height":25}}
+{"name":"VpXvtv","type":"kpi","col":12,"row":0,"colspan":12,"rowspan":3,"bounds":{"y":0,"x":50,"width":50,"height":25}}
+
+DIMENSIONS
+
+MEASURES
+
+VARIABLES
+{"qName":"vG.ProjectData","qDefinition":"Qlik Technology:S3_PROJECT_A\/PROJECT_A\/DATA","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"152b4c84-fb18-426a-869e-31fb3333dd62","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"vUatRepo","qDefinition":"Qlik Technology:S3_PROJECT_A\/PROJECT_A","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"c5a23815-7f47-43d8-8d4a-f4028ff45583","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"vRepo","qDefinition":"OneDrive - chytilm\/Qlik_Repository\/PROJECT_A","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"c4e27d9e-1bc6-474a-b141-0cd53a5b71f2","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"vEnv","qDefinition":"DEV","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"96412f80-d55f-4973-a9d6-5e59c79f4347","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"vLocalRepo","qDefinition":"OneDrive - chytilm\/Qlik_Repository\/PROJECT_A","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"78daf649-d21b-4122-897e-2a2a273917b0","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"vProdRepo","qDefinition":"TBD","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"232b33d8-e283-4b02-84fa-2c5d0dfb5a48","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+
+FIELDS
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Field","qCardinal":5,"qTags":["$ascii","$text","$key","$hidden","$system"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Table","qCardinal":2,"qTags":["$ascii","$text","$key","$hidden","$system"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Rows","qCardinal":2,"qTags":["$numeric","$integer","$hidden","$system"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Fields","qCardinal":2,"qTags":["$numeric","$integer","$hidden","$system"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$FieldNo","qCardinal":3,"qTags":["$numeric","$integer","$hidden","$system"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Info","qCardinal":1,"qTags":["$ascii","$text","$hidden","$system"],"qSrcTables":[]}
+{"qName":"Data","qCardinal":1,"qTags":["$ascii","$text"],"qSrcTables":["myQVDData"]}
+{"qName":"id","qCardinal":1,"qTags":["$numeric","$integer"],"qSrcTables":["myQVDData"]}
+{"qName":"NewA","qCardinal":4,"qTags":["$numeric","$integer"],"qSrcTables":["Result_Table"]}
+{"qName":"NewB","qCardinal":4,"qTags":["$numeric"],"qSrcTables":["Result_Table"]}
+{"qName":"Index","qCardinal":4,"qTags":["$numeric","$integer"],"qSrcTables":["Result_Table"]}
