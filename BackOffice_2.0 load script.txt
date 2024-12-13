@@ -1,0 +1,214 @@
+///$tab Main
+// Binary [lib://Back Office Space:Office_365_Sharepoint - ondrej.fejfar@dolphinconsulting.cz/Shared Documents/Datové modely/Back Office - Banka/BackOffice.qvf];
+
+//Binary [lib://Back Office Space:Office_365_Sharepoint - ondrej.fejfar@dolphinconsulting.cz/Shared Documents/Datové modely/Back Office - Banka/BackOffice.qvf];
+
+
+SET ThousandSep=' ';
+SET DecimalSep='.';
+SET MoneyThousandSep=' ';
+SET MoneyDecimalSep=',';
+SET MoneyFormat='$ ###0.00;-$ ###0.00';
+SET TimeFormat='h:mm:ss TT';
+SET DateFormat='M/D/YYYY';
+SET TimestampFormat='M/D/YYYY h:mm:ss[.fff] TT';
+SET FirstWeekDay=1;
+SET BrokenWeeks=1;
+SET ReferenceDay=0;
+SET FirstMonthOfYear=1;
+SET CollationLocale='en-US';
+SET CreateSearchIndexOnReload=1;
+SET MonthNames='Leden;Únor;Březen;Duben;Květen;Červen;Červenec;Srpen;Září;Říjen;Listopad;Prosinec';
+SET LongMonthNames='January;February;March;April;May;June;July;August;September;October;November;December';
+SET DayNames='Mon;Tue;Wed;Thu;Fri;Sat;Sun';
+SET LongDayNames='Monday;Tuesday;Wednesday;Thursday;Friday;Saturday;Sunday';
+SET NumericalAbbreviation='3:k;6:M;9:G;12:T;15:P;18:E;21:Z;24:Y;-3:m;-6:μ;-9:n;-12:p;-15:f;-18:a;-21:z;-24:y';
+
+///$tab Variables
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////// 1.1 BASE VARIABLES LOAD, DATA CONNECTION AND AUXILIAR TABLES //////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//set v.DWHConnection = Back Office Space:DataFiles; 
+
+//set v.ExtractFolderPath = Back Office Space:DataFiles/L1;
+//set v.TransformFolderPath = Back Office Space:DataFiles/L2;
+//set v.LoadFolderPath = Back Office Space:DataFiles/L3;
+
+Set vL.Store_Level 			= 'L1';
+Set vL.Store_Folder 		= 'DataFiles';
+Set vL.Store_Path 			= 'lib://$(Space):$(vL.Store_Folder)';
+
+Set vL.F_Data= 'F_DATA';		//1.1
+Set vL.D_Employee= 'D_Employee';		//1.2
+Set vL.D_Product = 'D_Product';				//1.3
+Set vL.D_Unit='D_Unit';		//1.4
+Set vL.D_Process='D_Process';				//1.5
+
+
+///$tab Section
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////// CONTENT ////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+///// 1.1 BASE VARIABLES LOAD, DATA CONNECTION AND AUXILIAR TABLES
+///// 2.1 FACT TABLE - F_DATA
+///// 2.2 DIMENSION TABLE - D_PRODUCT
+///// 2.3 DIMENSION TABLE - D_PROCESS
+///// 2.4 DIMENSION TABLE - D_UNIT
+///// 2.5 DIMENSION TABLE - D_EMPLOYEE
+///// 2.6 MASTER CALENDAR
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////// 1.1 BASE VARIABLES LOAD, DATA CONNECTION AND AUXILIAR TABLES //////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// $(Must_Include=???);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////// 2.1 Fact Table - F_DATA ////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+$(vL.F_Data):
+
+LOAD
+   AddMonths(%KEY_DATE,6) as %KEY_DATE ,
+    %KEY_UNIT,
+    %KEY_PRODUCT,
+    %KEY_EMPLOYEE,
+    %KEY_PROCESS,
+    Coefficient,
+    "Request Rate",
+    "SLA Compliance",
+    "Customer Satisfaction",
+    (Rand() * (0.035-0.01 ) + 0.035)+"Complaint Rate" as "Complaint Rate",
+	"Error Rate",
+	"Utilization",
+	"Norm Compliance",
+	"Capacity Planning",
+	"Employee Satisfaction",
+	"Employee Turnover"
+FROM [lib://Back Office Space:DataFiles/F_DATA.qvd]
+(qvd)
+where "%KEY_DATE"<date(today());
+
+ //STORE F_DATA INTO [lib://$(v.LoadFolderPath)/LEVEL_3_F_DATA.qvd](qvd);
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////// 2.2 Dim Table - D_PRODUCT //////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$(vL.D_Product):
+LOAD
+    "%KEY_PRODUCT",
+//     "product_key",
+//     "Product Source Id",
+    "Product Name",
+    "Product Category",
+    "Product Type",
+    "Product Legal Personality Name",
+    "Product Legal Personality Code"
+FROM [lib://Back Office Space:DataFiles/D_PRODUCT]
+(qvd);
+
+ //STORE D_PRODUCT INTO [lib://$(v.LoadFolderPath)/LEVEL_3_D_PRODUCT.qvd](qvd);
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////// 2.3 Dim Table - D_PROCESS //////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$(vL.D_Process):
+LOAD
+    "%KEY_PROCESS",
+	if([Process Name]='N/A','Nepřiřazeno',[Process Name]) as "Process Type",
+	if([Process Type Name]='N/A','Nepřiřazeno',[Process Type Name]) as "Process Type Name",
+    "Process Type Code"
+FROM [lib://Back Office Space:DataFiles/D_PROCESS]
+(qvd)
+;
+// STORE D_PROCESS INTO [lib://$(v.LoadFolderPath)/LEVEL_3_D_PROCESS.qvd](qvd);
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////// 2.4 Dim Table - D_UNIT //////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$(vL.D_Unit):
+LOAD
+	"%KEY_UNIT",
+  if([Unit Name]='N/A','Nepřiřazeno',[Unit Name]) as "Unit Name",
+  if([Unit Department]='N/A','Nepřiřazeno',[Unit Department]) as "Unit Department",
+  if([Unit Section]='N/A','Nepřiřazeno',[Unit Section]) as "Unit Section"
+FROM [lib://Back Office Space:DataFiles/D_UNIT]
+(qvd);
+
+
+// STORE D_UNIT INTO [lib://$(v.LoadFolderPath)/LEVEL_3_D_UNIT.qvd](qvd);
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////// 2.5 Dim Table - D_EMPLOYEE //////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$(vL.D_Employee):
+LOAD
+	"%KEY_EMPLOYEE" ,
+    "Employee Name",
+    "Employee Position"
+FROM [lib://Back Office Space:DataFiles/D_EMPLOYEE]
+(qvd) where [%KEY_EMPLOYEE]<>'-1' ;
+
+//STORE D_EMPLOYEE INTO [lib://$(v.LoadFolderPath)/LEVEL_2_D_EMPLOYEE.qvd](qvd);
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////// 2.6 MASTER CALENDAR //////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Original data is aggregated by months so Master Calendar has to be in month granularity.
+
+StartAndEndDates:
+LOAD
+	MIN("%KEY_DATE") 		AS FirstOrderDate,
+    MAX("%KEY_DATE")	 	AS LastOrderDate
+RESIDENT F_DATA;
+
+
+LET v.FirstDate = Num(Peek('FirstOrderDate', 0, 'StartAndEndDates'));
+LET v.LastDate = Num(Peek('LastOrderDate', 0, 'StartAndEndDates'));
+
+
+//Generates 12 rows for every year: 1st Jan, 1st Feb, 1st Mar etc...  
+TempCal:
+LOAD
+	AddMonths(Date($(v.FirstDate)), RowNo() -1) AS TempDate
+AUTOGENERATE
+	((Year($(v.LastDate))*12)+month($(v.LastDate))) - ((Year($(v.FirstDate))*12)+month($(v.FirstDate))) + 1;  //Calculate number of months between two dates
+
+
+//Common Master Calendar in month granularity (Calendar Day is always 1)
+MasterCalendar:
+LOAD
+	
+	TempDate AS %KEY_DATE,
+	WEEK(TempDate) AS "Calendar Week",
+	YEAR(TempDate) AS "Calendar Year",
+	MONTH(TempDate) AS "Calendar Month",
+    num(MONTH(TempDate)) AS "Calendar Month Number",
+	DAY(TempDate) AS "Calendar Day",
+	WEEKDAY (TempDate) AS Weekday,
+	'Q' & CEIL(MONTH(TempDate) / 3) AS Quarter,
+	DATE(MONTHSTART(TempDate), 'MMM-YYYY') AS MonthYear,
+	WEEK(TempDate) & '-' & YEAR(TempDate) AS WeekYear
+RESIDENT TempCal;
+
+
+DROP TABLE StartAndEndDates;
+DROP TABLE TempCal;
+///$tab Exit Script
+exit script;
