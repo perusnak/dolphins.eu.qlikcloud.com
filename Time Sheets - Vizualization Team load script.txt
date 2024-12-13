@@ -1,0 +1,318 @@
+///$tab Main
+SET ThousandSep=',';
+SET DecimalSep='.';
+SET MoneyThousandSep=',';
+SET MoneyDecimalSep='.';
+SET MoneyFormat='$ ###0.00;-$ ###0.00';
+SET TimeFormat='h:mm:ss TT';
+SET DateFormat='M/D/YYYY';
+SET TimestampFormat='M/D/YYYY h:mm:ss[.fff] TT';
+SET FirstWeekDay=6;
+SET BrokenWeeks=1;
+SET ReferenceDay=0;
+SET FirstMonthOfYear=1;
+SET CollationLocale='en-US';
+SET CreateSearchIndexOnReload=1;
+SET MonthNames='Jan;Feb;Mar;Apr;May;Jun;Jul;Aug;Sep;Oct;Nov;Dec';
+SET LongMonthNames='January;February;March;April;May;June;July;August;September;October;November;December';
+SET DayNames='Mon;Tue;Wed;Thu;Fri;Sat;Sun';
+SET LongDayNames='Monday;Tuesday;Wednesday;Thursday;Friday;Saturday;Sunday';
+SET NumericalAbbreviation='3:k;6:M;9:G;12:T;15:P;18:E;21:Z;24:Y;-3:m;-6:μ;-9:n;-12:p;-15:f;-18:a;-21:z;-24:y';
+
+///$tab LIB CONNECT
+Set vL.Space = 'Applications (Shared)';
+Set vL.Database = 'AdventureWorksEDU_SQLSERVER';
+
+LIB CONNECT TO '$(vL.Space):$(vL.Database)';
+///$tab L1 - Data Model Time Sheets
+//////////////////////////////
+//// Informace k datům
+////
+//// 1.1 - F Pracovní Výkaz
+//// 1.2 - D Pracovní úkol
+//// 1.3 - D Zakázka
+//// 1.4 - D Zakázka Subjekt
+//// 1.5 - D Delfín
+//// 1.6 - D Datum Výkazu
+/////////////////////////////
+
+//////////////////////////////
+//// Variables Table Names
+
+Set vL.Store_Level 			= 'L1';
+Set vL.Store_Folder 		= 'DataFiles';
+Set vL.Store_Path 			= 'lib://$(Space):$(vL.Store_Folder)';
+
+Set vL.F_Pracovni_Vykaz 	= 'F_Pracovni_Vykaz';		//1.1
+Set vL.D_Pracovni_Ukol 		= 'D_Pracovni_Ukol';		//1.2
+Set vL.D_Zakazka 			= 'D_Zakazka';				//1.3
+Set vL.D_Zakazka_Subjekt 	= 'D_Zakazka_Subjekt';		//1.4
+Set vL.D_Delfin 			= 'D_Delfin';				//1.5
+Set vL.D_Datum_Vykazu 		= 'D_Datum_Vykazu';			//1.6
+
+
+//////////////////////////////
+//// 1.1 - F Pracovní Výkaz
+/////////////////////////////
+
+
+
+$(vL.F_Pracovni_Vykaz):
+    LOAD 
+        [ID Pracovního Výkazu], 
+        [ID Delfína], 
+        [ID Pracovního Úkolu], 
+        [Datum Výkazu], 
+        [ID Zakázky], 
+        [ID Subjektu Zakázky], 
+        [Zdroj Výkazu], 
+        [Popis Práce], 
+        [Počet Vykázaných Minut], 
+        [Počet Vykázaných Hodin], 
+        [Počet Vykázaných MD], 
+        [Datum platnosti Od], 
+        [Datum platnosti Do], 
+        [Aktuální záznam], 
+        [Smazaný záznam];
+        
+        
+
+    SELECT 
+        "ID Pracovního Výkazu",
+        "ID Delfína",
+        "ID Pracovního Úkolu",
+        "Datum Výkazu",
+        "ID Zakázky",
+        "ID Subjektu Zakázky",
+        "Zdroj Výkazu",
+        "Popis Práce",
+        "Počet Vykázaných Minut",
+        "Počet Vykázaných Hodin",
+        "Počet Vykázaných MD",
+        "Datum platnosti Od",
+        "Datum platnosti Do",
+        "Aktuální záznam",
+        "Smazaný záznam"
+    FROM AdventureWorksEDU.pbi."Pracovní Výkaz";
+    
+
+store $(vL.F_Pracovni_Vykaz) into [lib://Vizualization Team - Data:DataFiles/L1_F_Pracovni_Vykaz.qvd] (qvd);
+// store $(vL.F_Pracovni_Vykaz) into [$(vL.Store_Path)/$(vL.Store_Level)_$(vL.F_Pracovni_Vykaz).qvd] (qvd);
+
+
+
+//////////////////////////////
+//// 1.2 - D Pracovní úkol
+/////////////////////////////
+
+
+$(vL.D_Pracovni_Ukol):
+    LOAD 
+        [ID Pracovního Úkolu], 
+        [Jméno Zákazníka], 
+        [Název Projektu], 
+        [Název Úkolu], 
+        [Popis Úkolu], 
+        [Fakturovatelný Úkol], 
+        [Termín Úkolu], 
+        [Limit MD], 
+        [Datum Dokončení Úkolu], 
+        [Typ Zaúčtování], 
+        Zdroj;
+
+    SELECT 
+        "ID Pracovního Úkolu",
+        "Jméno Zákazníka",
+        "Název Projektu",
+        "Název Úkolu",
+        "Popis Úkolu",
+        "Fakturovatelný Úkol",
+        "Termín Úkolu",
+        "Limit MD",
+        "Datum Dokončení Úkolu",
+        "Typ Zaúčtování",
+        Zdroj
+    FROM AdventureWorksEDU.pbi."Pracovní Úkol";
+
+store $(vL.D_Pracovni_Ukol) into [lib://Vizualization Team - Data:DataFiles/L1_D_Pracovni_Ukol.qvd] (qvd);
+// store $(vL.D_Pracovni_Ukol) into [$(vL.Store_Path)/$(vL.Store_Level)_$(vL.D_Pracovni_Ukol).qvd] (qvd);
+
+
+//////////////////////////////
+//// 1.3 - D Zakázka
+/////////////////////////////
+
+
+$(vL.D_Zakazka):
+    LOAD 
+        [ID Zakázky], 
+        [Kód Zakázky], 
+        [Název Zakázky];
+
+    SELECT 
+        "ID Zakázky",
+        "Kód Zakázky",
+        "Název Zakázky"
+    FROM AdventureWorksEDU.pbi."Zakázka";
+    
+store $(vL.D_Zakazka) into [lib://Vizualization Team - Data:DataFiles/L1_D_Zakazka.qvd] (qvd);    
+//store $(vL.D_Zakazka) into [$(vL.Store_Path)/$(vL.Store_Level)_$(vL.D_Zakazka).qvd] (qvd);
+
+
+//////////////////////////////
+//// 1.4 - D Zakázka Subjekt
+/////////////////////////////
+
+
+$(vL.D_Zakazka_Subjekt):
+    LOAD
+        [ID Subjektu Zakázky], 
+        [Název Subjektu Zakázky], 
+        [Popis Subjektu Zakázky], 
+        [Unifikovaný Název Subjektu Zakázky], 
+        [IČO Subjektu Zakázky], 
+        [DIČ Subjektu Zakázky], 
+        [Ulice Subjektu Zakázky], 
+        [Město Subjektu Zakázky], 
+        [PSČ Subjektu Zakázky], 
+        [Země Subjektu Zakázky];
+
+    SELECT 
+        "ID Subjektu Zakázky",
+        "Název Subjektu Zakázky",
+        "Popis Subjektu Zakázky",
+        "Unifikovaný Název Subjektu Zakázky",
+        "IČO Subjektu Zakázky",
+        "DIČ Subjektu Zakázky",
+        "Ulice Subjektu Zakázky",
+        "Město Subjektu Zakázky",
+        "PSČ Subjektu Zakázky",
+        "Země Subjektu Zakázky"
+    FROM AdventureWorksEDU.pbi."Zakázka Subjekt";
+
+store $(vL.D_Zakazka_Subjekt) into [lib://Vizualization Team - Data:DataFiles/L1_D_Zakazka_Subjekt.qvd] (qvd); 
+// store $(vL.D_Zakazka_Subjekt) into [$(vL.Store_Path)/$(vL.Store_Level)_$(vL.D_Zakazka_Subjekt).qvd] (qvd);
+
+
+//////////////////////////////
+//// 1.5 - D Delfín
+/////////////////////////////
+
+
+$(vL.D_Delfin):
+    LOAD 
+        [ID Delfína], 
+        [Jméno Delfína], 
+        [Příjmení Delfína], 
+        [Delfín], 
+        [Zkratka Delfína], 
+        [Typ Pracovní Smlouvy], 
+        [Email Delfína], 
+        [Datum Nástupu Delfína], 
+        [Datum Ukončení Poměru], 
+        [Počet Dní Úvazku], 
+        [Počet Hodin Úvazku],
+        [Počet Hodin Úvazku]*[Počet Dní Úvazku] as [Počet Hodin V Týdnu],
+        [Aktivní smlouva], 
+        [Platnost Záznamu Od], 
+        [Platnost Záznamu Do], 
+//         [Kruh Delfína], 
+        if([Kruh Delfína]='NA','Nepřiřazeno',[Kruh Delfína]) as [Kruh Delfína],
+        [Kruh Delfína] &' - '& AutoNumber([Delfín],[Kruh Delfína]) as Kruh_Seat,
+        [Pozice Delfína];
+
+    SELECT 
+        "ID Delfína",
+        "Jméno Delfína",
+        "Příjmení Delfína",
+        "Delfín",
+        "Zkratka Delfína",
+        "Typ Pracovní Smlouvy",
+        "Email Delfína",
+        "Datum Nástupu Delfína",
+        "Datum Ukončení Poměru",
+        "Počet Dní Úvazku",
+        "Počet Hodin Úvazku",
+        "Aktivní smlouva",
+        "Platnost Záznamu Od",
+        "Platnost Záznamu Do",
+        "Kruh Delfína",
+        "Pozice Delfína"
+    FROM AdventureWorksEDU.pbi."Delfín";
+
+
+store $(vL.D_Delfin) into [lib://Vizualization Team - Data:DataFiles/L1_D_Delfin.qvd] (qvd); 
+// store $(vL.D_Delfin) into [$(vL.Store_Path)/$(vL.Store_Level)_$(vL.D_Delfin).qvd] (qvd);
+
+
+//////////////////////////////
+//// 1.6 - D Datum Výkazu
+/////////////////////////////
+
+
+$(vL.D_Datum_Vykazu):
+    LOAD 
+        [Datum Výkazu], 
+        Den, 
+        [Den v Týdnu], 
+        [Den Název], 
+        [Den Zkr.], 
+        [Víkend], 
+        [Týden],
+        Rok&'-'&[Týden] as [Rok-Týden],
+        [Týden Rozdělený V Ultimu Měsíce], 
+        [Měsíc], 
+        [Měsíc Název], 
+        [Měsíc Zkr.], 
+        [Qvartál], 
+        [Qvartál Název], 
+        Rok, 
+        [Rok-Měsíc], 
+        [Svátek],
+        [Rok]&'-'&[Qvartál Název] as [Rok-Qvartál];
+
+    SELECT 
+        "Datum Výkazu",
+        Den,
+        "Den v Týdnu",
+        "Den Název",
+        "Den Zkr.",
+        "Víkend",
+        "Týden",
+        "Týden Rozdělený V Ultimu Měsíce",
+        "Měsíc",
+        "Měsíc Název",
+        "Měsíc Zkr.",
+        "Qvartál",
+        "Qvartál Název",
+        Rok,
+        "Rok-Měsíc",
+        "Svátek"
+    FROM AdventureWorksEDU.pbi."Datum Výkazu";
+    
+
+store $(vL.D_Datum_Vykazu) into [lib://Vizualization Team - Data:DataFiles/L1_D_Datum_Vykazu.qvd] (qvd); 
+// store $(vL.D_Datum_Vykazu) into [$(vL.Store_Path)/$(vL.Store_Level)_$(vL.D_Datum_Vykazu).qvd] (qvd);
+
+
+
+
+
+// Call DropAllTables(True());
+///$tab Exit scritp
+exit script;
+///$tab SUBROUTINES
+Sub DropAllTables(bool)
+
+    If bool Then
+
+        For Table = 0 to NoOfTables()-1
+
+            LET vTableName = TableName(0);
+			Drop Table $(vTableName);
+			
+        Next
+
+    End If
+
+end sub
