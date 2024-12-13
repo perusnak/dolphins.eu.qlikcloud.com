@@ -1,0 +1,24 @@
+
+SHEETS
+{"qInfo":{"qId":"a777af05-2944-4838-befe-1b609b69b993","qType":"sheet"},"qMeta":{"title":"My new sheet (1)","description":"","_resourcetype":"app.object","_objecttype":"sheet","id":"a777af05-2944-4838-befe-1b609b69b993","approved":false,"published":true,"owner":"auth0|ae0be3409fdbd3316572a8c51d5c0fe0e2c9d76da9c3ccc777330ae942923884","ownerId":"igkHZ3vsLvAdKgGbjQybbnc78LP2p4Si","createdDate":"2022-08-21T01:41:02.127Z","modifiedDate":"2022-08-21T01:42:21.194Z","publishTime":"2022-08-21T01:42:21.194Z","privileges":["read","publish"]},"qData":[]}
+
+OBJECTS ON SHEETS
+{"bounds":{"y":0,"x":0,"width":29.166666666666668,"height":25},"col":0,"colspan":7,"name":"1594f295-a596-4a8e-9ab3-53782ac18c57","row":0,"rowspan":3,"smartGrid":{"rowIdx":0,"itemIdx":0,"item":{"width":1}},"type":"action-button"}
+
+DIMENSIONS
+
+MEASURES
+
+VARIABLES
+
+FIELDS
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Field","qCardinal":4,"qTags":["$key","$hidden","$system","$ascii","$text"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Table","qCardinal":3,"qTags":["$key","$hidden","$system","$ascii","$text"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Rows","qCardinal":3,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Fields","qCardinal":2,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$FieldNo","qCardinal":2,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Info","qCardinal":1,"qTags":["$hidden","$system","$ascii","$text"],"qSrcTables":[]}
+{"qName":"a","qCardinal":8,"qTags":["$numeric","$integer"],"qSrcTables":["INLFED"]}
+{"qName":"b","qCardinal":5,"qTags":["$key","$numeric","$integer"],"qSrcTables":["INLFED","Table2"]}
+{"qName":"c","qCardinal":4,"qTags":["$ascii","$text"],"qSrcTables":["Table2"]}
+{"qName":"Dim","qCardinal":3,"qTags":["$ascii","$text"],"qSrcTables":["Table3"]}
